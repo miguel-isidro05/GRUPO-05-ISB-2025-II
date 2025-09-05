@@ -9,10 +9,11 @@
 
 ### Materiales y equipos
 
-|  **Modelo**  | **Descripción** | **Cantidad** |
+|  **Materiales**  | **Detalles** | **Cantidad** |
 |:------------:|:---------------:|:---------------:|
-|  (R)EVOLUTION   | Kit BITalino  | 1 |
-|    | Laptop | 1 |
+|  Kit BITalino   | (R)EVOLUTION   | 1 |
+|   Laptop |  | 1 |
+|   Electrodos |  | 1 |
 
 ### Procedimiento
 
