@@ -1,4 +1,4 @@
-# LABORATORIO 3: – USO DE BITalino para EMG
+  # LABORATORIO 3: Uso de BITalino para EMG
 
 
 ### Introducción
