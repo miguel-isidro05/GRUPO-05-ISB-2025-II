@@ -43,3 +43,6 @@ plt.xlabel("Tiempo (s)")
 plt.ylabel("Amplitud (uV)")
 plt.grid()
 plt.show()
+
+
+XDF
