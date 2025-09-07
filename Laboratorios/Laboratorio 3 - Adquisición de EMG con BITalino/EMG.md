@@ -34,3 +34,29 @@ Para obtener dichas señales fisiológicas se hace uso del BITalino, un disposit
 [2]
 [3]
 
+<<<<<<< HEAD
+=======
+
+#FUERZA 1
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+# Cargar el archivo, sin contar el encabezado del archivo que empieza con '#'
+datos = np.loadtxt("fuerza1_biceps.txt", comments="#")
+#Obtenemos la seál EMG que está en la última posición  -1
+emg = datos[:, -1]
+fs=1000 #frecuencia de muestreo 
+tiempo=np.linspace(0, len(emg) / fs, len(emg))
+
+plt.figure(figsize=(10,4))
+plt.plot(tiempo, emg, color="purple", linewidth=0.4)
+plt.title("Señal EMG desde OpenSignals")
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (uV)")
+plt.grid()
+plt.show()
+
+
+>>>>>>> 6616ee31046ed1120ed4c53d722effb6a9966ba1
