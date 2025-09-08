@@ -4,19 +4,13 @@
 
 1. [Introducción](#id1)
 2. [Objetivos específicos de la práctica](#id2)
-3. [Materiales y metodología](#id3)\
-     3.1 [Materiales Utilizados](#id4)\
-     3.2 [Metodología](#id5)\
-          3.2.1 [Colocación de electrodos](#id6)\
-          3.2.2 [Configuración del sistema](#id7)\
-          3.2.3 [Adquisición de datos](#id8)
-4. [Procesamiento de datos](#id9)\
-     4.1 [Lectura de archivos](#id10)\
-     4.2 [Preprocesamiento de la señal](#id11)\
-     4.3 [Análisis en ventana de 100 ms](#id12)\
-     4.4 [Visualización](#id13)
-6. [Resultados y limitaciones](#id14)
-7. [Referencias](#id15)
+3. [Materiales y equipos](#id3)
+4. [Procedimiento](#id4)\
+     5.1. [EMG - Biceps Braquial](#id5)\
+     5.2. [EMG - Triceps](#id6)
+5. [Resultados](#id7)
+6. [Análisis y discusión](#id8)
+7. [Referencias](#id9)
 
 ## **1. Introducción** <a name="id1"></a>
 La electromiografía (EMG) es una prueba diagnóstica que evalúa el estado y salud de los músculos así como de los nervios que los controlan [1].
@@ -33,7 +27,7 @@ Para obtener dichas señales fisiológicas se hace uso del BITalino, un disposit
 * Analizar e interpretar las señales obtenidas.
 
 
-## Materiales y equipos
+## **3. Materiales y equipos** <a name="id3"></a>
 
 |  **Materiales**  | **Detalles** | **Cantidad** |
 |:------------:|:---------------:|:---------------:|
@@ -41,22 +35,47 @@ Para obtener dichas señales fisiológicas se hace uso del BITalino, un disposit
 |   Laptop | Software OpenSignals | 1 |
 |   Electrodos |  | 3 |
 
-## Procedimiento
-
-### Configuración para la detección de EMG
-
-### EMG - Biceps Braquial
+## **4. Procedimiento** <a name="id4"></a>
+1. Se debe seleccionar el músculo a evaluar y limpiar la zona. De ser posible seleccionar una zona sin vellos para mejorar la impedancia de los electródos.
+2. Colocar 2 electrodos (Positivo y Negativo) en el músculo objetivo y un tercer electrodo de referencia sobre una región electricamente muerta. En el presente laboratorio se eligio poner el electrodo en la cresta hiliaca (hueso de la cadera).
+3. Sincronizar mediante protocolo Bluetooth el BITalino y la computadora con el software previamente instalado
+4. Realizar las mediciones con el software de 3 diferentes ejercicios para cada músculo: en reposo, fuerza leve sin oposición y fuerza con oposición.
+   
+### **4.1. EMG - Biceps Braquial** <a name="id5"></a>
 Se procedió con la colocación de electrodos
-### EMG - Triceps
+
+A continuación, presentamos los videos 
+
+<div align="center">
+ 
+|  **Biceps en reposo**  | **Biceps sin oposición** | **Biceps con oposición** |
+|:----------------------:|:------------------------:|:------------------------:|
+| <video src="https://github.com/user-attachments/assets/a20d28f2-9160-462d-9f0d-921bce4582ed"></video> | <video src="https://github.com/user-attachments/assets/e34ea912-98a3-4a99-8bbd-69a006e5b189"></video> | <video src="https://github.com/user-attachments/assets/582a7d62-79ef-40fb-a2c3-521d561ef5de"></video> |
+
+</div>
 
 
-## Resultados
+### **4.2. EMG - Triceps** <a name="id6"></a>
+
+A continuación, presentamos los videos 
+
+<div align="center">
+ 
+|  **Triceps en reposo**  | **Triceps sin oposición** | **Triceps con oposición** |
+|:----------------------:|:------------------------:|:------------------------:|
+| <video src="https://github.com/user-attachments/assets/122f538e-1267-4ab4-ba6d-a0584519151f" controls></video> | <video src="https://github.com/user-attachments/assets/5412d4e4-d70a-40e8-b306-6c804fc63fcb" controls></video> | <video src="https://github.com/user-attachments/assets/dc13e13e-e735-4437-a025-f35a0cd603c7" controls></video> |
+
+</div>
 
 
-## Discusión
 
 
-## Referencias
+## **6. Resultados** <a name="id7"></a>
+
+## **7. Análisis y discusión** <a name="id8"></a>
+
+
+## **8. Referencias** <a name="id9"></a>
 [1]
 [2]
 [3]
