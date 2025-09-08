@@ -6,8 +6,8 @@
 2. [Objetivos específicos de la práctica](#id2)
 3. [Materiales y equipos](#id3)
 4. [Procedimiento](#id4)\
-     5.1. [EMG - Biceps Braquial](#id5)\
-     5.2. [EMG - Triceps](#id6)
+     4.1. [EMG - Biceps Braquial](#id5)\
+     4.2. [EMG - Triceps](#id6)
 5. [Resultados](#id7)
 6. [Análisis y discusión](#id8)
 7. [Referencias](#id9)
@@ -29,11 +29,14 @@ Para obtener dichas señales fisiológicas se hace uso del BITalino, un disposit
 
 ## **3. Materiales y equipos** <a name="id3"></a>
 
-|  **Materiales**  | **Detalles** | **Cantidad** |
-|:------------:|:---------------:|:---------------:|
-|  Kit BITalino   | (R)EVOLUTION   | 1 |
-|   Laptop | Software OpenSignals | 1 |
-|   Electrodos |  | 3 |
+| Materiales                                   | Cantidad | Imagen                          |
+|----------------------------------------------|----------|---------------------------------|
+| Batería 3.7V                                 | 1        | ![Batería](Imagenes-L3/IM0.png) |
+| Software OpenSignals                         | 1        | ![OpenSignals](Imagenes-L3/IM2.png) |
+| Electrodos de superficie descartables        | 3        | ![Electrodos](Imagenes-L3/IM3.png) |
+| Cable de los 3 electrodos                    | 1        | ![Cable](Imagenes-L3/IM4.png) |
+| Kit BITalino                                 | 1        | ![BITalino](Imagenes-L3/IM5.png) |
+| Laptop                                       | 1        | ![Laptop](Imagenes-L3/IM6.png) |
 
 ## **4. Procedimiento** <a name="id4"></a>
 1. Se debe seleccionar el músculo a evaluar y limpiar la zona. De ser posible seleccionar una zona sin vellos para mejorar la impedancia de los electródos.
