@@ -43,8 +43,11 @@ Para obtener dichas señales fisiológicas se hace uso del BITalino, un disposit
 2. Colocar 2 electrodos (Positivo y Negativo) en el músculo objetivo y un tercer electrodo de referencia sobre una región electricamente muerta. En el presente laboratorio se eligio poner el electrodo en la cresta hiliaca (hueso de la cadera).
 3. Sincronizar mediante protocolo Bluetooth el BITalino y la computadora con el software previamente instalado
 4. Realizar las mediciones con el software de 3 diferentes ejercicios para cada músculo: en reposo, fuerza leve sin oposición y fuerza con oposición.
-   
-### **4.1. EMG - Biceps Braquial** <a name="id5"></a>
+
+### **4.1. Configuración de electrodos** <a name="id20"></a>
+Configuración de registro bipolar diferencial en EMG de superficie
+
+### **4.2. EMG - Biceps Braquial** <a name="id5"></a>
 
 A continuación, presentamos el material audiovisual del EMG en entranamiento con el biceps braquial:
 
@@ -57,7 +60,7 @@ A continuación, presentamos el material audiovisual del EMG en entranamiento co
 </div>
 
 
-### **4.2. EMG - Triceps** <a name="id6"></a>
+### **4.3. EMG - Triceps** <a name="id6"></a>
 
 A continuación, presentamos el material audiovisual del EMG en entranamiento con el triceps:
 
@@ -147,7 +150,9 @@ plt.show()
 
 
 ## **6. Análisis y discusión** <a name="id8"></a>
+### **6.1. Análisis del EMG - Biceps Braquial** <a name="id8"></a>
 
+### **6.2. Análisis del EMG - Triceps** <a name="id8"></a>
 
 ## **7. Referencias** <a name="id9"></a>
 [1]
