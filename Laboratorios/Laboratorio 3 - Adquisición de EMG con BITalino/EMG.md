@@ -17,6 +17,10 @@ La electromiografía (EMG) es una prueba diagnóstica que evalúa el estado y sa
 En una prueba EMG se analizan las señales eléctricas que emiten los músculos cuando están en reposo y en movimiento. Gracias a estas evaluaciones se puede detectar si existe una afección o transtorno muscular [2].
 Durante la contracción muscular, ya sea en reposo en un músculo normal o anormal, el sistema nervioso envía impulsos eléctricos a través de las neuronas motoras las cuales activan las fibras musculares generando un potencial de acción muscular que produce la contracción[3]. De este modo las pruebas de EMG proporcionan datos sobre los impulsos nerviosos y las reacciones de las fibras musculares.
 
+<img width="486" height="294" alt="image" src="https://github.com/user-attachments/assets/62238343-b1b6-4886-ab35-aeaaddf7090f" />
+
+***Fig 1**. Registro electromiografico [4].*
+
 Para obtener dichas señales fisiológicas se hace uso del BITalino, un dispositivo que permite la recolección de datos biomédicos. Este equipo cuenta con sensores diseñados para la obtención de EDA, ECG, EEG y EMG. Además, cuenta con el software OpenSignals (r)evolution para visualizar en tiempo real las señales adquiridas, almacenarlas y exportarlas para un posterior análisis. 
 
 
@@ -47,7 +51,14 @@ Para obtener dichas señales fisiológicas se hace uso del BITalino, un disposit
 ### **4.1. Configuración de electrodos** <a name="id20"></a>
 Configuración de registro bipolar diferencial en EMG de superficie
 
+
+
 ### **4.2. EMG - Biceps Braquial** <a name="id5"></a>
+La ubicación más recomendada para la colocación de electrodos en el bíceps braquial es sobre el vientre muscular, específicamente entre la zona de inervación y el tendón distal, ya que esta localización mejora la estabilidad de la señal y reduce el ruido en el registro electromiográfico [5]. En investigaciones recientes, se ha demostrado que registrar en esta franja permite obtener señales más estables y con menor interferencia de músculos vecinos en comparación con ubicaciones cercanas al tendón o en los bordes del músculo [6]. Para garantizar la calidad de la señal, se sugiere mantener una separación entre electrodos de aproximadamente 20 mm, lo cual equilibra la amplitud y disminuye el riesgo de contaminación de la actividad de otros músculos. Además, los electrodos deben colocarse alineados en dirección a las fibras musculares, ya que una orientación transversal u oblicua puede atenuar la propagación de los potenciales de acción.
+
+<img width="641" height="550" alt="image" src="https://github.com/user-attachments/assets/3b785460-04fd-43c8-9163-934d44616a94" />
+
+***Fig. X.** Puntos de ubicación de electrodos [6]*
 
 A continuación, presentamos el material audiovisual del EMG en entranamiento con el biceps braquial:
 
@@ -61,6 +72,12 @@ A continuación, presentamos el material audiovisual del EMG en entranamiento co
 
 
 ### **4.3. EMG - Triceps** <a name="id6"></a>
+En la literatura más reciente sobre electromiografía de superficie (EMG), se ha señalado la importancia de mantener protocolos estandarizados de colocación de electrodos en músculos como el bíceps y el tríceps. Un estudio publicado en 2025 destacó que, aunque las recomendaciones clásicas como las del proyecto SENIAM siguen siendo la base de la práctica actual, el foco de los nuevos trabajos está puesto en la integridad de los datos y la consistencia de los registros, más que en proponer cambios sustanciales en la ubicación de los electrodos [7]. Esto implica que la posición en el vientre muscular del tríceps continúa siendo válida, siempre y cuando se respete una correcta orientación y separación de los electrodos.
+Del mismo modo, otra revisión también de 2025, aunque centrada en el tríceps sural, ofrece conclusiones relevantes que pueden extrapolarse al tríceps braquial. Este trabajo subraya la necesidad de reducir el crosstalk o interferencia de músculos adyacentes, así como de minimizar la variabilidad espacial en los registros EMG. Para lograrlo, recomienda mantener los electrodos alineados con las fibras musculares y situarlos en el vientre del músculo, lo que asegura un registro más selectivo y confiable [8].
+
+<img width="654" height="476" alt="image" src="https://github.com/user-attachments/assets/581a91c7-ce45-4b64-a8a4-f2987a88e074" />
+
+***Fig. X.** Ubicación de electrodos para la realización de ejercicios [3]*
 
 A continuación, presentamos el material audiovisual del EMG en entranamiento con el triceps:
 
@@ -155,6 +172,18 @@ plt.show()
 ### **6.2. Análisis del EMG - Triceps** <a name="id8"></a>
 
 ## **7. Referencias** <a name="id9"></a>
-[1]
-[2]
-[3]
+[1] M. B. I. Raez, M. S. Hussain y F. Mohd-Yasin, “Techniques of EMG signal analysis: detection, processing, classification and applications,” Biological Procedures Online, vol. 8, pp. 115–145, ene. 2006, PMCID: PMC1455479.
+
+[2] Cleveland Clinic, “EMG (Electromyography),” Cleveland Clinic Health Library, última revisión el 2 de marzo de 2023. Disponible en: my.clevelandclinic.org/health/diagnostics/4825-emg-electromyography
+
+[3] Ahmet Kocyigit, Nehal Shah, Angeliki Chorti y Kim Jackson, “Electromyogram,” Physiopedia, ed. Ahmet Kocyigit, fecha de publicación o revisión no disponible, disponible en: Physiopedia.com/Electromyogram
+
+[4] mDurance Solutions S.L., “¿Qué es la electromiografía de superficie o EMG?,” Blog de mDurance, 25 de julio de 2019. Disponible en: mdurance.com/blog/que-es-la-electromiografia-de-superficie/
+
+[5]  N. R. Prasad, N. Burhan, and A. H. Abdullah, "Prediction of biceps muscle electromyogram signal using a NARX neural network," Journal of Healthcare Engineering, vol. 2021, Article ID 9928763, pp. 1–9, Apr. 2021. [Online]. Available: https://pmc.ncbi.nlm.nih.gov/articles/PMC8085855/
+
+[6]  Y. Zhou, L. Wang, H. Chen, and X. Li, "Surface electromyography electrode placement between innervation zone and tendon: implications for signal quality," Sensors, vol. 23, no. 9, p. 46590, May 2023. [Online]. Available: https://pmc.ncbi.nlm.nih.gov/articles/PMC10246590/
+
+[7] F. Martínez-Cabrera, J. López, and M. Torres, "Normalization protocols for EMG of biceps and triceps: ensuring data integrity in neuromuscular research," Sensors, vol. 25, no. 9, p. 2668, May 2025. [Online]. Available: https://www.mdpi.com/1424-8220/25/9/2668
+
+[8]  B. Shuman et al., “Assessment of common electrode placement methods for surface EMG recordings of the triceps surae muscles,” Journal of Electromyography Applications, preprint, 2025. [Online]. Available: https://www.researchgate.net/publication/393277200_Assessment_of_Common_Electrode_Placement_Methods_for_Surface_Electromyography_Recordings_of_the_Triceps_Surae_Muscles
