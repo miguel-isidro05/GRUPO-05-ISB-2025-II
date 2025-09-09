@@ -31,12 +31,12 @@ Para obtener dichas señales fisiológicas se hace uso del BITalino, un disposit
 
 | Materiales                                   | Cantidad | Imagen                          |
 |----------------------------------------------|----------|---------------------------------|
-| Batería 3.7V                                 | 1        | ![Batería](Imagenes-L3/IM0.png) |
-| Software OpenSignals                         | 1        | ![OpenSignals](Imagenes-L3/IM2.png) |
-| Electrodos de superficie descartables        | 3        | ![Electrodos](Imagenes-L3/IM3.png) |
-| Cable de los 3 electrodos                    | 1        | ![Cable](Imagenes-L3/IM4.png) |
-| Kit BITalino                                 | 1        | ![BITalino](Imagenes-L3/IM5.png) |
-| Laptop                                       | 1        | ![Laptop](Imagenes-L3/IM6.png) |
+| Batería 3.7V                                 | 1        | ![bateria](https://github.com/user-attachments/assets/25fe9643-a7fa-4bd9-85ad-e1ce78a926ab) |
+| Software OpenSignals                         | 1        | ![opensignals](https://github.com/user-attachments/assets/270de790-173f-42fc-9960-5b12a7fff042) |
+| Electrodos de superficie descartables        | 3        | ![electrodos (1)](https://github.com/user-attachments/assets/2e58ad27-7c4a-4336-9fdf-fe54129be397) |
+| Cable de los 3 electrodos                    | 1        | ![cable](https://github.com/user-attachments/assets/2d397e32-3ec4-4982-91fe-0d6855e3aec0) |
+| Kit BITalino                                 | 1        | ![bitalino](https://github.com/user-attachments/assets/a60c127f-27c2-4a03-b852-454d23f54163) |
+| Laptop                                       | 1        | ![laptop](https://github.com/user-attachments/assets/c1394461-1a65-41fc-b6f4-8d8ae5b3b37b) |
 
 ## **4. Procedimiento** <a name="id4"></a>
 1. Se debe seleccionar el músculo a evaluar y limpiar la zona. De ser posible seleccionar una zona sin vellos para mejorar la impedancia de los electródos.
@@ -45,9 +45,8 @@ Para obtener dichas señales fisiológicas se hace uso del BITalino, un disposit
 4. Realizar las mediciones con el software de 3 diferentes ejercicios para cada músculo: en reposo, fuerza leve sin oposición y fuerza con oposición.
    
 ### **4.1. EMG - Biceps Braquial** <a name="id5"></a>
-Se procedió con la colocación de electrodos
 
-A continuación, presentamos los videos 
+A continuación, presentamos el material audiovisual del EMG en entranamiento con el biceps braquial:
 
 <div align="center">
  
@@ -60,7 +59,7 @@ A continuación, presentamos los videos
 
 ### **4.2. EMG - Triceps** <a name="id6"></a>
 
-A continuación, presentamos los videos 
+A continuación, presentamos el material audiovisual del EMG en entranamiento con el triceps:
 
 <div align="center">
  
@@ -74,6 +73,8 @@ A continuación, presentamos los videos
 
 
 ## **6. Resultados** <a name="id7"></a>
+
+Para los resultados haremos uso del archivo "CodigosEMG.ipynb" que se encuentra en el mismo folder. El cual contiene todos los codigos hechos para la visualización de las gráficas de las señales adquiridas. Asi como su respectivo filtrado y análisis de frecuencia.
 
 ## **7. Análisis y discusión** <a name="id8"></a>
 
