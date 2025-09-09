@@ -76,9 +76,60 @@ A continuación, presentamos el material audiovisual del EMG en entranamiento co
 
 Para los resultados haremos uso del archivo "CodigosEMG.ipynb" que se encuentra en el mismo folder. El cual contiene todos los codigos hechos para la visualización de las gráficas de las señales adquiridas. Asi como su respectivo filtrado y análisis de frecuencia.
 
-### 5.1. Procesamiento y visualización de gráficas con python
-
-### 5.2. EMG - Biceps Braquial
+### **5.1. Procesamiento y visualización de gráficas con python**
+### a) Importar librerias
+Importamos las librerias a utilizar que son comunes para el codigo de cada señal graficada.
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import neurokit2 as nk
+from scipy.signal import butter, filtfilt
+```
+### b) Cargar el archivo
+Cargamos el archivo .txt según la ruta en la que este almacenada en el ordenador local (Se muestra el ejemplo para la señal del músculo Biceps Braquial en reposo)
+```python
+ruta = r"D:\IB PUCP - UPCH 2022\7mo Semestre\Introducción a las Señales Biomédicas\Lab 3 - Adquisicion EMG\pythoooooon\Biceps\Reposo\reposo1_biceps.txt"
+datos = np.loadtxt(ruta, comments="#")
+emg = datos[:, -1]  # señal EMG en la última columna
+```
+### c) Definimos variables de la señal para la visualización
+```python
+fs = 1000  # frecuencia de muestreo
+tiempo = np.linspace(0, len(emg) / fs, len(emg))
+```
+### d) Graficamos la señal original
+```python
+plt.figure(figsize=(10, 4))
+plt.plot(tiempo, emg, color="#00008B", linewidth=0.4)
+plt.title("Señal EMG cruda")
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (uV)")
+plt.grid()
+plt.show()
+```
+### e) Filtramos la señal
+```python
+#Función filtro pasa-banda
+def filtro_pasabanda(señal, f_muestreo, frec_baja=20.0, frec_alta=450.0, orden=4):
+    nyquist = 0.5 * f_muestreo  
+    bajo = frec_baja / nyquist
+    alto = frec_alta / nyquist
+    b, a = butter(orden, [bajo, alto], btype="band")
+    return filtfilt(b, a, señal)
+# Aplicar el filtro pasa-banda
+emg_filtrada = filtro_pasabanda(emg, fs)
+```
+### f) Graficamos la señal filtrada
+```python
+plt.figure(figsize=(10, 4))
+plt.plot(tiempo, emg_filtrada, color="#006400", linewidth=0.4)
+plt.title("Señal EMG con filtro pasa-banda (20–450 Hz)")
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (uV)")
+plt.grid()
+plt.show()
+```
+### **5.2. EMG - Biceps Braquial**
 | Entrenamiento                                   | Señal original | Señal filtrada                         |
 |----------------------------------------------|----------|---------------------------------|
 | Reposo                              | <img width="867" height="391" alt="image" src="https://github.com/user-attachments/assets/c16b9bc8-bdce-4fcc-9b4e-b33b1bd82a2a" />| <img width="847" height="391" alt="image" src="https://github.com/user-attachments/assets/b9769556-36ce-4faf-9fad-55ae2ef1dd7e" /> |
