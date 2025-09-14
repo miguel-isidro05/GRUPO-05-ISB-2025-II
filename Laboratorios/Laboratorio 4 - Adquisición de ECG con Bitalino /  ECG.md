@@ -76,6 +76,7 @@ El ECG clínico estándar se registra con 12 derivaciones, que permiten observar
 
 ### Metodología
 
+
 #### Colocación de electrodos
 Describe la posición estándar para registrar ECG.
 
