@@ -34,7 +34,7 @@ Los resultados de un electrocardiograma pueden ayudar a diagnosticar:
 - Defectos cardiacos congénitos
 
 ## Señal ECG
-<img src="http://scielo.sld.cu/img/revistas/eac/v36n1/f0102115.jpg" alt="Mi imagen" width="400">
+<img src="img/senal-ecg.png" alt="Señal ECG" width="500">
 
 ## Propósito de la práctica
 Explica qué se busca lograr (por ejemplo: registrar señales ECG reales y procesarlas digitalmente).
