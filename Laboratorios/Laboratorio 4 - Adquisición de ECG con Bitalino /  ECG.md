@@ -2,8 +2,8 @@
 
 ## Tabla de contenidos
 1. [Introducción](#introducción)
-2. [Señal ECG](#señalECG)
-3. [Propósito de la práctica](#propósito-de-la-práctica)  
+2. [Señal ECG](#señal-ecg)
+3. [Objetivos del Laboratorio](#objetivos-del-laboratorio)  
 4. [Materiales y metodología](#materiales-y-metodología)  
    3.1 [Materiales utilizados](#materiales-utilizados)  
    3.2 [Metodología](#metodología)  
@@ -35,10 +35,34 @@ Los resultados de un electrocardiograma pueden ayudar a diagnosticar:
 
 ## Señal ECG
 ![Señal ECG](https://cdn.rohde-schwarz.com/pws/application/cards/3607_3180/capturing-small-ecg-signals-medical-applications_ac_3607-3180-92_01.1_w1280_hX.png)
+| Segmento      | Descripción                                                                 |
+|---------------|------------------------------------------------------------------------------|
+| **Onda P**    | Indica la activación eléctrica de las aurículas previo al paso al ventrículo.|
+| **Intervalo PR** | Tiempo que tarda el impulso en propagarse desde las aurículas hasta los ventrículos.|
+| **Complejo QRS** | Señal que refleja la contracción eléctrica de los ventrículos.             |
+| **Intervalo QT** | Periodo que abarca desde la activación ventricular hasta su recuperación completa.|
+| **Segmento ST** | Marca la fase en la que el ventrículo está totalmente despolarizado.       |
+| **Onda T**    | Representa el proceso de recuperación de la actividad eléctrica ventricular. |
+| **Onda U**    | Se asocia con la recuperación tardía de fibras especializadas o miocitos.    |
 
+## Electrocardiograma  
 
-## Propósito de la práctica
-Explica qué se busca lograr (por ejemplo: registrar señales ECG reales y procesarlas digitalmente).
+El ECG clínico estándar se registra con 12 derivaciones, que permiten observar la actividad eléctrica cardíaca desde distintos planos. Estas derivaciones se obtienen a partir de electrodos ubicados en las extremidades y en la región torácica. De ellas, seis corresponden al plano frontal (derivaciones I, II, III, aVR, aVL y aVF) y las otras seis al plano horizontal (precordiales V1 a V6). Esta disposición brinda una visión completa del proceso de despolarización y repolarización del corazón.[3]
+
+<p align="center">
+  <img src="https://fisiologia.facmed.unam.mx/wp-content/uploads/2021/11/UTII-2B-img-Vectores-de-despo-ventri.jpg" 
+       alt="Vectores de despolarización ventricular" 
+       width="350">
+</p>
+
+## Objetivos del Laboratorio
+- Configurar adecuadamente el sistema BiTalino para la adquisición de señales cardíacas.
+
+- Registrar y visualizar una señal de ECG en condiciones controladas usando el software OpenSignals.
+
+- Reconocer las ondas principales (P, QRS y T) dentro del registro electrocardiográfico.
+
+- Analizar los cambios en la señal de ECG bajo diferentes condiciones fisiológicas (reposo, apnea breve y actividad física).
 
 ## Materiales y metodología
 
