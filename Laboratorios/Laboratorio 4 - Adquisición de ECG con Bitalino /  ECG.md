@@ -127,8 +127,39 @@ Para obtener una señal de ECG de buena calidad, la ubicación correcta de los e
 ### Adquisición de datos
 Durante la práctica se registraron señales de ECG en un sujeto voluntario en diferentes condiciones fisiológicas. En total se realizaron las siguientes tomas:  
 
-1. **Reposo **  
+**1. Reposo**  
    - 1 registro inicial con el sujeto en reposo y en calma.
+     
+<div align="center">
+
+| **Toma en reposo** |
+|:----------------------:|
+| <video src="https://github.com/user-attachments/assets/2e581bb9-ceae-4bbf-82a4-4913a6c3245a" controls></video> |
+
+</div>
+
+
+**2. Respiracion**
+
+<div align="center">
+ 
+| **Toma 1** | **Toma 2** | **Toma 3** |
+|:-----------------------:|:--------------------------:|:--------------------------:|
+| <video src="https://github.com/user-attachments/assets/ecc5c4b2-8733-4968-9329-2e7f5ea2533f" controls></video> | <video src="https://github.com/user-attachments/assets/40c5edc6-781a-4698-807f-5a9b1ae9d326" controls></video> | <video src="https://github.com/user-attachments/assets/f7e2701a-3f41-422c-91ae-466e512d350b" controls></video> |
+
+</div>
+
+**3. Actividad Fisica**
+
+<div align="center">
+
+| **Pectoral sin oposición** |
+|:---------------------------:|
+| <video src="https://github.com/user-attachments/assets/22de795a-6e0c-4749-be6b-432d3a4b73ff" controls></video> |
+
+</div>
+
+
      
 
 ## Procesamiento de datos
