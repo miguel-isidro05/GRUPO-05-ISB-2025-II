@@ -127,7 +127,7 @@ Para obtener una señal de ECG de buena calidad, la ubicación correcta de los e
 ### Adquisición de datos
 Durante la práctica se registraron señales de ECG en un sujeto voluntario en diferentes condiciones fisiológicas. En total se realizaron las siguientes tomas:  
 
-1. **Reposo basal**  
+1. **Reposo **  
    - 1 registro inicial con el sujeto en reposo y en calma.
      
 
