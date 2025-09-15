@@ -4,19 +4,19 @@
 1. [Introducción](#introducción)
 2. [Señal ECG](#señal-ecg)
 3. [Objetivos del Laboratorio](#objetivos-del-laboratorio)  
-4. [Materiales y metodología](#materiales-y-metodología)  
-   3.1 [Materiales utilizados](#materiales-utilizados)  
-   3.2 [Metodología](#metodología)  
-   - [Colocación de electrodos](#colocación-de-electrodos)  
-   - [Configuración del sistema](#configuración-del-sistema)  
-   - [Adquisición de datos](#adquisición-de-datos)  
-5. [Procesamiento de datos](#procesamiento-de-datos)  
+4. [Materiales](#materiales)  
+5. [Metodología](#metodología)
+   - [Preparación inicial](#preparación-inicial)
+   - [Colocación de electrodos](#colocación-de-electrodos)
+   - [Configuración del sistema](#configuración-del-sistema)
+   - [Adquisición de datos](#adquisición-de-datos)
+7. [Procesamiento de datos](#procesamiento-de-datos)  
    - [Lectura de archivos](#lectura-de-archivos)  
    - [Preprocesamiento de la señal](#preprocesamiento-de-la-señal)  
    - [Análisis en ventana de 100 ms](#análisis-en-ventana-de-100-ms)  
    - [Visualización](#visualización)  
-6. [Resultados y limitaciones](#resultados-y-limitaciones)  
-7. [Referencias](#referencias)  
+8. [Resultados y limitaciones](#resultados-y-limitaciones)  
+9. [Referencias](#referencias)  
 
 ---
 
@@ -34,7 +34,13 @@ Los resultados de un electrocardiograma pueden ayudar a diagnosticar:
 - Defectos cardiacos congénitos
 
 ## Señal ECG
-![Señal ECG](https://cdn.rohde-schwarz.com/pws/application/cards/3607_3180/capturing-small-ecg-signals-medical-applications_ac_3607-3180-92_01.1_w1280_hX.png)
+<p align="center">
+  <img src="https://cdn.rohde-schwarz.com/pws/application/cards/3607_3180/capturing-small-ecg-signals-medical-applications_ac_3607-3180-92_01.1_w1280_hX.png" 
+       alt="Registro de señales de ECG" 
+       width="450"><br>
+  <em>Figura 1. Registro de señales de ECG (Rohde & Schwarz, Aplicaciones médicas).</em>
+</p>
+
 | Segmento      | Descripción                                                                 |
 |---------------|------------------------------------------------------------------------------|
 | **Onda P**    | Indica la activación eléctrica de las aurículas previo al paso al ventrículo.|
@@ -51,8 +57,9 @@ El ECG clínico estándar se registra con 12 derivaciones, que permiten observar
 
 <p align="center">
   <img src="https://fisiologia.facmed.unam.mx/wp-content/uploads/2021/11/UTII-2B-img-Vectores-de-despo-ventri.jpg" 
-       alt="Vectores de despolarización ventricular" 
-       width="350">
+       alt="Electrocardiograma y derivaciones" 
+       width="450"><br>
+  <em>Figura 2. Electrocardiograma y derivaciones (UNAM, Fisiología).</em>
 </p>
 
 ## Objetivos del Laboratorio
@@ -74,16 +81,47 @@ El ECG clínico estándar se registra con 12 derivaciones, que permiten observar
 | Kit BITalino                                 | 1        | ![bitalino](https://github.com/user-attachments/assets/a60c127f-27c2-4a03-b852-454d23f54163) |
 | Laptop                                       | 1        | ![laptop](https://github.com/user-attachments/assets/c1394461-1a65-41fc-b6f4-8d8ae5b3b37b) |
 
-### Metodología
+## Metodología
+Para la adquisición de la señal de ECG utilizando el kit **BiTalino** y el software **OpenSignals**, se siguió el siguiente procedimiento:  
+
+### Preparación inicial: 
+   - Conexión de los electrodos desechables al cable de 3 derivaciones y colocación en la piel según la configuración estándar de ECG.  
+   - Encendido del dispositivo BiTalino y vinculación por Bluetooth con la laptop mediante el software OpenSignals.  
+   - Verificación de la señal registrada para asegurar calidad y ausencia de ruidos excesivos.
+
+### Colocación de los electrodos: 
+Para obtener una señal de ECG de buena calidad, la ubicación correcta de los electrodos es fundamental. A continuación, se presentan dos referencias que explican la posición estándar y los efectos de colocar mal los electrodos:  
+
+   a. **LITFL – ECG Lead Positioning**  
+   Según la guía clínica de *Life in the Fast Lane (LITFL)*, los electrodos deben colocarse en puntos anatómicos bien definidos para asegurar registros confiables. En el caso de las derivaciones precordiales:  
+   - **V1 y V2**: 4.º espacio intercostal, a la derecha e izquierda del esternón.  
+   - **V4**: 5.º espacio intercostal en la línea medio clavicular.  
+   - **V3**: entre V2 y V4.  
+   - **V5 y V6**: en la misma altura que V4, pero en la línea axilar anterior y media.  
+
+   <p align="center">
+     <img src="https://litfl.com/wp-content/uploads/2018/08/Chest-external-landmarks-in-ECG-placament.png" 
+          alt="Posición de electrodos precordiales" 
+          width="400"><br>
+     <em>Figura 3. Posición estándar de electrodos precordiales (LITFL).</em>
+   </p>  
+
+   b. **Tung, R. T. et al., 2021 – Electrocardiographic Limb Leads Placement and Its Effect on ECG Interpretation**  
+   Este artículo científico analiza el impacto de la colocación de los electrodos de las extremidades en la interpretación del ECG. Explica que mover los electrodos de los brazos o piernas a posiciones no convencionales (por ejemplo, más arriba en el torso) puede cambiar el eje eléctrico aparente del corazón, alterar el segmento ST o incluso simular un infarto inexistente.  
+
+   El estudio concluye que las derivaciones de miembros deben colocarse de forma simétrica en las extremidades (RA, LA, LL y RL), ya que su reposicionamiento sin seguir estándares puede generar errores clínicos serios. Por ello, recomienda seguir las guías internacionales para asegurar lecturas correctas.  
+
+   <p align="center">
+     <img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/8010/8415387/0b20e08ada27/14-229f3.jpg" 
+          alt="Colocación de electrodos en extremidades" 
+          width="400"><br>
+     <em>Figura 4. Colocación de electrodos en extremidades (Tung et al., 2021).</em>
+   </p>  
+   
+### Configuración del sistema
 
 
-#### Colocación de electrodos
-Describe la posición estándar para registrar ECG.
-
-#### Configuración del sistema
-Explica la conexión entre hardware y software.
-
-#### Adquisición de datos
+### Adquisición de datos
 Cómo se registraron las señales, duración, sujeto, etc.
 
 ## Procesamiento de datos
