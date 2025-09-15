@@ -118,7 +118,9 @@ Para obtener una señal de ECG de buena calidad, la ubicación correcta de los e
      <em>Figura 4. Colocación de electrodos en extremidades (Tung et al., 2021).</em>
    </p>  
    
-### Configuración del sistema
+### Configuración del sistema:
+
+
 
 
 ### Adquisición de datos
