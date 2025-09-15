@@ -119,12 +119,17 @@ Para obtener una señal de ECG de buena calidad, la ubicación correcta de los e
    </p>  
    
 ### Configuración del sistema:
-
-
-
+- Se instaló el software **OpenSignals** en la laptop para establecer la comunicación con el kit BiTalino.  
+- Se activó la conectividad **Bluetooth** de la computadora y se emparejó con el dispositivo BiTalino utilizando el código predeterminado.  
+- En el software, se seleccionó el canal correspondiente al **sensor de ECG** y se ajustaron los parámetros de muestreo (frecuencia de adquisición y duración de la señal).  
+- Se verificó la correcta recepción de la señal en tiempo real antes de iniciar la adquisición formal.  
 
 ### Adquisición de datos
-Cómo se registraron las señales, duración, sujeto, etc.
+Durante la práctica se registraron señales de ECG en un sujeto voluntario en diferentes condiciones fisiológicas. En total se realizaron las siguientes tomas:  
+
+1. **Reposo basal**  
+   - 1 registro inicial con el sujeto en reposo y en calma.
+     
 
 ## Procesamiento de datos
 
