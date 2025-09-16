@@ -33,7 +33,7 @@ Los resultados de un electrocardiograma pueden ayudar a diagnosticar:
 - Enfermedades de las válvulas del corazón
 - Defectos cardiacos congénitos
 
-## Señal ECG
+## 2. Señal ECG <a name="objetivos-del-laboratorio"></a>
 <p align="center">
   <img src="https://cdn.rohde-schwarz.com/pws/application/cards/3607_3180/capturing-small-ecg-signals-medical-applications_ac_3607-3180-92_01.1_w1280_hX.png" 
        alt="Registro de señales de ECG" 
@@ -62,7 +62,7 @@ El ECG clínico estándar se registra con 12 derivaciones, que permiten observar
   <em>Figura 2. Electrocardiograma y derivaciones (UNAM, Fisiología).</em>
 </p>
 
-## Objetivos del Laboratorio
+## 3. Objetivos del Laboratorio <a name="señal-ecg"></a>
 - Configurar adecuadamente el sistema BiTalino para la adquisición de señales cardíacas.
 
 - Registrar y visualizar una señal de ECG en condiciones controladas usando el software OpenSignals.
