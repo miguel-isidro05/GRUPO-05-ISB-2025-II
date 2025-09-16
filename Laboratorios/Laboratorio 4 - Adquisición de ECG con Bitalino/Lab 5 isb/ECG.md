@@ -191,7 +191,61 @@ El ECG es una señal bioeléctrica débil, muy suceptible al ruido de diversas f
 ### d) Ploteo de las señales
 Se realizó el ploteo de las señales crudas y filtradas, así como de sus respectivos FFT en amplitud y dB.
 
-### 5.1 Reposo Basal
+### 6.1 Reposo Basal
+| Tipo                 | Señal original | Señal filtrada                         |
+|-------------------------|----------|---------------------------------|
+|        Ploteo              | ![image.png](attachment:image.png)     | ![image-4.png](attachment:image-4.png)     |
+|        FFT    | ![image-2.png](attachment:image-2.png)  | ![image-5.png](attachment:image-5.png)    |
+|           FFT [dB]    | ![image-3.png](attachment:image-3.png) | ![image-6.png](attachment:image-6.png)    |
+
+### 6.2 Mantenimiento de la respiracion por 10 segundos
+
+**Toma 1:**
+| Tipo                 | Señal original | Señal filtrada                         |
+|-------------------------|----------|---------------------------------|
+|        Ploteo              | ![image-7.png](attachment:image-7.png)     | ![image-10.png](attachment:image-10.png)     |
+|        FFT    | ![image-8.png](attachment:image-8.png)  | ![image-11.png](attachment:image-11.png)   |
+|           FFT [dB]    | ![image-9.png](attachment:image-9.png)  |   ![image-12.png](attachment:image-12.png)  |
+
+**Toma 2:**
+| Tipo                 | Señal original | Señal filtrada                         |
+|-------------------------|----------|---------------------------------|
+|        Ploteo              | ![image-13.png](attachment:image-13.png)     |   ![image-16.png](attachment:image-16.png)   |
+|        FFT    |![image-14.png](attachment:image-14.png)   | ![image-17.png](attachment:image-17.png)     |
+|           FFT [dB]    | ![image-15.png](attachment:image-15.png)  | ![image-18.png](attachment:image-18.png)    |
+
+**Toma 3:**
+| Tipo                 | Señal original | Señal filtrada                         |
+|-------------------------|----------|---------------------------------|
+|        Ploteo              |  ![image-19.png](attachment:image-19.png)    | ![image-22.png](attachment:image-22.png)     |
+|        FFT    | ![image-20.png](attachment:image-20.png)  |  ![image-23.png](attachment:image-23.png)   |
+|           FFT [dB]    |![image-21.png](attachment:image-21.png)   | ![image-24.png](attachment:image-24.png)    |
+
+### 6.3 Reposo basal después del mantenimiento de la respiración
+| Tipo                 | Señal original | Señal filtrada                         |
+|-------------------------|----------|---------------------------------|
+|        Ploteo              | ![image-25.png](attachment:image-25.png)    | ![image-28.png](attachment:image-28.png)    |
+|        FFT    | ![image-26.png](attachment:image-26.png) | ![image-29.png](attachment:image-29.png)    |
+|           FFT [dB]    | ![image-27.png](attachment:image-27.png)  | ![image-30.png](attachment:image-30.png)    |
+
+## 6.4 Respiración después de actividad aeróbica
+
+**Toma 1:**
+| Tipo                 | Señal original | Señal filtrada                         |
+|-------------------------|----------|---------------------------------|
+|        Ploteo          |![image-31.png](attachment:image-31.png)| ![image-34.png](attachment:image-34.png) |
+|        FFT    |![image-32.png](attachment:image-32.png)| ![image-35.png](attachment:image-35.png) |
+|           FFT [dB]           |![image-33.png](attachment:image-33.png)|![image-36.png](attachment:image-36.png)|
+
+**Toma 2:**
+| Tipo                 | Señal original | Señal filtrada                         |
+|-------------------------|----------|---------------------------------|
+|        Ploteo          | ![image-37.png](attachment:image-37.png)| ![image-40.png](attachment:image-40.png) |
+|        FFT    |![image-38.png](attachment:image-38.png) | ![image-41.png](attachment:image-41.png) |
+|           FFT [dB]       |![image-39.png](attachment:image-39.png)|![image-42.png](attachment:image-42.png)  |
+
+## Referencias
+Formato APA o IEEE.
 
 ## Resultados y limitaciones
 Discusión de los hallazgos y dificultades encontradas.
