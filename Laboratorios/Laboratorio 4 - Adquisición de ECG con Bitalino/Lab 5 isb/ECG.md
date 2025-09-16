@@ -5,8 +5,8 @@
 2. [Señal ECG](#señal-ecg)
 3. [Objetivos del Laboratorio](#objetivos-del-laboratorio)  
 4. [Materiales](#materiales)  
-5. [Metodología](#metodología)\
-   - [Preparación inicial](#preparación-inicial)\
+5. [Metodología](#metodología)
+   - [Preparación inicial](#preparación-inicial)
    - [Colocación de electrodos](#colocación-de-electrodos)\
    - [Configuración del sistema](#configuración-del-sistema)\
    - [Adquisición de datos](#adquisición-de-datos)\
