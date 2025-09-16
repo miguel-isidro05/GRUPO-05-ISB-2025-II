@@ -53,7 +53,7 @@ Los resultados de un electrocardiograma pueden ayudar a diagnosticar:
 
 ## Electrocardiograma  
 
-El ECG clínico estándar se registra con 12 derivaciones, que permiten observar la actividad eléctrica cardíaca desde distintos planos. Estas derivaciones se obtienen a partir de electrodos ubicados en las extremidades y en la región torácica. De ellas, seis corresponden al plano frontal (derivaciones I, II, III, aVR, aVL y aVF) y las otras seis al plano horizontal (precordiales V1 a V6). Esta disposición brinda una visión completa del proceso de despolarización y repolarización del corazón.[3]
+El ECG clínico estándar se registra con 12 derivaciones, que permiten observar la actividad eléctrica cardíaca desde distintos planos. Estas derivaciones se obtienen a partir de electrodos ubicados en las extremidades y en la región torácica. De ellas, seis corresponden al plano frontal (derivaciones I, II, III, aVR, aVL y aVF) y las otras seis al plano horizontal (precordiales V1 a V6). Esta disposición brinda una visión completa del proceso de despolarización y repolarización del corazón.[2]
 
 <p align="center">
   <img src="https://fisiologia.facmed.unam.mx/wp-content/uploads/2021/11/UTII-2B-img-Vectores-de-despo-ventri.jpg" 
@@ -92,7 +92,7 @@ Para la adquisición de la señal de ECG utilizando el kit **BiTalino** y el sof
 ### Colocación de los electrodos: <a name="colocación-de-electrodos"></a>
 Para obtener una señal de ECG de buena calidad, la ubicación correcta de los electrodos es fundamental. A continuación, se presentan dos referencias que explican la posición estándar y los efectos de colocar mal los electrodos:  
 
-   **a. LITFL – ECG Lead Positioning**  
+   **a. LITFL – ECG Lead Positioning** [3]
    Según la guía clínica de *Life in the Fast Lane (LITFL)*, los electrodos deben colocarse en puntos anatómicos bien definidos para asegurar registros confiables. En el caso de las derivaciones precordiales:  
    - **V1 y V2**: 4.º espacio intercostal, a la derecha e izquierda del esternón.  
    - **V4**: 5.º espacio intercostal en la línea medio clavicular.  
@@ -106,7 +106,7 @@ Para obtener una señal de ECG de buena calidad, la ubicación correcta de los e
      <em>Figura 3. Posición estándar de electrodos precordiales (LITFL).</em>
    </p>  
 
-   **b. Tung, R. T. et al., 2021 – Electrocardiographic Limb Leads Placement and Its Effect on ECG Interpretation**  
+   **b. Tung, R. T. et al., 2021 – Electrocardiographic Limb Leads Placement and Its Effect on ECG Interpretation** [4]
    Este artículo científico analiza el impacto de la colocación de los electrodos de las extremidades en la interpretación del ECG. Explica que mover los electrodos de los brazos o piernas a posiciones no convencionales (por ejemplo, más arriba en el torso) puede cambiar el eje eléctrico aparente del corazón, alterar el segmento ST o incluso simular un infarto inexistente.  
 
    El estudio concluye que las derivaciones de miembros deben colocarse de forma simétrica en las extremidades (RA, LA, LL y RL), ya que su reposicionamiento sin seguir estándares puede generar errores clínicos serios. Por ello, recomienda seguir las guías internacionales para asegurar lecturas correctas.  
@@ -184,8 +184,8 @@ datos = np.array(datos_limpios, dtype=float)
 ```
 
 ### c) Aplicación de filtros <a name="aplicación-de-filtros"></a>
-El ECG es una señal bioeléctrica débil, muy suceptible al ruido de diversas fuentes, tanto internas como externas (al cuerpo del paciente). Los movimientos, las señales eléctricas de otros músculos, la mala conexión de electrodos pueden generar una lectura de ECG borrosa, por lo que es necesario aplicar un filtrado para mitigar esa interferencia[a]. Para este laboratorio se aplicaron los siguientes filtros:
-- **Pasa-banda (0.5 Hz-40 Hz):** Filtrado suave para entornos ruidosos. Se usa principalmente para detectar la frecuencia cardiaca[b].
+El ECG es una señal bioeléctrica débil, muy suceptible al ruido de diversas fuentes, tanto internas como externas (al cuerpo del paciente). Los movimientos, las señales eléctricas de otros músculos, la mala conexión de electrodos pueden generar una lectura de ECG borrosa, por lo que es necesario aplicar un filtrado para mitigar esa interferencia[5]. Para este laboratorio se aplicaron los siguientes filtros:
+- **Pasa-banda (0.5 Hz-40 Hz):** Filtrado suave para entornos ruidosos. Se usa principalmente para detectar la frecuencia cardiaca[6].
 - **Filtro Notch:** Reduce la interferencia de la red eléctrica.
 Gracias a este proceso de filtrado se logró resaltar mejor las ondas características del ECG, especialmente el complejo QRS y las ondas P y T.
 <p align="center">
@@ -258,10 +258,11 @@ Se realizó el ploteo de las señales crudas y filtradas, así como de sus respe
 
 ## 8. Referencias <a name="referencias"></a>
 [1] MedlinePlus, Electrocardiograma. MedlinePlus Enciclopedia Médica, U.S. National Library of Medicine. [En línea]. Disponible en: https://medlineplus.gov/spanish/pruebas-de-laboratorio/electrocardiograma/[Accedido: 16-sep-2025].
-[2]
-[a] MedTeq, “ECG Filters,” MedTeq.net, Apr. 1, 2017. [Online]. Available: https://www.medteq.net/article/2017/4/1/ecg-filters
-
-[b] GE Healthcare, “A Guide to ECG Signal Filtering,” GE Healthcare Insights. [Online]. Available: https://www.gehealthcare.co.uk/insights/article/a-guide-to-ecg-signal-filtering
+[2] Cardiopatías Congénitas La Paz, ¿Qué es un ECG de 12 derivaciones? Desde el Pálpito. [En línea]. Disponible en: https://www.cardiopatiascongenitaslapaz.com/desde-el-palpito/que-es-un-ecg-de-12-derivaciones/ [Accedido: 16-sep-2025].
+[3]LITFL, ECG Lead Positioning. Life in the Fast Lane, 2025. [En línea]. Disponible en: https://litfl.com/ecg-lead-positioning/.[Accedido: 16-sep-2025].
+[4]A. C. F. Siqueira, G. T. C. P. Freitas, T. A. C. Ribeiro, M. C. da Silva, L. B. Ferreira, y A. C. C. Simões, “The 12-lead electrocardiogram: What the general practitioner needs to know,” Rev. Assoc. Med. Bras., vol. 67, no. 4, pp. 618-628, 2021. [En línea]. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC8415387/.[Accedido: 16-sep-2025].
+[5] MedTeq, “ECG Filters,” MedTeq.net, Apr. 1, 2017. [Online]. Available: https://www.medteq.net/article/2017/4/1/ecg-filters
+[6] GE Healthcare, “A Guide to ECG Signal Filtering,” GE Healthcare Insights. [Online]. Available: https://www.gehealthcare.co.uk/insights/article/a-guide-to-ecg-signal-filtering
 
 
 
