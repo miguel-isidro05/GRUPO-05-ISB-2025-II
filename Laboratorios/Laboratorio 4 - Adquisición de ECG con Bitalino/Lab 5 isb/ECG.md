@@ -222,32 +222,32 @@ Se realizó el ploteo de las señales crudas y filtradas, así como de sus respe
 **Toma 3:**
 | Tipo                 | Señal original | Señal filtrada                         |
 |-------------------------|----------|---------------------------------|
-|        Ploteo              |  ![image-19.png](attachment:image-19.png)    | ![image-22.png](attachment:image-22.png)     |
-|        FFT    | ![image-20.png](attachment:image-20.png)  |  ![image-23.png](attachment:image-23.png)   |
-|           FFT [dB]    |![image-21.png](attachment:image-21.png)   | ![image-24.png](attachment:image-24.png)    |
+| Ploteo |<img width="1181" height="393" alt="image" src="https://github.com/user-attachments/assets/dd74eca2-5f5b-47ca-be8c-82cbbcf4c3ec" />|<img width="1181" height="393" alt="image" src="https://github.com/user-attachments/assets/2e221153-96af-42f2-a432-93ec00accf71" />|
+|  FFT    |<img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/cad0c7bb-7095-4317-9320-9a4d4f2c4ed6" />|<img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/48f35fb8-efe0-4433-917b-4c2d89d121fd" />|
+| FFT [dB] |<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/ea460a99-f9c8-4b14-9dd5-452fddbe5ca2" />|<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/e568ea60-58bc-4c92-89f6-627c3c939aef" />|
 
 ### 6.3 Reposo basal después del mantenimiento de la respiración
 | Tipo                 | Señal original | Señal filtrada                         |
 |-------------------------|----------|---------------------------------|
-|        Ploteo              | ![image-25.png](attachment:image-25.png)    | ![image-28.png](attachment:image-28.png)    |
-|        FFT    | ![image-26.png](attachment:image-26.png) | ![image-29.png](attachment:image-29.png)    |
-|           FFT [dB]    | ![image-27.png](attachment:image-27.png)  | ![image-30.png](attachment:image-30.png)    |
+| Ploteo |<img width="1181" height="393" alt="image" src="https://github.com/user-attachments/assets/0f2d2a8f-da31-433f-9061-d6766b7bcb8b" />|<img width="1181" height="393" alt="image" src="https://github.com/user-attachments/assets/40cdc42d-7edf-4cbc-9c64-9733e1e5ca8c" />|
+|  FFT    |<img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/8d3f3d3c-c48e-4bd0-b4e1-99f9013f6c03" />|<img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/ec60511d-8a85-4c48-94e9-cb56a812950d" />  |
+| FFT [dB] |<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/3f4105ff-829e-43da-bc7f-445bb87346e6" />|<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/5e8625e8-1fbd-4dc1-9e4a-8cfe64dda7f9" />|
 
 ## 6.4 Respiración después de actividad aeróbica
 
 **Toma 1:**
 | Tipo                 | Señal original | Señal filtrada                         |
 |-------------------------|----------|---------------------------------|
-|        Ploteo          |![image-31.png](attachment:image-31.png)| ![image-34.png](attachment:image-34.png) |
-|        FFT    |![image-32.png](attachment:image-32.png)| ![image-35.png](attachment:image-35.png) |
-|           FFT [dB]           |![image-33.png](attachment:image-33.png)|![image-36.png](attachment:image-36.png)|
+| Ploteo |<img width="1181" height="393" alt="image" src="https://github.com/user-attachments/assets/b8781c16-a99c-421b-b028-91c948924a3c" />| <img width="1181" height="393" alt="image" src="https://github.com/user-attachments/assets/fe244dd1-e0a5-411b-a7bf-73cfd20082ef" />|
+|  FFT    |<img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/97916780-29e4-43a1-9b92-65571d309891" />| <img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/cfbbee03-6025-4f23-a8e6-0e0d3ca797a5" /> |
+| FFT [dB] |<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/67dc52c0-9974-4905-b46b-6a3643fcd504" />| <img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/92e53a6d-a594-467f-b9d2-f91a2889169e" />|
 
 **Toma 2:**
 | Tipo                 | Señal original | Señal filtrada                         |
 |-------------------------|----------|---------------------------------|
-|        Ploteo          | ![image-37.png](attachment:image-37.png)| ![image-40.png](attachment:image-40.png) |
-|        FFT    |![image-38.png](attachment:image-38.png) | ![image-41.png](attachment:image-41.png) |
-|           FFT [dB]       |![image-39.png](attachment:image-39.png)|![image-42.png](attachment:image-42.png)  |
+| Ploteo | <img width="1180" height="393" alt="image" src="https://github.com/user-attachments/assets/ce0eab54-39a1-43e6-b826-ef05aa667458" />| <img width="1172" height="393" alt="image" src="https://github.com/user-attachments/assets/425fd7bc-6df7-40c3-9bc6-ad8ffb92a9a3" />|
+|  FFT    |<img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/aa504f13-9ece-463e-9923-4b8b6626be14" />| <img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/356141c7-24a3-4886-a438-ddf95a892c76" />|
+| FFT [dB] |<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/1485a92b-c995-4058-813f-ebd4e8e71f92" />|<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/24456f84-7600-42a4-b699-0f02def51abb" />|
 
 
 ## 7. Discusión y resultados
