@@ -258,7 +258,8 @@ Se realizó el ploteo de las señales crudas y filtradas, así como de sus respe
 
 ## 8. Referencias <a name="referencias"></a>
 
-[a MedTeq, “ECG Filters,” MedTeq.net, Apr. 1, 2017. [Online]. Available: https://www.medteq.net/article/2017/4/1/ecg-filters
+[a] MedTeq, “ECG Filters,” MedTeq.net, Apr. 1, 2017. [Online]. Available: https://www.medteq.net/article/2017/4/1/ecg-filters
+
 [b] GE Healthcare, “A Guide to ECG Signal Filtering,” GE Healthcare Insights. [Online]. Available: https://www.gehealthcare.co.uk/insights/article/a-guide-to-ecg-signal-filtering
 
 
