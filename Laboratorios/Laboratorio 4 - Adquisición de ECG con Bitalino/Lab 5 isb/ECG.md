@@ -92,7 +92,7 @@ Para la adquisición de la señal de ECG utilizando el kit **BiTalino** y el sof
 ### Colocación de los electrodos: <a name="colocación-de-electrodos"></a>
 Para obtener una señal de ECG de buena calidad, la ubicación correcta de los electrodos es fundamental. A continuación, se presentan dos referencias que explican la posición estándar y los efectos de colocar mal los electrodos:  
 
-   **a. LITFL – ECG Lead Positioning** [3]
+   **a. LITFL – ECG Lead Positioning** [3]:
    Según la guía clínica de *Life in the Fast Lane (LITFL)*, los electrodos deben colocarse en puntos anatómicos bien definidos para asegurar registros confiables. En el caso de las derivaciones precordiales:  
    - **V1 y V2**: 4.º espacio intercostal, a la derecha e izquierda del esternón.  
    - **V4**: 5.º espacio intercostal en la línea medio clavicular.  
@@ -106,7 +106,7 @@ Para obtener una señal de ECG de buena calidad, la ubicación correcta de los e
      <em>Figura 3. Posición estándar de electrodos precordiales (LITFL).</em>
    </p>  
 
-   **b. Tung, R. T. et al., 2021 – Electrocardiographic Limb Leads Placement and Its Effect on ECG Interpretation** [4]
+   **b. Tung, R. T. et al., 2021 – Electrocardiographic Limb Leads Placement and Its Effect on ECG Interpretation** [4]:
    Este artículo científico analiza el impacto de la colocación de los electrodos de las extremidades en la interpretación del ECG. Explica que mover los electrodos de los brazos o piernas a posiciones no convencionales (por ejemplo, más arriba en el torso) puede cambiar el eje eléctrico aparente del corazón, alterar el segmento ST o incluso simular un infarto inexistente.  
 
    El estudio concluye que las derivaciones de miembros deben colocarse de forma simétrica en las extremidades (RA, LA, LL y RL), ya que su reposicionamiento sin seguir estándares puede generar errores clínicos serios. Por ello, recomienda seguir las guías internacionales para asegurar lecturas correctas.  
