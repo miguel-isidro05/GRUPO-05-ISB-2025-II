@@ -5,16 +5,16 @@
 2. [Señal ECG](#señal-ecg)
 3. [Objetivos del Laboratorio](#objetivos-del-laboratorio)  
 4. [Materiales](#materiales)  
-5. [Metodología](#metodología)
-   - [Preparación inicial](#preparación-inicial)
-   - [Colocación de electrodos](#colocación-de-electrodos)
-   - [Configuración del sistema](#configuración-del-sistema)
-   - [Adquisición de datos](#adquisición-de-datos)
-6. [Procesamiento de datos](#procesamiento-de-datos)  
-   - [a) Importar Librerías](#importar-librerías)  
-   - [b) Cargar archivos](#cargar-archivos)  
-   - [c) Aplicación de filtros](#aplicación-de-filtros)  
-   - [d) Ploteo de las señales](#visualización)  
+5. [Metodología](#metodología)\
+   - [Preparación inicial](#preparación-inicial)\
+   - [Colocación de electrodos](#colocación-de-electrodos)\
+   - [Configuración del sistema](#configuración-del-sistema)\
+   - [Adquisición de datos](#adquisición-de-datos)\
+6. [Procesamiento de datos](#procesamiento-de-datos)\  
+   - [a) Importar Librerías](#importar-librerías)\  
+   - [b) Cargar archivos](#cargar-archivos)\ 
+   - [c) Aplicación de filtros](#aplicación-de-filtros)\  
+   - [d) Ploteo de las señales](#visualización)\  
 7. [Resultados y limitaciones](#resultados-y-limitaciones)  
 8. [Referencias](#referencias)  
 
@@ -33,7 +33,7 @@ Los resultados de un electrocardiograma pueden ayudar a diagnosticar:
 - Enfermedades de las válvulas del corazón
 - Defectos cardiacos congénitos
 
-## 2. Señal ECG <a name="objetivos-del-laboratorio"></a>
+## 2. Señal ECG <a name="señal-ecg"></a>
 <p align="center">
   <img src="https://cdn.rohde-schwarz.com/pws/application/cards/3607_3180/capturing-small-ecg-signals-medical-applications_ac_3607-3180-92_01.1_w1280_hX.png" 
        alt="Registro de señales de ECG" 
@@ -62,7 +62,7 @@ El ECG clínico estándar se registra con 12 derivaciones, que permiten observar
   <em>Figura 2. Electrocardiograma y derivaciones (UNAM, Fisiología).</em>
 </p>
 
-## 3. Objetivos del Laboratorio <a name="señal-ecg"></a>
+## 3. Objetivos del Laboratorio <a name="objetivos-del-laboratorio"></a>
 - Configurar adecuadamente el sistema BiTalino para la adquisición de señales cardíacas.
 
 - Registrar y visualizar una señal de ECG en condiciones controladas usando el software OpenSignals.
@@ -71,7 +71,7 @@ El ECG clínico estándar se registra con 12 derivaciones, que permiten observar
 
 - Analizar los cambios en la señal de ECG bajo diferentes condiciones fisiológicas (reposo, apnea breve y actividad física).
 
-## Materiales:
+## 4. Materiales <a name="materiales"></a>
 | Materiales                                   | Cantidad | Imagen                          |
 |----------------------------------------------|----------|---------------------------------|
 | Batería 3.7V                                 | 1        | ![bateria](https://github.com/user-attachments/assets/25fe9643-a7fa-4bd9-85ad-e1ce78a926ab) |
@@ -81,10 +81,10 @@ El ECG clínico estándar se registra con 12 derivaciones, que permiten observar
 | Kit BITalino                                 | 1        | ![bitalino](https://github.com/user-attachments/assets/a60c127f-27c2-4a03-b852-454d23f54163) |
 | Laptop                                       | 1        | ![laptop](https://github.com/user-attachments/assets/c1394461-1a65-41fc-b6f4-8d8ae5b3b37b) |
 
-## Metodología
+## 5. Metodología <a name="metodología"></a>
 Para la adquisición de la señal de ECG utilizando el kit **BiTalino** y el software **OpenSignals**, se siguió el siguiente procedimiento:  
 
-### Preparación inicial: 
+### Preparación inicial: <a name="preparación-inicial"></a>
    - Conexión de los electrodos desechables al cable de 3 derivaciones y colocación en la piel según la configuración estándar de ECG.  
    - Encendido del dispositivo BiTalino y vinculación por Bluetooth con la laptop mediante el software OpenSignals.  
    - Verificación de la señal registrada para asegurar calidad y ausencia de ruidos excesivos.
