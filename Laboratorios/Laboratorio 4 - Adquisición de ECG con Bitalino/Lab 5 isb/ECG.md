@@ -257,7 +257,8 @@ Se realizó el ploteo de las señales crudas y filtradas, así como de sus respe
 - **Respiración post actividad física**: Después de realizar una actividad aeróbica por 10 minutos, en ambas tomas se puede observar que hay más picos QRS por segundo en comparación con el reposo basal y una reducción de los intervalos R-R, lo que significa que el corazón late más rápido por el esfuerzo físico. Esto se traduce al aumento de la frecuencia cardíaca que conforme pasa el tiempo se va estabilizando tanto los picos como los intervalos R-R. También se observan variaciones en la amplitud de los picos a causa de la fluctuación del retorno venoso y el volumen sistólico.
 
 ## 8. Referencias <a name="referencias"></a>
-
+[1] MedlinePlus, Electrocardiograma. MedlinePlus Enciclopedia Médica, U.S. National Library of Medicine. [En línea]. Disponible en: https://medlineplus.gov/spanish/pruebas-de-laboratorio/electrocardiograma/[Accedido: 16-sep-2025].
+[2]
 [a] MedTeq, “ECG Filters,” MedTeq.net, Apr. 1, 2017. [Online]. Available: https://www.medteq.net/article/2017/4/1/ecg-filters
 
 [b] GE Healthcare, “A Guide to ECG Signal Filtering,” GE Healthcare Insights. [Online]. Available: https://www.gehealthcare.co.uk/insights/article/a-guide-to-ecg-signal-filtering
