@@ -1,6 +1,6 @@
 # LABORATORIO 4: – ADQUISICIÓN DE ECG
 
-## Tabla de contenidos
+## Tabla de contenidos 
 1. [Introducción](#introducción)
 2. [Señal ECG](#señal-ecg)
 3. [Objetivos del Laboratorio](#objetivos-del-laboratorio)  
@@ -190,7 +190,7 @@ El ECG es una señal bioeléctrica débil, muy suceptible al ruido de diversas f
 - 
 Gracias a este proceso de filtrado se logró resaltar mejor las ondas características del ECG, especialmente el complejo QRS y las ondas P y T.
 <img width="1226" height="458" alt="image" src="https://github.com/user-attachments/assets/6de69508-ae97-4735-96c8-4afbec3bcf4a" />
-***Fig x**. Complejo QRS.*
+<em>Figura 5. Señales ECG con  intervalos y segmentos .</em>
 
 ### d) Ploteo de las señales
 Se realizó el ploteo de las señales crudas y filtradas, así como de sus respectivos FFT en amplitud y dB.
