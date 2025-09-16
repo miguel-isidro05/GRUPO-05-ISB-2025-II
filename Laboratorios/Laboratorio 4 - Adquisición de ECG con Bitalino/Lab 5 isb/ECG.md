@@ -261,9 +261,9 @@ Se realizó el ploteo de las señales crudas y filtradas, así como de sus respe
 
 [2] Cardiopatías Congénitas La Paz, ¿Qué es un ECG de 12 derivaciones? Desde el Pálpito. [En línea]. Disponible en: https://www.cardiopatiascongenitaslapaz.com/desde-el-palpito/que-es-un-ecg-de-12-derivaciones/ [Accedido: 16-sep-2025].
 
-[3]LITFL, ECG Lead Positioning. Life in the Fast Lane, 2025. [En línea]. Disponible en: https://litfl.com/ecg-lead-positioning/.[Accedido: 16-sep-2025].
+[3] LITFL, ECG Lead Positioning. Life in the Fast Lane, 2025. [En línea]. Disponible en: https://litfl.com/ecg-lead-positioning/.[Accedido: 16-sep-2025].
 
-[4]A. C. F. Siqueira, G. T. C. P. Freitas, T. A. C. Ribeiro, M. C. da Silva, L. B. Ferreira, y A. C. C. Simões, “The 12-lead electrocardiogram: What the general practitioner needs to know,” Rev. Assoc. Med. Bras., vol. 67, no. 4, pp. 618-628, 2021. [En línea]. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC8415387/.[Accedido: 16-sep-2025].
+[4] A. C. F. Siqueira, G. T. C. P. Freitas, T. A. C. Ribeiro, M. C. da Silva, L. B. Ferreira, y A. C. C. Simões, “The 12-lead electrocardiogram: What the general practitioner needs to know,” Rev. Assoc. Med. Bras., vol. 67, no. 4, pp. 618-628, 2021. [En línea]. Disponible en: https://pmc.ncbi.nlm.nih.gov/articles/PMC8415387/.[Accedido: 16-sep-2025].
 
 [5] MedTeq, “ECG Filters,” MedTeq.net, Apr. 1, 2017. [Online]. Available: https://www.medteq.net/article/2017/4/1/ecg-filters
 
