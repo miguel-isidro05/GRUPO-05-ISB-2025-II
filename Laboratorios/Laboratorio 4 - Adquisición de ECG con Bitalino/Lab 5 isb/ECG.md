@@ -251,7 +251,7 @@ Se realizó el ploteo de las señales crudas y filtradas, así como de sus respe
 
 ## 7. Discusión y resultados
 - **Reposo basal**: El registro del ECG en reposo representa la actividad cardíaca en condiciones normales sin influencia de movimiento o esfuerzo físico. Se observan picos ascendentes (propios de la primera derivada). El complejo QRS positivo corresponde a la despolarización ventricular que es la activación eléctrica de las fibras cardíacas que generan la contracción principal del corazón que impulsa la sangre hacia la circulación sistémica y pulmonar. En la FFT se ve que la señal ECG concentra su energía a frecuencias menores a 40 Hz y que las frecuencias mayores son atenuadas. En la FFT de la señal filtrada se puede observar mejor las atenuaciondes de frecuencias.
-- **Mantenimiento de la respiración por 10 segundos**:
+- **Mantenimiento de la respiración por 10 segundos**: En los primeros segundos de la señal se presenta una distancia del intervalo R-R corta debido a la "adaptación fisiológica" inicial que se produce al aguantar la respiración. También se observa una disminución progresiva en la amplitud de los picos R en comparación al reposo basal. Este efecto puede explicarse porque la apnea voluntaria genera una menor oxigenación y cambios en la presión intratorácica, lo cual altera la dinámica cardíaca durante la apnea y se manifiesta como una reducción progresiva en la amplitud de los picos eléctricos del ECG.
 - **Reposo basal después del mantenimiento de la respiración**:
 - **Respiración post actividad física**:
 
