@@ -187,6 +187,8 @@ datos = np.array(datos_limpios, dtype=float)
 El ECG es una señal bioeléctrica débil, muy suceptible al ruido de diversas fuentes, tanto internas como externas (al cuerpo del paciente). Los movimientos, las señales eléctricas de otros músculos, la mala conexión de electrodos pueden generar una lectura de ECG borrosa, por lo que es necesario aplicar un filtrado para mitigar esa interferencia[a]. Para este laboratorio se aplicaron los siguientes filtros:
 - **Pasa-banda (0.5 Hz-40 Hz):** Filtrado suave para entornos ruidosos. Se usa principalmente para detectar la frecuencia cardiaca[b].
 - **Filtro Notch:** Reduce la interferencia de la red eléctrica
+Gracias a este proceso de filtrado se logró resaltar mejor las ondas características del ECG, especialmente el complejo QRS y las ondas P y T.
+
 
 ### d) Ploteo de las señales
 Se realizó el ploteo de las señales crudas y filtradas, así como de sus respectivos FFT en amplitud y dB.
@@ -244,11 +246,14 @@ Se realizó el ploteo de las señales crudas y filtradas, así como de sus respe
 |        FFT    |![image-38.png](attachment:image-38.png) | ![image-41.png](attachment:image-41.png) |
 |           FFT [dB]       |![image-39.png](attachment:image-39.png)|![image-42.png](attachment:image-42.png)  |
 
-## Referencias
+
+## 7. Discusión y resultados
+
+
+
+
+## 8. Referencias
 Formato APA o IEEE.
 
-## Resultados y limitaciones
-Discusión de los hallazgos y dificultades encontradas.
 
-## Referencias
-Formato APA o IEEE.
+
