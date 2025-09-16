@@ -20,7 +20,7 @@
 
 ---
 
-## 1. Introducción
+## 1. Introducción <a name="introducción"></a>
 El electrocardiograma (ECG) es una herramienta fundamental en el ámbito biomédico, ya que permite registrar la actividad eléctrica del corazón de manera no invasiva. Su análisis facilita la detección de alteraciones en el ritmo y la conducción cardiaca, así como la evaluación del estado fisiológico del paciente en diferentes condiciones, como reposo o actividad física.[1]
 
 Los resultados de un electrocardiograma pueden ayudar a diagnosticar:
