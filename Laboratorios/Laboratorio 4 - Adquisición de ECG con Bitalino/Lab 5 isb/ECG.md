@@ -189,6 +189,8 @@ El ECG es una señal bioeléctrica débil, muy suceptible al ruido de diversas f
 - **Filtro Notch:** Reduce la interferencia de la red eléctrica
 Gracias a este proceso de filtrado se logró resaltar mejor las ondas características del ECG, especialmente el complejo QRS y las ondas P y T.
  |<img scr="https://github.com/miguel-isidro05/GRUPO-05-ISB-2025-II/blob/main/Laboratorios/Laboratorio%204%20-%20Adquisici%C3%B3n%20de%20ECG%20con%20Bitalino/Lab%205%20isb/im%C3%A1genes/complejo%20qrs.jpg?raw=true"/>|
+<img width="1226" height="458" alt="image" src="https://github.com/user-attachments/assets/6de69508-ae97-4735-96c8-4afbec3bcf4a" />
+
 
 ### d) Ploteo de las señales
 Se realizó el ploteo de las señales crudas y filtradas, así como de sus respectivos FFT en amplitud y dB.
