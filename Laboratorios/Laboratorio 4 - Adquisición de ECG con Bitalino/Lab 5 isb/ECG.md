@@ -199,18 +199,19 @@ Se realizó el ploteo de las señales crudas y filtradas, así como de sus respe
 ### 6.1 Reposo Basal
 | Tipo                 | Señal original | Señal filtrada    |                    
 |-------------------------|----------|---------------------------------|
-|        Ploteo              | ![image.png](attachment:image.png)     | ![image-4.png](attachment:image-4.png)     |
-|        FFT    | ![image-2.png](attachment:image-2.png)  | ![image-5.png](attachment:image-5.png)    |
-|           FFT [dB]    | ![image-3.png](attachment:image-3.png) | ![image-6.png](attachment:image-6.png)    |
+|Ploteo   |<img width="1176" height="393" alt="image" src="https://github.com/user-attachments/assets/b2c2dca0-7358-46a5-aa63-d6ce0e82821d" />| <img width="1176" height="393" alt="image" src="https://github.com/user-attachments/assets/39f6cdd8-1efd-4e27-b2c4-591c0947b314" />|
+|  FFT  |<img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/bbd23322-c2ed-42d3-a326-d5831dd23b1b" />| <img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/783de173-f79f-4697-a5a2-5a9d56381e62" />|
+|  FFT [dB]    |<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/9b18516b-4030-44d6-bf95-e41b87800e3f" />
+  | <img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/77f01de9-a001-482e-bf06-a2213c149ce3" />|
 
 ### 6.2 Mantenimiento de la respiracion por 10 segundos
 
 **Toma 1:**
 | Tipo                 | Señal original | Señal filtrada                         |
 |-------------------------|----------|---------------------------------|
-|        Ploteo              | ![image-7.png](attachment:image-7.png)     | ![image-10.png](attachment:image-10.png)     |
-|        FFT    | ![image-8.png](attachment:image-8.png)  | ![image-11.png](attachment:image-11.png)   |
-|           FFT [dB]    | ![image-9.png](attachment:image-9.png)  |   ![image-12.png](attachment:image-12.png)  |
+|Ploteo  |<img width="1181" height="393" alt="image" src="https://github.com/user-attachments/assets/e6f90235-bfc6-4cf1-937f-dd2064d9f32d" />|<img width="1181" height="393" alt="image" src="https://github.com/user-attachments/assets/46e23738-7fe3-4ea2-90ab-fede75e82290" />|
+| FFT    |<img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/e25e1ef1-6bc0-4085-9969-1b48682d8b38" />| <img width="890" height="393" alt="image" src="https://github.com/user-attachments/assets/95174037-8dc7-4e58-a64f-1e0705a40add" />|
+|  FFT [dB]    |<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/4478e1f3-8077-4925-8150-8e3f2ec0502b" />| <img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/c4ea490d-836e-4337-85dc-2bc5826e72b3" /> |
 
 **Toma 2:**
 | Tipo                 | Señal original | Señal filtrada                         |
