@@ -188,7 +188,7 @@ El ECG es una señal bioeléctrica débil, muy suceptible al ruido de diversas f
 - **Pasa-banda (0.5 Hz-40 Hz):** Filtrado suave para entornos ruidosos. Se usa principalmente para detectar la frecuencia cardiaca[b].
 - **Filtro Notch:** Reduce la interferencia de la red eléctrica
 Gracias a este proceso de filtrado se logró resaltar mejor las ondas características del ECG, especialmente el complejo QRS y las ondas P y T.
- |<scr="https://github.com/miguel-isidro05/GRUPO-05-ISB-2025-II/blob/main/Laboratorios/Laboratorio%204%20-%20Adquisici%C3%B3n%20de%20ECG%20con%20Bitalino/Lab%205%20isb/im%C3%A1genes/complejo%20qrs.jpg?raw=true"/> |
+ |<img scr="https://github.com/miguel-isidro05/GRUPO-05-ISB-2025-II/blob/main/Laboratorios/Laboratorio%204%20-%20Adquisici%C3%B3n%20de%20ECG%20con%20Bitalino/Lab%205%20isb/im%C3%A1genes/complejo%20qrs.jpg?raw=true"/>|
 
 ### d) Ploteo de las señales
 Se realizó el ploteo de las señales crudas y filtradas, así como de sus respectivos FFT en amplitud y dB.
