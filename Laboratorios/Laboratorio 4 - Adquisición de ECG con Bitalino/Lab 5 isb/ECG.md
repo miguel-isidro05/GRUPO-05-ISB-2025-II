@@ -7,14 +7,14 @@
 4. [Materiales](#materiales)  
 5. [Metodología](#metodología)
    - [Preparación inicial](#preparación-inicial)
-   - [Colocación de electrodos](#colocación-de-electrodos)\
-   - [Configuración del sistema](#configuración-del-sistema)\
-   - [Adquisición de datos](#adquisición-de-datos)\
-6. [Procesamiento de datos](#procesamiento-de-datos)\  
-   - [a) Importar Librerías](#importar-librerías)\  
-   - [b) Cargar archivos](#cargar-archivos)\ 
-   - [c) Aplicación de filtros](#aplicación-de-filtros)\  
-   - [d) Ploteo de las señales](#visualización)\  
+   - [Colocación de electrodos](#colocación-de-electrodos)
+   - [Configuración del sistema](#configuración-del-sistema)
+   - [Adquisición de datos](#adquisición-de-datos)
+6. [Procesamiento de datos](#procesamiento-de-datos)  
+   - [a) Importar Librerías](#importar-librerías)  
+   - [b) Cargar archivos](#cargar-archivos)
+   - [c) Aplicación de filtros](#aplicación-de-filtros)  
+   - [d) Ploteo de las señales](#visualización) 
 7. [Resultados y limitaciones](#resultados-y-limitaciones)  
 8. [Referencias](#referencias)  
 
@@ -89,7 +89,7 @@ Para la adquisición de la señal de ECG utilizando el kit **BiTalino** y el sof
    - Encendido del dispositivo BiTalino y vinculación por Bluetooth con la laptop mediante el software OpenSignals.  
    - Verificación de la señal registrada para asegurar calidad y ausencia de ruidos excesivos.
 
-### Colocación de los electrodos: 
+### Colocación de los electrodos: <a name="colocación-de-electrodos"></a>
 Para obtener una señal de ECG de buena calidad, la ubicación correcta de los electrodos es fundamental. A continuación, se presentan dos referencias que explican la posición estándar y los efectos de colocar mal los electrodos:  
 
    a. **LITFL – ECG Lead Positioning**  
@@ -118,13 +118,13 @@ Para obtener una señal de ECG de buena calidad, la ubicación correcta de los e
      <em>Figura 4. Colocación de electrodos en extremidades (Tung et al., 2021).</em>
    </p>  
    
-### Configuración del sistema:
+### Configuración del sistema: <a name="configuración-del-sistema"></a>
 - Se instaló el software **OpenSignals** en la laptop para establecer la comunicación con el kit BiTalino.  
 - Se activó la conectividad **Bluetooth** de la computadora y se emparejó con el dispositivo BiTalino utilizando el código predeterminado.  
 - En el software, se seleccionó el canal correspondiente al **sensor de ECG** y se ajustaron los parámetros de muestreo (frecuencia de adquisición y duración de la señal).  
 - Se verificó la correcta recepción de la señal en tiempo real antes de iniciar la adquisición formal.  
 
-### Adquisición de datos
+### Adquisición de datos; <a name="adquisición-de-datos"></a>
 Durante la práctica se registraron señales de ECG en un sujeto voluntario en diferentes condiciones fisiológicas. En total se realizaron las siguientes tomas:  
 
 **1. Reposo**  
@@ -162,17 +162,17 @@ Durante la práctica se registraron señales de ECG en un sujeto voluntario en d
 
      
 
-## 6. Procesamiento de datos
+## 6. Procesamiento de datos <a name="procesamiento-de-datos"></a>
 Para los resultados haremos uso del archivo "CodigosECG.ipynb" que se encuentra en el mismo folder. El cual contiene todos los codigos hechos para la visualización de las gráficas de las señales adquiridas. Asi como su respectivo filtrado y análisis de frecuencia.
 
-### a) Importar Librerías
+### a) Importar Librerías  <a name="importar-librerías"></a>
 Se importan las librerías a utilizar para graficar las señales.
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import butter, filtfilt, iirnotch
 ```
-### b) Cargar archivos
+### b) Cargar archivos  <a name="cargar-archivos"></a>
 Se cargan los archivos .txt que contienen las señales obtenidas del software OpenSignals.
 ```python
 #Abrimos el archivo sin incluir las filas que inician con"#"
@@ -183,7 +183,7 @@ datos_limpios = [line.strip().split() for line in lineas if not line.startswith(
 datos = np.array(datos_limpios, dtype=float)
 ```
 
-### c) Aplicación de filtros
+### c) Aplicación de filtros <a name="aplicación-de-filtros"></a>
 El ECG es una señal bioeléctrica débil, muy suceptible al ruido de diversas fuentes, tanto internas como externas (al cuerpo del paciente). Los movimientos, las señales eléctricas de otros músculos, la mala conexión de electrodos pueden generar una lectura de ECG borrosa, por lo que es necesario aplicar un filtrado para mitigar esa interferencia[a]. Para este laboratorio se aplicaron los siguientes filtros:
 - **Pasa-banda (0.5 Hz-40 Hz):** Filtrado suave para entornos ruidosos. Se usa principalmente para detectar la frecuencia cardiaca[b].
 - **Filtro Notch:** Reduce la interferencia de la red eléctrica.
@@ -193,10 +193,10 @@ Gracias a este proceso de filtrado se logró resaltar mejor las ondas caracterí
 <em>Figura 5. Señales ECG con  intervalos y segmentos .</em>
 </p>
 
-### d) Ploteo de las señales
+### d) Ploteo de las señales <a name="visualización"></a>
 Se realizó el ploteo de las señales crudas y filtradas, así como de sus respectivos FFT en amplitud y dB.
 
-### 6.1 Reposo Basal
+### 6.1 Reposo Basal 
 | Tipo                 | Señal original | Señal filtrada    |                    
 |-------------------------|----------|---------------------------------|
 |Ploteo   |<img width="1176" height="393" alt="image" src="https://github.com/user-attachments/assets/b2c2dca0-7358-46a5-aa63-d6ce0e82821d" />| <img width="1176" height="393" alt="image" src="https://github.com/user-attachments/assets/39f6cdd8-1efd-4e27-b2c4-591c0947b314" />|
@@ -250,13 +250,13 @@ Se realizó el ploteo de las señales crudas y filtradas, así como de sus respe
 | FFT [dB] |<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/1485a92b-c995-4058-813f-ebd4e8e71f92" />|<img width="875" height="393" alt="image" src="https://github.com/user-attachments/assets/24456f84-7600-42a4-b699-0f02def51abb" />|
 
 
-## 7. Discusión y resultados
+## 7. Discusión y resultados <a name="#resultados-y-limitaciones"></a> 
 - **Reposo basal**: El registro del ECG en reposo representa la actividad cardíaca en condiciones normales sin influencia de movimiento o esfuerzo físico. Se observan picos ascendentes (propios de la primera derivada). El complejo QRS positivo corresponde a la despolarización ventricular que es la activación eléctrica de las fibras cardíacas que generan la contracción principal del corazón que impulsa la sangre hacia la circulación sistémica y pulmonar. En la FFT se ve que la señal ECG concentra su energía a frecuencias menores a 40 Hz y que las frecuencias mayores son atenuadas. En la FFT de la señal filtrada se puede observar mejor las atenuaciondes de frecuencias.
 - **Mantenimiento de la respiración por 10 segundos**: En los primeros segundos de la señal se presenta una distancia del intervalo R-R corta debido a la "adaptación fisiológica" inicial que se produce al aguantar la respiración. También se observa una disminución progresiva en la amplitud de los picos R en comparación al reposo basal, debido a que la apnea voluntaria genera una menor oxigenación y cambios en la presión intratorácica, lo cual altera la dinámica cardíaca y se manifiesta como una reducción progresiva en la amplitud de los picos del ECG.
 - **Reposo basal después del mantenimiento de la respiración**: Al reanudar la respiración tras la apnea voluntaria, se observa la reaparición de la deriva de la línea base y una recuperación de los intervalor R-R, asociada al reinicio del ciclo respiratorio. Aun así, las variaciones de los intervalos R-R son irregulares, característicos de una arritmia sinusal, lo cual tiene sentido ya que esta corresponde a una variación fisiológica a causa de la apnea.
 - **Respiración post actividad física**: Después de realizar una actividad aeróbica por 10 minutos, en ambas tomas se puede observar que hay más picos QRS por segundo en comparación con el reposo basal y una reducción de los intervalos R-R, lo que significa que el corazón late más rápido por el esfuerzo físico. Esto se traduce al aumento de la frecuencia cardíaca que conforme pasa el tiempo se va estabilizando tanto los picos como los intervalos R-R. También se observan variaciones en la amplitud de los picos a causa de la fluctuación del retorno venoso y el volumen sistólico.
 
-## 8. Referencias
+## 8. Referencias <a name="referencias"></a>
 Formato APA o IEEE.
 
 
