@@ -162,7 +162,16 @@ Durante la práctica se registraron señales de ECG en un sujeto voluntario en d
 
      
 
-## Procesamiento de datos
+## 6. Procesamiento de datos
+Para los resultados haremos uso del archivo "CodigosECG.ipynb" que se encuentra en el mismo folder. El cual contiene todos los codigos hechos para la visualización de las gráficas de las señales adquiridas. Asi como su respectivo filtrado y análisis de frecuencia.
+
+### a) Importar Librerías
+Se importan las librerías a utilizar para graficar las señales.
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import butter, filtfilt, iirnotch
+```
 
 ### Lectura de archivos
 Cómo se importaron los datos al software.
