@@ -27,11 +27,8 @@
 ### **5.1 Reposo Basal
 | Tipo                 | Señal original | Señal filtrada    |                    
 |-------------------------|----------|---------------------------------|
-|Ploteo   |||
-|  FFT |||
-|  FFT [dB]|||
-|  Welch | ||
-|  PSD | ||
+|   |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/281ffe63-96a8-4f1d-8b95-10686ee2fe39" />||
+|  PSD |<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/80605c2e-6d2d-40ba-a8d7-2f49e684fce4" />||
 
 ### **5.2 Mirada fija
 Toma 1
