@@ -71,7 +71,7 @@ Toma 2
 |  PSD |<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/9fa0ecc4-2784-4762-a7d5-c70eaef8f64d" />|<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/c53a9e5c-02fc-4deb-8167-734808f47e92" />|
 
 
-### **6.3 Mirada sin luz**
+### **6.3 Ojos Cerrados (sin luz)**
 Toma 1
 | Tipo                 | Señal original | Señal filtrada    |                    
 |-------------------------|----------|---------------------------------|
@@ -135,3 +135,13 @@ Toma 3: Escuchando una canci
 
 
 ## **7. Discusión y resultados** <a name="id3"></a>
+El análisis de PSD (Power Spectral Density) mediante el método de Welch se emplea para complementar la información obtenida de la FFT. Mientras que la FFT permite identificar la composición espectral de la señal en un rango de frecuencias, su estimación puede verse afectada por el ruido y la variabilidad de segmentos cortos de EEG. En cambio, el método de Welch divide la señal en ventanas solapadas, aplica una función de suavizado y luego promedia los espectros parciales, lo que reduce la varianza de la estimación y proporciona un espectro de potencia más estable y confiable. De esta manera se obtiene tanto una caracterización espectral detallada como una estimación robusta de la potencia en cada banda cerebral (δ, θ, α, β, γ).
+- **Reposo:** En la gráfica de PSD se observa que tanto en la señal cruda como filtrada, la banda delta presenta mayor potencia, seguida de beta y theta. Lo ideal sería que al estar en reposo la banda theta presente mayor potencia ya que está asociada a la somnolencia ligera y relajación, no obstante se ve mayor potencia en delta y beta, la cual está relacionada con estados de alerta y tensión mental, lo que indica que la persona evaluada mantenía un nivel de tensión mental a pesar del intento de mantener la calma. Por parte de la banda gamma, se ve reducida considerablemente ya que es clave en la atención de tareas complejas  donde se involucra el razonamiento; resultado esperado ya que el voluntario se encontraba en reposo.
+- **Mirada Fija:** En ambas tomas se observa que predomina la potencia en las bandas theta,beta y alfa respectivamente. El predominio de theta  puede indicar cierto nivel de fatiga, somnolencia o baja activación, podría deberse a artefactos relacionados con el parpadeo o el movimiento ocular. La banda beta está asociada a procesos de atención y concentración, que son necesarios para mantener la mirada fija sin distraerse mientras que la presencia de alfa en menor medida es coherente ya que esta banda normalmente predomina con ojos cerrados y se reduce cuando el sujeto abre los ojos o dirige su atención a estímulos visuales, fenómeno conocido como bloqueo alfa o desincronización alfa.
+- **Ojos cerrados (sin luz):** En ambas tomas predominan en orden las bandas theta, beta y alfa. El resultado difiere a lo esperado ya que la banda que debería presentar mayor potencia debería ser la alfa, relacionada a la relajación y desconexión visual; esto podría deberse a que el sujeto no alcanzó un nivel de calma sficiente además de presentar ruidos musculares o eléctricos, lo que explicaría la presencia de las bandas beta y theta.
+- **Parpadeo cada 2 segundos**
+- **Resta desde 100 a 0**
+- **Actividad libre: Escuchar música**
+- **Respondiendo preguntas:**
+
+## **8. Referencias** <a name="id3"></a>
