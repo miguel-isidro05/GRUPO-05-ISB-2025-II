@@ -27,27 +27,21 @@
 ### **5.1 Reposo Basal
 | Tipo                 | Señal original | Señal filtrada    |                    
 |-------------------------|----------|---------------------------------|
-|   |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/281ffe63-96a8-4f1d-8b95-10686ee2fe39" />||
-|  PSD |<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/80605c2e-6d2d-40ba-a8d7-2f49e684fce4" />||
+| Análisis  |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/281ffe63-96a8-4f1d-8b95-10686ee2fe39" />|<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/ed8e6096-4a77-4723-9070-149d1a21e637" />|
+|  PSD |<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/80605c2e-6d2d-40ba-a8d7-2f49e684fce4" />|<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/7446e9aa-e553-467b-b54c-30860c86c17d" />|
 
 ### **5.2 Mirada fija
 Toma 1
 | Tipo                 | Señal original | Señal filtrada    |                    
 |-------------------------|----------|---------------------------------|
-|Ploteo   |||
-|  FFT |||
-|  FFT [dB]|||
-|  Welch | ||
-|  PSD | ||
+|Ploteo   |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/0239a2de-9eb4-4a01-80f5-cb1fd3ea0f85" />|<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/d689ff01-9394-403a-a4a7-2cda1466a7b2" />|
+|  PSD |<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/51dfc68f-9656-415a-85f3-ace495a03344" />|<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/c2f1790d-b787-4042-b985-a0770d214208" />|
 
 Toma 2
 | Tipo                 | Señal original | Señal filtrada    |                    
 |-------------------------|----------|---------------------------------|
-|Ploteo   |||
-|  FFT |||
-|  FFT [dB]|||
-|  Welch | ||
-|  PSD | ||
+|Ploteo   |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/8b261407-03c6-4881-b6ab-f7d19f87b3bf" />|<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/1a39d999-d1e6-4996-b3b7-369474b94ff5" />|
+|  PSD |<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/9fa0ecc4-2784-4762-a7d5-c70eaef8f64d" />|<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/c53a9e5c-02fc-4deb-8167-734808f47e92" />|
 
 ### **5.3 Mirada sin luz 
 Toma 1
