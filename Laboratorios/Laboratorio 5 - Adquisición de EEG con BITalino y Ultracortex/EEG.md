@@ -48,7 +48,6 @@ En el registro electroencefalográfico, los electrodos se distribuyen siguiendo 
 - **Laptop:** Equipo de cómputo utilizado para ejecutar el software de registro, almacenamiento y análisis de datos.
 
 ## **4. Metodología:** <a name="id4"></a> 
-## Metodología  
 
 Para la adquisición de las señales EEG se utilizó un protocolo basado en la exposición del participante a diferentes condiciones experimentales, con el fin de observar variaciones en la actividad cerebral según la tarea realizada. El procedimiento se desarrolló en un ambiente controlado, con el sujeto en posición cómoda y utilizando electrodos de superficie conectados al sistema BiTalino y visualización en el software OpenSignals.  
 
