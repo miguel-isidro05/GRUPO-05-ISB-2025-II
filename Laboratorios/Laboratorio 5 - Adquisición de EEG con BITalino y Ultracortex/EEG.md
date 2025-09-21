@@ -15,3 +15,114 @@
 ## **2. Objetivos de la práctica** <a name="id2"></a>
 
 ## **2. Materiales e instrumentos** <a name="id3"></a>
+
+
+
+## **3. Materiales e instrumentos** <a name="id3"></a>
+
+
+## **5. Procesamiento de datos** <a name="id3"></a>
+
+
+### **5.1 Reposo Basal
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+### **5.2 Mirada fija
+Toma 1
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+Toma 2
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+### **5.3 Mirada sin luz 
+Toma 1
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+Toma 2
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+### **5.4 Parpadeo cada 2 segundos
+Toma 1
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+Toma 2
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+### **5.5 Actividad libre: Escuchar m
+Toma 1: Escuchando ondas alfa
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+Toma 2: Escuchando ondas alfa
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+Toma 3: Escuchando una canci
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
+
+### **5.6 Respondiendo a preguntas
+| Tipo                 | Señal original | Señal filtrada    |                    
+|-------------------------|----------|---------------------------------|
+|Ploteo   |||
+|  FFT |||
+|  FFT [dB]|||
+|  Welch | ||
+|  PSD | ||
