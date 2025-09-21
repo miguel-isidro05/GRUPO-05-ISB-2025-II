@@ -114,13 +114,13 @@ Toma 1: Escuchando ondas alfa
 |Ploteo   |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/b4addf7a-fdd2-413c-816d-fd6636f27b82" />|<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/423242a5-416a-4b99-baac-20980e192441" />|
 |  PSD |<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/0a17bb66-35c4-4342-80f2-14162cf00311" />|<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/181acbfe-3b96-4658-a66e-2ad502340e1a" />|
 
-Toma 2: Escuchando ondas alfa
+Toma 2: Escuchando ondas beta
 | Tipo                 | Señal original | Señal filtrada    |                    
 |-------------------------|----------|---------------------------------|
 |Ploteo   |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/2e3bb86a-a762-40a8-9da6-7656a57258fc" /> |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/9c1810bb-2b71-4bc7-994e-2837ba8407fd" />|
 |  PSD |<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/d346b40b-8b85-47e7-9353-19759146dfa1" />|<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/e536bd95-b4c1-4fac-b2d3-67c5b003e8ac" />|
 
-Toma 3: Escuchando una canci
+Toma 3: Escuchando una canción
 | Tipo                 | Señal original | Señal filtrada    |                    
 |-------------------------|----------|---------------------------------|
 |Ploteo   |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/4462ccbf-0b23-44ff-adeb-f248f3a21087" />|<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/be30095e-1cf5-41fa-9565-0bceb86dafba" />|
