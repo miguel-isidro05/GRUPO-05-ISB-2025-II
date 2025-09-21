@@ -44,7 +44,7 @@ t = np.arange(len(eeg)) / fs
 ### c) Aplicación de filtros <a name="aplicación-de-filtros"></a>
 La señal EEG refleja la suma de potenciales postsinápticos de grandes poblaciones neuronales y se caracteriza por ser compleja, dinámica y de baja amplitud, con componentes que se distribuyen principalmente en un rango de frecuencias entre 1 y 30 Hz.
 - **Pasa-banda (0.5 Hz-40Hz):** Este rango permite preservar las oscilaciones cerebrales de interés (δ, θ, α, β y parte de γ), mientras se atenúan artefactos de baja frecuencia (movimientos, sudoración y derivas lentas de electrodos) y de alta frecuencia (actividad muscular e interferencia electromagnética). De este modo, se mejora la relación señal-ruido y se garantiza que los análisis en dominios de tiempo y frecuencia se centren en la actividad cerebral relevante [a].
-- - **Filtro Notch:** Reduce la interferencia de la red eléctrica.
+- **Filtro Notch:** Reduce la interferencia de la red eléctrica.
 
 ### d) Ploteo de las señales <a name="visualización"></a>
 Se realizó el ploteo de las señales crudas y filtradas, así como de sus respectivos FFT en amplitud y dB, análisis Welch y PSD.
