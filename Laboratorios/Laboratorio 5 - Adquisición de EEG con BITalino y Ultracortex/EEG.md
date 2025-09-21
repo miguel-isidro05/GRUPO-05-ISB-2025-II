@@ -22,7 +22,29 @@
 
 
 ## **6. Procesamiento de datos** <a name="id3"></a>
+Para los resultados haremos uso del archivo "CodigosEEG_BITalino.ipynb" que se encuentra en el mismo folder. El cual contiene todos los codigos hechos para la visualización de las gráficas de las señales adquiridas. Asi como su respectivo filtrado y análisis de frecuencia.
 
+### a) Importar Librerías  <a name="importar-librerías"></a>
+Se importan las librerías a utilizar para graficar las señales.
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import butter, filtfilt, iirnotch
+```
+### b) Cargar archivos  <a name="cargar-archivos"></a>
+Se cargan los archivos .txt que contienen las señales obtenidas del software OpenSignals.
+```python
+datos = np.loadtxt("resta1.txt", delimiter=None, comments="#")
+eeg = datos[:, 5] #La señal se encuentra en ña 5 columna
+
+fs = 1000  
+t = np.arange(len(eeg)) / fs
+```
+
+### c) Aplicación de filtros <a name="aplicación-de-filtros"></a>
+*****************
+### d) Ploteo de las señales <a name="visualización"></a>
+Se realizó el ploteo de las señales crudas y filtradas, así como de sus respectivos FFT en amplitud y dB, análisis Welch y PSD.
 
 ### **6.1 Reposo Basal**
 | Tipo                 | Señal original | Señal filtrada    |                    
