@@ -5,9 +5,9 @@
 1. [Introducción](#id1)
 2. [Objetivos de la práctica](#id2)
 3. [Materiales e instrumentos](#id3)
-4. [Metodologia](#id4)\
-5. [Descripción de las señales](#id7)\
-6. [Discusión](#id5)\
+4. [Metodologia](#id4)
+5. [Descripción de las señales](#id7)
+6. [Discusión](#id5)
 7. [Referencias](#id9)
 
 ## **1. Introducción** <a name="id1"></a>
