@@ -71,42 +71,49 @@ Para la adquisición de las señales EEG se utilizó un protocolo basado en la e
 **1. Reposo**  
 | **Toma en reposo** |
 |:------------------:|
-| <video src="https://github.com/miguel-isidro05/GRUPO-05-ISB-2025-II/blob/main/Laboratorios/Laboratorio%205%20-%20Adquisici%C3%B3n%20de%20EEG%20con%20BITalino%20y%20Ultracortex/Comprimido/reposo_ojos_cerrados.mp4" controls></video> |
+| <video src="https://github.com/user-attachments/assets/d3c52c9b-5f5e-4f10-b5a4-f28c9fb99878" controls></video> |
+
+
+
 
 ---
 **2. Mirada fija**  
-| **Toma 1** | **Toma 2** | **Toma 3** |
-|:----------:|:----------:|:----------:|
-| <video src="" controls></video> | <video src="" controls></video> | <video src="" controls></video> |
+| **Toma 1** | **Toma 2** | 
+|:----------:|:----------:|
+| <video src="https://github.com/user-attachments/assets/5fba599d-ffb7-4293-a401-e2896783939e" controls></video> | <video src="https://github.com/user-attachments/assets/b38b4ddf-2a39-4a92-8e6d-b9b7223a4940" controls></video> | 
 
 ---
+
+
 
 **3. Mirada sin luz**  
-| **Toma 1** | **Toma 2** | **Toma 3** |
-|:----------:|:----------:|:----------:|
-| <video src="" controls></video> | <video src="" controls></video> | <video src="" controls></video> |
+| **Toma 1** | **Toma 2** |
+|:----------:|:----------:|
+| <video src="https://github.com/user-attachments/assets/f1d0432f-d818-43c0-83f4-50bc7bdfd11b" controls></video> | <video src="https://github.com/user-attachments/assets/a7ca0565-43a5-4e97-a773-b6efb86da92b" controls></video> | 
 
 ---
+
+
 
 **4. Parpadeo cada 2s**  
-| **Toma 1** | **Toma 2** | **Toma 3** |
-|:----------:|:----------:|:----------:|
-| <video src="" controls></video> | <video src="" controls></video> | <video src="" controls></video> |
+| **Toma 1** | **Toma 2** | 
+|:----------:|:----------:|
+| <video src="https://github.com/user-attachments/assets/fddc41e7-3263-40b3-8408-3bd5c9394160" controls></video> | <video src="https://github.com/user-attachments/assets/bce39aec-f332-4099-92cd-99107dcc5957" controls></video> | 
 
 ---
+
 
 **5. Resta**  
 | **Toma 1** |
 |:----------:|
-| <video src="" controls></video> |
+| <video src="https://github.com/user-attachments/assets/7dd34e5d-dada-47b0-ac8b-04754a919b79" controls></video> |
 
 ---
 
-**6. Escuchar música**  
+**6. Actividad Libre**  
 | **Toma 1** | **Toma 2** | **Toma 3** |
 |:----------:|:----------:|:----------:|
-| <video src="" controls></video> | <video src="" controls></video> | <video src="" controls></video> |
-
+| <video src="https://github.com/user-attachments/assets/29115733-97ba-4962-a7ce-720c25de4fdd" controls></video> | <video src="https://github.com/user-attachments/assets/4101d14a-2858-49ff-9721-178c88d62b6d" controls></video> | <video src="https://github.com/user-attachments/assets/ef417650-8c6a-4291-9e03-18409c1df743" controls></video> |
 
 
 
