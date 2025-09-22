@@ -71,7 +71,7 @@ Para la adquisición de las señales EEG se utilizó un protocolo basado en la e
 **1. Reposo**  
 | **Toma en reposo** |
 |:------------------:|
-| <video src="https://github.com/miguel-isidro05/GRUPO-05-ISB-2025-II/blob/main/Laboratorios/Laboratorio%205%20-%20Adquisici%C3%B3n%20de%20EEG%20con%20BITalino%20y%20Ultracortex/Videos%20editados/reposo_ojos_cerrados.mp4" controls></video> |
+| <video src="https://github.com/miguel-isidro05/GRUPO-05-ISB-2025-II/blob/main/Laboratorios/Laboratorio%205%20-%20Adquisici%C3%B3n%20de%20EEG%20con%20BITalino%20y%20Ultracortex/Comprimido/reposo_ojos_cerrados.mp4" controls></video> |
 
 ---
 **2. Mirada fija**  
