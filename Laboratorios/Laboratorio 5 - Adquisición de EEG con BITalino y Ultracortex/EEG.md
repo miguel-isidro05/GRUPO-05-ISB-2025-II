@@ -111,9 +111,9 @@ Para la adquisición de las señales EEG se utilizó un protocolo basado en la e
 ---
 
 **6. Actividad Libre**  
-| **Toma 1** | **Toma 2** | **Toma 3** | **Toma 3** |
+| **Toma 1** | **Toma 2** | **Toma 3** | **Toma 4** |
 |:----------:|:----------:|:----------:|:----------:|
-| <video src="https://github.com/user-attachments/assets/29115733-97ba-4962-a7ce-720c25de4fdd" controls></video> | <video src="https://github.com/user-attachments/assets/4101d14a-2858-49ff-9721-178c88d62b6d" controls></video> | <video src="https://github.com/user-attachments/assets/ef417650-8c6a-4291-9e03-18409c1df743" controls></video> | | <video src="https://github.com/user-attachments/assets/af937ba4-be67-48eb-8d35-fa645d8907b8" controls></video> |
+| <video src="https://github.com/user-attachments/assets/29115733-97ba-4962-a7ce-720c25de4fdd" controls></video> | <video src="https://github.com/user-attachments/assets/4101d14a-2858-49ff-9721-178c88d62b6d" controls></video> | <video src="https://github.com/user-attachments/assets/ef417650-8c6a-4291-9e03-18409c1df743" controls></video> | <video src="https://github.com/user-attachments/assets/af937ba4-be67-48eb-8d35-fa645d8907b8" controls></video> |
 
 
 
