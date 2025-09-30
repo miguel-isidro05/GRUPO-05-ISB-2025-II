@@ -186,7 +186,7 @@ En este caso, se tomaron las señales de los bíceps en 3 estados y se realizaro
 
 
 #### Resultados de los filtros de las señales EMG
-Comparamos las respuestas en frecuencia de los filtros IIR: Se aplicaron diferentes números de orden para que cada filtro pueda cumplir con los requerimientos de la banda de interés de la señal EMG.
+Comparamos las respuestas en frecuencia de los filtros IIR: Se aplicaron diferentes números de orden para que cada filtro pueda cumplir con los requerimientos de la banda de interés de la señal EMG. El Chebyshev tipo 1 ofrece una pendiente pronunciada en la transición y permite una alta selectividad con menor orden. El Chebyshev tipo 2, en cambio, mantiene la banda de paso uniforme  pero genera ondulaciones en la banda de rechazo, siendo útil cuando se requiere estabilidad en la amplitud de la señal filtrada. Por su parte, el filtro Bessel se caracteriza por preservar la forma temporal de la señal gracias a su respuesta de fase lineal, aunque su pendiente de transición es más suave, lo que reduce la selectividad en frecuencia y permite que componentes cercanos a la banda de paso se atenúen más lentamente.
 
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/a5664f9a-9a43-4ee2-990e-fec462d5d04c" />
 
