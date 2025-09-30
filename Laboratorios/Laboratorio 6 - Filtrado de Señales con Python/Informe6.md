@@ -82,8 +82,7 @@ Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se opt�
 *Filtros IIR*: Se diseñaron los filtros Butterworth y Chebyshev tipo 1 de tipo Pasa Bajas, ya que en Pasa Banda se presentaba inestabilidad en las regiones de transición incluso al modificar el orden del filtro. La opción de un filtro Pasa Bajas permitió un comportamiento más estable y un filtrado correcto, asegurando la adecuada obtención de la banda de frecuencia de interés en la señal.
 Se observa la señal de reposo tras aplicarles ambos filtros:
 ************
-<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/9573450d-140c-49ee-b15d-0045c064b586" />
-
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/9573450d-140c-49ee-b15d-0045c064b586" />
 
 
 
