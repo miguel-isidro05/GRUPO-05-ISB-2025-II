@@ -184,9 +184,8 @@ En este caso, se tomaron las señales de los bíceps en 3 estados y se realizaro
 
 
 #### Resultados de los filtros de las señales EMG
-Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales
+Comparamos las respuestas en frecuencia de los filtros IIR: Se aplicaron diferentes números de orden para que cada filtro pueda cumplir con los requerimientos de la banda de interés de la señal EMG.
 
-IIR:
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/a5664f9a-9a43-4ee2-990e-fec462d5d04c" />
 
 
