@@ -157,6 +157,7 @@ Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señal
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/ba2bad5d-ab0b-4542-bcec-a9f07d617f14" />
 
 Respuestas en frecuencia de los filtros IIR:
+
 <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/552822b4-47e8-4cb9-8b4a-dabbab9c0553" />
 
 
@@ -175,12 +176,10 @@ En este caso, se tomaron las señales de los bíceps en 3 estados y se realizaro
 |Leve |<img width="850" height="393" alt="image" src="https://github.com/user-attachments/assets/d8aadf16-6bee-4435-9a56-7eab3eb2b69f" />|<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/53d207c3-6642-41fa-86e6-abecf479cf44" />|
 
 
-
 ### 6.3.c Aplicando fuerza 
 |Señal                                   |Señal Cruda | Señal Filtrada|
 |--------------------|--------|--------|
 |Fuerza |<img width="859" height="393" alt="image" src="https://github.com/user-attachments/assets/e6c427d3-a6b3-4250-ac4d-8285be4bb0c5" />|<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/2973eb70-c102-4c02-bf89-2bc2560100c5" />|
-
 
 
 #### Resultados de los filtros de las señales EMG
