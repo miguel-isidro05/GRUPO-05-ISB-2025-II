@@ -81,37 +81,38 @@ Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se opt�
 
 *Filtros IIR*: Se diseñaron los filtros Butterworth y Chebyshev tipo 1 de tipo Pasa Bajas, ya que en Pasa Banda se presentaba inestabilidad en las regiones de transición incluso al modificar el orden del filtro. La opción de un filtro Pasa Bajas permitió un comportamiento más estable y un filtrado correcto, asegurando la adecuada obtención de la banda de frecuencia de interés en la señal.
 Se observa la señal de reposo tras aplicarles ambos filtros:
-************
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/9573450d-140c-49ee-b15d-0045c064b586" />
 
 
 
 ### 6.1.b Apnea 10 segundos
+*Filtros FIR*:
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
 |filtro en pyFDA| <img width="1447" height="740" alt="image" src="https://github.com/user-attachments/assets/a798648c-dbe8-4e0f-b6e8-ca1140d3aae6" />|<img width="1437" height="821" alt="image" src="https://github.com/user-attachments/assets/6f26d3fd-3fa7-4617-b6c2-43427910e2bf" />|<img width="1438" height="847" alt="image" src="https://github.com/user-attachments/assets/785c1216-d817-4eb5-944e-025efe24953d" />|
 |Apnea|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/ef939ec9-6090-4513-bf67-9c3317326adc" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/87c430d7-f88a-4d37-8091-ada1234d2ee7" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/bfa6f89f-1072-4d8e-8868-956596a0040c" />|
  
+*Filtros IIR*: 
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/be000006-87d0-4f8d-be95-242047f1ac76" />
 
-*Filtros IIR*: Se dise
+
 ### 6.1.c Actividad Aeróbica
+*Filtros FIR*:
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
 |filtro en pyFDA| <img width="1447" height="740" alt="image" src="https://github.com/user-attachments/assets/a798648c-dbe8-4e0f-b6e8-ca1140d3aae6" />|<img width="1437" height="821" alt="image" src="https://github.com/user-attachments/assets/6f26d3fd-3fa7-4617-b6c2-43427910e2bf" />|<img width="1438" height="847" alt="image" src="https://github.com/user-attachments/assets/785c1216-d817-4eb5-944e-025efe24953d" />|
 |Actividad aeróbica|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/3aa3f2b7-255d-4e29-b1cf-27b2ed7100aa" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/374830a1-bf90-4c15-ba04-8974719503ba" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/e431b31a-173c-4a71-8694-fa27ed9af5c6" />|
 
-*Filtros IIR*: Se dise
-<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/82b7704b-ec84-458a-9d27-1b8ecc23cced" />
-
-
-
+*Filtros IIR*: 
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/82b7704b-ec84-458a-9d27-1b8ecc23cced" />
 
 
 #### Resultados de los filtros de las señales ECG
-Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales
+Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales y se observa que la ventana Hamming presenta una caída rápida entre ancho de transición y atenuación de lobulos laterales. La ventana Hann tiene una transición ligeramente más amplia y una atenuación más suave, lo que puede permitir algo más de ruido fuera de banda. En cambio, la ventana Blackman proporciona la mayor supresión de componentes fuera de banda, reduciendo significativamente el ruido; sin embargo, su banda de transición más ancha provoca que la señal filtrada caiga más lentamente, mostrando un inicio más suavizado y un retardo mayor en la respuesta temporal.
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/bb358571-90c8-434e-be58-b7cd77e8d0aa" />
 Análogamente, las respuestas en frecuencia de los filtros IIR: 
 <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/8e6a31e7-fcf4-4786-8991-49ab2bf95a5f" />
+************
 ## 6.2 EEG
 ### 6.2.a Estado basal
 | Señal                                   | Hamming | Hann |Blackman |
@@ -145,6 +146,8 @@ Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señal
 IIR:
 <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/552822b4-47e8-4cb9-8b4a-dabbab9c0553" />
 
+
+************
 ## 6.3 EMG
 En este caso, se tomaron las señales de los bíceps en 3 estados:
 ### 6.3.a Bicep relajado
