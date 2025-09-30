@@ -153,7 +153,7 @@ En este caso, se tomaron las señales de los bíceps en 3 estados:
 ### 6.3.b Movimiento Leve
 |Señal                                   |Señal Cruda | Señal Filtrada|
 |--------------------|---------------|-----|
-|Leve |<img width="850" height="393" alt="image" src="https://github.com/user-attachments/assets/d8aadf16-6bee-4435-9a56-7eab3eb2b69f" />|<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/274f8201-b531-4c77-be6f-52984151521c" />|
+|Leve |<img width="850" height="393" alt="image" src="https://github.com/user-attachments/assets/d8aadf16-6bee-4435-9a56-7eab3eb2b69f" />|<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/53d207c3-6642-41fa-86e6-abecf479cf44" />|
 
 
 
