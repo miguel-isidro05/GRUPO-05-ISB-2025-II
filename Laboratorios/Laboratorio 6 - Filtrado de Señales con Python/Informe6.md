@@ -112,34 +112,54 @@ Análogamente, las respuestas en frecuencia de los filtros IIR:
 ### 6.2.a Estado basal
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
-|Apnea||||
-Comparamos las respuestas en frecuencia de los filtros FIR 
+|Basal|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/748de29b-7aa2-4f09-8501-fc69e54caeae" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/c8447fbd-de1c-405e-801c-51887c3e59b6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/81545631-63d8-42e1-82d0-641d330775d9" />|
 
-*Filtros IIR*: Se dise
+*Filtros IIR*: chev y but
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/451780fc-57b1-44f2-8e94-4bd60a2e370a" />
 
 ### 6.2.b Mirada Fija
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
-|Apnea||||
-Comparamos las respuestas en frecuencia de los filtros FIR 
+|Mirada fija|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6a2569e5-9c0b-4f06-adfb-f08c07779ea6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5fceffe4-3c10-4105-86a6-c8cbd0e043ca" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6c34c529-9812-4af9-b11b-be63c814a4bb" />|
+
 
 *Filtros IIR*: Se dise
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/8893ced8-df42-4e19-98d7-0c6c34a839c7" />
 
 ### 6.2.c Preguntas
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
-|Apnea||||
-Comparamos las respuestas en frecuencia de los filtros FIR 
+|Preguntas|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/3648a775-3f05-456e-9d48-f6423a62e93e" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/33dabba3-4b30-4fed-8a5c-1b147d41f2d6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/61818343-e524-4ed1-8382-ceab4a1c2f8c" />|
+
 
 *Filtros IIR*: Se dise
+<img width="988" height="490" alt="image" src="https://github.com/user-attachments/assets/4cd54bcf-4ad9-4fc4-a526-4136bebd75c9" />
+
+#### Resultados de los filtros de las señales EEG
+Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/ba2bad5d-ab0b-4542-bcec-a9f07d617f14" />
+IIR:
+<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/552822b4-47e8-4cb9-8b4a-dabbab9c0553" />
 
 ## 6.3 EMG
 En este caso, se tomaron las señales de los bíceps en 3 estados:
 ### 6.3.a Bicep relajado
-
+| Tipo de filtro | Ploteo |
+|--------------------|----------|
+|Señal cruda|<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/9d0eb69f-c2f2-4b19-bf6c-b8690646c87d" />|
+|Chevyshev 1|<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/f0495b3d-ddaf-42c3-8048-03ade2c399c3" />|
+|Chevyshev 2||
+|Bessel||
 ### 6.3.b Movimiento Leve
 
+
 ### 6.3.c Aplicando fuerza 
+
+
+#### Resultados de los filtros de las señales EMG
+Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales
+
+IIR:
 
 
 ## **7. Referencias bibliográficas** <a name="id1"></a>
