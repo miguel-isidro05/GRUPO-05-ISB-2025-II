@@ -118,26 +118,32 @@ Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señal
 Análogamente, las respuestas en frecuencia de los filtros IIR: El filtro Butterworth presenta una respuesta en frecuencia muy suave dentro de la banda de paso, con transición gradual hacia la banda de rechazo, lo que evita ondulaciones en la señal y genera un filtrado estable, aunque requiere un orden relativamente alto para obtener selectividad pronunciada (N=17) en comparación al Chevyshev tipo 1 (N=10). Por su parte, el filtro Chebyshev tipo 1 presenta una mayor pendiente en la transición y permite una mejor selectividad con un orden menor, pero también contiene ondulaciones  en la banda de paso, lo que puede generar ligeras variaciones en la amplitud de los picos y un comportamiento menos uniforme en el tiempo.
 
 <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/8e6a31e7-fcf4-4786-8991-49ab2bf95a5f" />
-************
+
+
 ## 6.2 EEG
+Las frecuencias de interés del EEG se encuentran entre 0.5 Hz y 100 Hz, abarcando las principales bandas de actividad cerebral (delta, theta, alpha, beta y gamma). Para aislar estas bandas y eliminar componentes fuera de rango, se optó por diseñar un filtro Pasa Banda utilizando PyFDA, lo que permite conservar la información relevante del EEG y reducir ruido o interferencias de baja y alta frecuencia.
 ### 6.2.a Estado basal
+*Filtros FIR*:
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
 |Basal|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/748de29b-7aa2-4f09-8501-fc69e54caeae" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/c8447fbd-de1c-405e-801c-51887c3e59b6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/81545631-63d8-42e1-82d0-641d330775d9" />|
 
-*Filtros IIR*: chev y but
-<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/451780fc-57b1-44f2-8e94-4bd60a2e370a" />
+*Filtros IIR*: También se diseñaron filtros Pasa Bajas debido a la inestabilidad de los Pasa Banda. En el diseño se llegó a un punto en el que al querer eliminar ondulaciones de las bandas y aumentar el número de orden, ya no se veía un suavizado de las ondulaciones sino que lo único que cambiaba era la caída de la pendiente de la banda de transición. Así se definió que para el filtro Butterworth se necesitó un N=15 y para el Chevyshev un N=10.
+
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/451780fc-57b1-44f2-8e94-4bd60a2e370a" />
 
 ### 6.2.b Mirada Fija
+*Filtros FIR*:
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
 |Mirada fija|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6a2569e5-9c0b-4f06-adfb-f08c07779ea6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5fceffe4-3c10-4105-86a6-c8cbd0e043ca" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6c34c529-9812-4af9-b11b-be63c814a4bb" />|
 
 
-*Filtros IIR*: Se dise
-<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/8893ced8-df42-4e19-98d7-0c6c34a839c7" />
+*Filtros IIR*: 
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/8893ced8-df42-4e19-98d7-0c6c34a839c7" />
 
 ### 6.2.c Preguntas
+*Filtros FIR*:
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
 |Preguntas|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/3648a775-3f05-456e-9d48-f6423a62e93e" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/33dabba3-4b30-4fed-8a5c-1b147d41f2d6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/61818343-e524-4ed1-8382-ceab4a1c2f8c" />|
@@ -147,13 +153,14 @@ Análogamente, las respuestas en frecuencia de los filtros IIR: El filtro Butter
 <img width="988" height="490" alt="image" src="https://github.com/user-attachments/assets/4cd54bcf-4ad9-4fc4-a526-4136bebd75c9" />
 
 #### Resultados de los filtros de las señales EEG
-Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales
+Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales:
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/ba2bad5d-ab0b-4542-bcec-a9f07d617f14" />
-IIR:
+
+Respuestas en frecuencia de los filtros IIR:
 <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/552822b4-47e8-4cb9-8b4a-dabbab9c0553" />
 
 
-************
+
 ## 6.3 EMG
 En este caso, se tomaron las señales de los bíceps en 3 estados:
 ### 6.3.a Bicep relajado
