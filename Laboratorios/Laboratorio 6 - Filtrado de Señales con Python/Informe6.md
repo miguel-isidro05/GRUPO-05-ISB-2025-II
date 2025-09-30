@@ -72,6 +72,7 @@ Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se opt�
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
 | Reposo |<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5e202eae-9cee-4714-aaea-0f2f2b3b8a0f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/9e70ae25-7728-493b-bab6-34da22e7584f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/c531f5e5-45d1-4843-9bea-b6df0038cca7" />|
+
 Comparamos las respuestas en frecuencia de los filtros FIR 
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/bb358571-90c8-434e-be58-b7cd77e8d0aa" />
 
