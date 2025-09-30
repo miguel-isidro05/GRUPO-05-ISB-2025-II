@@ -41,15 +41,46 @@ Son algoritmos matemáticos representados como ecuaciones en diferencias que ope
 
 ## **3. Filtrado de la señal EMG** <a name="id1"></a>
 
+La señal electromiográfica (EMG) constituye una herramienta clave para evaluar la actividad muscular tanto en contextos clínicos como experimentales. No obstante, su registro suele verse afectado por diversas fuentes de ruido, como los artefactos de movimiento, el desplazamiento de electrodos, el drift de la línea base y la interferencia de la red eléctrica (50 Hz), lo que puede comprometer la validez de los análisis posteriores [3]. 
+
+El análisis espectral de la EMG ha demostrado que la banda de interés se encuentra entre 10 y 500 Hz, ya que por debajo de 10 Hz predominan artefactos asociados al movimiento y variaciones lentas de la línea base, mientras que por encima de 500 Hz se registran principalmente ruidos de alta frecuencia sin valor clínico ni biomecánico [4]. Este rango asegura la preservación de la actividad eléctrica muscular más representativa, utilizada en cálculos de amplitud, frecuencia y potencia de la señal.
+
+Los filtros de Respuesta Infinita al Impulso (IIR) son especialmente recomendados debido a su eficiencia computacional y su capacidad para generar pendientes de atenuación pronunciadas con un número reducido de coeficientes [5]. 
+En particular, el filtro Butterworth IIR ha demostrado ser una alternativa robusta, ya que presenta una respuesta en frecuencia suavemente decreciente, es estable en cascadas de primer orden y es eficaz para eliminar tanto los artefactos de baja frecuencia (<10 Hz) como la interferencia de la red eléctrica, preservando al mismo tiempo los componentes musculares útiles. 
+
 ## **4. Filtrado de la señal ECG** <a name="id1"></a>
 
-## **5. Discusión y Análisis** <a name="id1"></a>
+El electrocardiograma (ECG) es la técnica más utilizada para evaluar la actividad eléctrica del corazón. Sin embargo, el registro de la señal suele verse afectado por artefactos como el drift de línea base (producido por movimientos respiratorios o desplazamiento de electrodos), la interferencia de la red eléctrica (50/60 Hz) y el ruido muscular (EMG) que ocupa frecuencias más altas [6].
+
+Diversos estudios han establecido que la señal útil del ECG se concentra en un rango de 0.5 a 40 Hz. El límite inferior (≈0.5 Hz) se emplea para eliminar el drift de baja frecuencia, asegurando que ondas lentas debidas a artefactos no distorsionen el complejo P-QRS-T. Por su parte, el límite superior (≈40 Hz) permite reducir el ruido muscular y de alta frecuencia, que puede enmascarar detalles relevantes del QRS y otras componentes de interés diagnóstico [6].
+
+De esta forma, filtrar la señal en el rango de 0.5–40 Hz asegura la preservación de la información fisiológica esencial del ECG (ondas P, QRS y T), a la vez que minimiza la influencia de interferencias externas y ruidos que afectan la interpretación clínica.
+
+## **5. Filtrado de la señal EEG** <a name="id1"></a>
+
+El electroencefalograma (EEG) es una técnica esencial para el estudio de la actividad eléctrica cerebral, ampliamente utilizada en investigación y aplicaciones clínicas. Sin embargo, la señal bruta suele estar contaminada por artefactos de movimiento, parpadeo ocular, ruido muscular (EMG) y la interferencia de la red eléctrica (50/60 Hz), lo que dificulta su análisis directo [7].
+
+Diversos estudios han establecido que la información útil del EEG se encuentra en el rango de 0.5 a 100 Hz. El límite inferior de 0.5 Hz se emplea para eliminar el drift de baja frecuencia producido por movimientos respiratorios, desplazamientos de electrodos o sudoración, que no forman parte de la actividad cerebral. Por otro lado, el límite superior de 100 Hz se selecciona porque la mayoría de las oscilaciones corticales relevantes (delta, theta, alpha, beta y gamma) se encuentran por debajo de este umbral. Las frecuencias mayores a 100 Hz suelen asociarse con ruido de alta frecuencia o artefactos musculares, los cuales no aportan información relevante para el análisis neurofisiológico convencional [7].
+
+Dentro de esta banda, se distinguen los principales ritmos cerebrales: delta (0.5–4 Hz), theta (4–8 Hz), alpha (8–12 Hz), beta (12–40 Hz) y gamma (40–80 Hz). Cada uno refleja distintos estados funcionales del cerebro, desde el sueño profundo hasta la atención y el procesamiento cognitivo. Por tanto, limitar la señal al rango de 0.5–100 Hz garantiza la preservación de las oscilaciones neuronales de interés, a la vez que se reducen artefactos y ruidos externos, facilitando el análisis clínico y computacional [7].
+
+## **6. Discusión y Análisis** <a name="id1"></a>
 
 
 
-## **6. Referencias bibliográficas** <a name="id1"></a>
+## **7. Referencias bibliográficas** <a name="id1"></a>
 
 [1] ScienceDirect. Analog filter [Internet]. Amsterdam: Elsevier. Disponible en: https://www.sciencedirect.com/topics/engineering/analog-filter
 
 [2] Advanced Solutions Nederland. Difference between IIR and FIR filters: a practical design guide [Internet]. Disponible en: https://www.advsolned.com/difference-between-iir-and-fir-filters-a-practical-design-guide/
+
+[3] V. R. Zschorlich, "Digital filtering of EMG-signals," Electromyogr. Clin. Neurophysiol., vol. 29, pp. 81–86.
+
+[4] E. Kwatny, D. H. Thomas, and H. G. Kwatny, "An application of signal processing techniques to the study of myoelectric signals," IEEE Transactions on Biomedical Engineering, vol. 17, no. 4, pp. 303–313.
+
+[5] A. Thys et al., "Stabilization of the isoelectric line of surface EMG by means of high pass filters," Electromyogr. Clin. Neurophysiol., vol. 17, pp. 393–400.
+
+[6] C. Saxena, A. Sharma, R. Srivastav, and H. K. Gupta, "Denoising of ECG signals using FIR & IIR filter: a performance analysis," International Journal of Engineering & Technology, vol. 7, no. 4.12, pp. 1–5, 2018.
+
+[7] A. Pant and A. Kumar, "Hanning FIR window filtering analysis for EEG signals," Biomedical Analysis, vol. 1, pp. 111–123, 2024, doi: 10.1016/j.bioana.2024.05.003.
 
