@@ -73,8 +73,6 @@ Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se opt�
 |--------------------|----------|-------------|-----|
 | Reposo |<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5e202eae-9cee-4714-aaea-0f2f2b3b8a0f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/9e70ae25-7728-493b-bab6-34da22e7584f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/c531f5e5-45d1-4843-9bea-b6df0038cca7" />|
 
-Comparamos las respuestas en frecuencia de los filtros FIR 
-<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/bb358571-90c8-434e-be58-b7cd77e8d0aa" />
 
 *Filtros IIR*: Se diseñaron los filtros Butterworth y Chevishev tipo 1 de tipo Pasa Bajas; esto debido a que al ser jcdcjsjvjf no eprmite sjdcbebv por lo que se comportaba muy inestable en las regiones de transición a pesar de modificar el orden del filtro, por lo que se optó diseñar un Pasa Bajas que se mostraba más estable y permitía un correcto filtrado y obtención de la banda de frecuencia de inetrés
 *************iamgen de pyfda
@@ -83,19 +81,57 @@ Se observa la señal de reposo tras aplicarles ambos filtros:
 ************
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/9573450d-140c-49ee-b15d-0045c064b586" />
 
-Comparamos las respuestas en frecuencia de los filtros IIR 
-<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/8e6a31e7-fcf4-4786-8991-49ab2bf95a5f" />
+
 
 
 ### 6.1.b Apnea 10 segundos
+| Señal                                   | Hamming | Hann |Blackman |
+|--------------------|----------|-------------|-----|
+|Apnea|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/ef939ec9-6090-4513-bf67-9c3317326adc" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/87c430d7-f88a-4d37-8091-ada1234d2ee7" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/bfa6f89f-1072-4d8e-8868-956596a0040c" />|
+ 
 
+*Filtros IIR*: Se dise
 ### 6.1.c Actividad Aeróbica
+| Señal                                   | Hamming | Hann |Blackman |
+|--------------------|----------|-------------|-----|
+|Actividad aeróbica|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/3aa3f2b7-255d-4e29-b1cf-27b2ed7100aa" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/374830a1-bf90-4c15-ba04-8974719503ba" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/e431b31a-173c-4a71-8694-fa27ed9af5c6" />|
 
+*Filtros IIR*: Se dise
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/82b7704b-ec84-458a-9d27-1b8ecc23cced" />
+
+
+
+
+
+#### Resultados de los filtros de las señales ECG
+Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/bb358571-90c8-434e-be58-b7cd77e8d0aa" />
+Análogamente, las respuestas en frecuencia de los filtros IIR: 
+<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/8e6a31e7-fcf4-4786-8991-49ab2bf95a5f" />
 ## 6.2 EEG
 ### 6.2.a Estado basal
+| Señal                                   | Hamming | Hann |Blackman |
+|--------------------|----------|-------------|-----|
+|Apnea||||
+Comparamos las respuestas en frecuencia de los filtros FIR 
+
+*Filtros IIR*: Se dise
 
 ### 6.2.b Mirada Fija
+| Señal                                   | Hamming | Hann |Blackman |
+|--------------------|----------|-------------|-----|
+|Apnea||||
+Comparamos las respuestas en frecuencia de los filtros FIR 
+
+*Filtros IIR*: Se dise
+
 ### 6.2.c Preguntas
+| Señal                                   | Hamming | Hann |Blackman |
+|--------------------|----------|-------------|-----|
+|Apnea||||
+Comparamos las respuestas en frecuencia de los filtros FIR 
+
+*Filtros IIR*: Se dise
 
 ## 6.3 EMG
 En este caso, se tomaron las señales de los bíceps en 3 estados:
