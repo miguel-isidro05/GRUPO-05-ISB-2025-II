@@ -66,10 +66,25 @@ Dentro de esta banda, se distinguen los principales ritmos cerebrales: delta (0.
 
 ## **6. Discusión y Análisis** <a name="id1"></a>
 ## ECG
-### 6.1 Reposo
+### 6.1.a Reposo
 
-### 6.2 Apnea 10 segundos
-### 6.3 Actividad Aeróbica
+### 6.1.b Apnea 10 segundos
+
+### 6.1.c Actividad Aeróbica
+
+## EEG
+### 6.2.a Estado basal
+
+### 6.2.b Mirada Fija
+### 6.2.c Preguntas
+
+## EMG
+En este caso, se tomaron las señales de los bíceps en 3 estados:
+### 6.3.a Bicep relajado
+
+### 6.3.b Movimiento Leve
+
+### 6.3.c Aplicando fuerza 
 
 
 ## **7. Referencias bibliográficas** <a name="id1"></a>
