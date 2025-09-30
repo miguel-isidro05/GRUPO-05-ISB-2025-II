@@ -69,12 +69,12 @@ Dentro de esta banda, se distinguen los principales ritmos cerebrales: delta (0.
 Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se optó por diseñar un filtro Pasa Banda en pyFDA. Se ajustaron los parámetros de las frecuencias de corte para obtener un filtro que nos permita obtener las frecuencias de interés de las señales EMG
 ### 6.1.a Reposo
 *Filtros FIR*: Para observarfernvev enventanamiento
-| <img width="1447" height="740" alt="image" src="https://github.com/user-attachments/assets/a798648c-dbe8-4e0f-b6e8-ca1140d3aae6" />|<img width="1437" height="821" alt="image" src="https://github.com/user-attachments/assets/6f26d3fd-3fa7-4617-b6c2-43427910e2bf" />|<img width="1438" height="847" alt="image" src="https://github.com/user-attachments/assets/785c1216-d817-4eb5-944e-025efe24953d" />|
-|--------------------|----------|-------------|
-| Hamming | Hann |Blackman |
+
+
 
 | Señal           | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
+|pyFDA| <img width="1447" height="740" alt="image" src="https://github.com/user-attachments/assets/a798648c-dbe8-4e0f-b6e8-ca1140d3aae6" />|<img width="1437" height="821" alt="image" src="https://github.com/user-attachments/assets/6f26d3fd-3fa7-4617-b6c2-43427910e2bf" />|<img width="1438" height="847" alt="image" src="https://github.com/user-attachments/assets/785c1216-d817-4eb5-944e-025efe24953d" />|
 | Reposo |<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5e202eae-9cee-4714-aaea-0f2f2b3b8a0f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/9e70ae25-7728-493b-bab6-34da22e7584f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/c531f5e5-45d1-4843-9bea-b6df0038cca7" />|
 
 
