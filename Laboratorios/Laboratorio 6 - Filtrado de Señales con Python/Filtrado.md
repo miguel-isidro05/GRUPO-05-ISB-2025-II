@@ -65,7 +65,11 @@ Diversos estudios han establecido que la información útil del EEG se encuentra
 Dentro de esta banda, se distinguen los principales ritmos cerebrales: delta (0.5–4 Hz), theta (4–8 Hz), alpha (8–12 Hz), beta (12–40 Hz) y gamma (40–80 Hz). Cada uno refleja distintos estados funcionales del cerebro, desde el sueño profundo hasta la atención y el procesamiento cognitivo. Por tanto, limitar la señal al rango de 0.5–100 Hz garantiza la preservación de las oscilaciones neuronales de interés, a la vez que se reducen artefactos y ruidos externos, facilitando el análisis clínico y computacional [7].
 
 ## **6. Discusión y Análisis** <a name="id1"></a>
+## ECG
+### 6.1 Reposo
 
+### 6.2 Apnea 10 segundos
+### 6.3 Actividad Aeróbica
 
 
 ## **7. Referencias bibliográficas** <a name="id1"></a>
