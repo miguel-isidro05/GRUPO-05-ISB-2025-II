@@ -133,7 +133,7 @@ Las frecuencias de interés del EEG se encuentran entre 0.5 Hz y 100 Hz, abarcan
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/451780fc-57b1-44f2-8e94-4bd60a2e370a" />
 
 ### 6.2.b Mirada Fija
-*Filtros FIR*:
+*Filtros FIR:*
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
 |Mirada fija|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6a2569e5-9c0b-4f06-adfb-f08c07779ea6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5fceffe4-3c10-4105-86a6-c8cbd0e043ca" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6c34c529-9812-4af9-b11b-be63c814a4bb" />|
@@ -143,14 +143,13 @@ Las frecuencias de interés del EEG se encuentran entre 0.5 Hz y 100 Hz, abarcan
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/8893ced8-df42-4e19-98d7-0c6c34a839c7" />
 
 ### 6.2.c Preguntas
-*Filtros FIR*:
+*Filtros FIR:*
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
 |Preguntas|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/3648a775-3f05-456e-9d48-f6423a62e93e" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/33dabba3-4b30-4fed-8a5c-1b147d41f2d6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/61818343-e524-4ed1-8382-ceab4a1c2f8c" />|
 
-
-*Filtros IIR*: Se dise
-<img width="988" height="490" alt="image" src="https://github.com/user-attachments/assets/4cd54bcf-4ad9-4fc4-a526-4136bebd75c9" />
+*Filtros IIR:*
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/4cd54bcf-4ad9-4fc4-a526-4136bebd75c9" />
 
 #### Resultados de los filtros de las señales EEG
 Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales:
@@ -162,12 +161,11 @@ Respuestas en frecuencia de los filtros IIR:
 
 
 ## 6.3 EMG
-En este caso, se tomaron las señales de los bíceps en 3 estados:
+En este caso, se tomaron las señales de los bíceps en 3 estados y se realizaron únicamente el diseño de filtros IIR ya que de acuerdo a la bibliografía son los filtros más adecuados para señales EMG debido a su alta selectividad en frecuencia y eficiencia computacional, permitiendo eliminar ruido fuera de banda sin necesidad de un número excesivo de coeficientes.
 ### 6.3.a Bicep relajado
 | Señal                                   |Señal Cruda | Señal Filtrada|
 |--------------------|---------------------|-----|
 | Relajado |<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/9d0eb69f-c2f2-4b19-bf6c-b8690646c87d" />|<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/f0495b3d-ddaf-42c3-8048-03ade2c399c3" />|
-
 
 
 ### 6.3.b Movimiento Leve
