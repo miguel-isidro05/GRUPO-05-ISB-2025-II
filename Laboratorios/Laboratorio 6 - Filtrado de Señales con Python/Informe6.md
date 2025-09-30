@@ -69,16 +69,21 @@ Dentro de esta banda, se distinguen los principales ritmos cerebrales: delta (0.
 Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se optó por diseñar un filtro Pasa Banda en pyFDA. Se ajustaron los parámetros de las frecuencias de corte para obtener un filtro que nos permita obtener las frecuencias de interés de las señales EMG
 ### 6.1.a Reposo
 *Filtros FIR*: Para observarfernvev enventanamiento
-**| Señal                                   | Hamming | Hann |Blackman |**
+| Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
-| Reposo |  |  |
+| Reposo |<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5e202eae-9cee-4714-aaea-0f2f2b3b8a0f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/9e70ae25-7728-493b-bab6-34da22e7584f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/c531f5e5-45d1-4843-9bea-b6df0038cca7" />|
 Comparamos las respuestas en frecuencia de los filtros FIR 
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/bb358571-90c8-434e-be58-b7cd77e8d0aa" />
+
 *Filtros IIR*: Se diseñaron los filtros Butterworth y Chevishev tipo 1 de tipo Pasa Bajas; esto debido a que al ser jcdcjsjvjf no eprmite sjdcbebv por lo que se comportaba muy inestable en las regiones de transición a pesar de modificar el orden del filtro, por lo que se optó diseñar un Pasa Bajas que se mostraba más estable y permitía un correcto filtrado y obtención de la banda de frecuencia de inetrés
 *************iamgen de pyfda
 
 Se observa la señal de reposo tras aplicarles ambos filtros:
 ************
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/9573450d-140c-49ee-b15d-0045c064b586" />
+
+Comparamos las respuestas en frecuencia de los filtros IIR 
+<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/8e6a31e7-fcf4-4786-8991-49ab2bf95a5f" />
 
 
 ### 6.1.b Apnea 10 segundos
