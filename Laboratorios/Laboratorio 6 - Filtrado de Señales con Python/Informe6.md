@@ -81,6 +81,7 @@ Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se opt�
 
 *Filtros IIR*: Se diseñaron los filtros Butterworth y Chebyshev tipo 1 de tipo Pasa Bajas, ya que en Pasa Banda se presentaba inestabilidad en las regiones de transición incluso al modificar el orden del filtro. La opción de un filtro Pasa Bajas permitió un comportamiento más estable y un filtrado correcto, asegurando la adecuada obtención de la banda de frecuencia de interés en la señal.
 Se observa la señal de reposo tras aplicarles ambos filtros:
+
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/9573450d-140c-49ee-b15d-0045c064b586" />
 
 
@@ -93,6 +94,7 @@ Se observa la señal de reposo tras aplicarles ambos filtros:
 |Apnea|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/ef939ec9-6090-4513-bf67-9c3317326adc" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/87c430d7-f88a-4d37-8091-ada1234d2ee7" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/bfa6f89f-1072-4d8e-8868-956596a0040c" />|
  
 *Filtros IIR*: 
+
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/be000006-87d0-4f8d-be95-242047f1ac76" />
 
 
@@ -104,13 +106,17 @@ Se observa la señal de reposo tras aplicarles ambos filtros:
 |Actividad aeróbica|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/3aa3f2b7-255d-4e29-b1cf-27b2ed7100aa" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/374830a1-bf90-4c15-ba04-8974719503ba" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/e431b31a-173c-4a71-8694-fa27ed9af5c6" />|
 
 *Filtros IIR*: 
+
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/82b7704b-ec84-458a-9d27-1b8ecc23cced" />
 
 
 #### Resultados de los filtros de las señales ECG
 Comparamos las respuestas en frecuencia de los filtros FIR de todas las 3 señales y se observa que la ventana Hamming presenta una caída rápida entre ancho de transición y atenuación de lobulos laterales. La ventana Hann tiene una transición ligeramente más amplia y una atenuación más suave, lo que puede permitir algo más de ruido fuera de banda. En cambio, la ventana Blackman proporciona la mayor supresión de componentes fuera de banda, reduciendo significativamente el ruido; sin embargo, su banda de transición más ancha provoca que la señal filtrada caiga más lentamente, mostrando un inicio más suavizado y un retardo mayor en la respuesta temporal.
+
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/bb358571-90c8-434e-be58-b7cd77e8d0aa" />
-Análogamente, las respuestas en frecuencia de los filtros IIR: 
+
+Análogamente, las respuestas en frecuencia de los filtros IIR: El filtro Butterworth presenta una respuesta en frecuencia muy suave dentro de la banda de paso, con transición gradual hacia la banda de rechazo, lo que evita ondulaciones en la señal y genera un filtrado estable, aunque requiere un orden relativamente alto para obtener selectividad pronunciada (N=17) en comparación al Chevyshev tipo 1 (N=10). Por su parte, el filtro Chebyshev tipo 1 presenta una mayor pendiente en la transición y permite una mejor selectividad con un orden menor, pero también contiene ondulaciones  en la banda de paso, lo que puede generar ligeras variaciones en la amplitud de los picos y un comportamiento menos uniforme en el tiempo.
+
 <img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/8e6a31e7-fcf4-4786-8991-49ab2bf95a5f" />
 ************
 ## 6.2 EEG
