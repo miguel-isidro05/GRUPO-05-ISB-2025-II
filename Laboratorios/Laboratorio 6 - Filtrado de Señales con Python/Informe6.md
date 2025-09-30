@@ -145,21 +145,21 @@ IIR:
 En este caso, se tomaron las señales de los bíceps en 3 estados:
 ### 6.3.a Bicep relajado
 | Señal                                   |Señal Cruda | Señal Filtrada|
-|--------------------|----------|-------------|-----|
+|--------------------|---------------------|-----|
 | Relajado |<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/9d0eb69f-c2f2-4b19-bf6c-b8690646c87d" />|<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/f0495b3d-ddaf-42c3-8048-03ade2c399c3" />|
 
 
 
 ### 6.3.b Movimiento Leve
 |Señal                                   |Señal Cruda | Señal Filtrada|
-|--------------------|----------|-------------|-----|
+|--------------------|---------------|-----|
 |Leve |<img width="850" height="393" alt="image" src="https://github.com/user-attachments/assets/d8aadf16-6bee-4435-9a56-7eab3eb2b69f" />|<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/274f8201-b531-4c77-be6f-52984151521c" />|
 
 
 
 ### 6.3.c Aplicando fuerza 
 |Señal                                   |Señal Cruda | Señal Filtrada|
-|--------------------|----------|-------------|-----|
+|--------------------|--------|--------|
 |Fuerza |<img width="859" height="393" alt="image" src="https://github.com/user-attachments/assets/e6c427d3-a6b3-4250-ac4d-8285be4bb0c5" />|<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/2973eb70-c102-4c02-bf89-2bc2560100c5" />|
 
 
