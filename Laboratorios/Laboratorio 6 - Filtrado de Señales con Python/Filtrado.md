@@ -66,7 +66,12 @@ Dentro de esta banda, se distinguen los principales ritmos cerebrales: delta (0.
 
 ## **6. Discusión y Análisis** <a name="id1"></a>
 ## 6.1 ECG
+Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se optó por diseñar un filtro Pasa Banda en pyFDA. Se ajustaron los parámetros de las frecuencias de corte para obtener un filtro que nos permita obtener las frecuencias de interés de las señales EMG
 ### 6.1.a Reposo
+*Filtros FIR*
+**| Entrenamiento                                   | Hamming | Hann |Blackman |**
+|----------------------------------------------|----------|---------------------------------|
+| Reposo                              |  |  |
 
 ### 6.1.b Apnea 10 segundos
 
