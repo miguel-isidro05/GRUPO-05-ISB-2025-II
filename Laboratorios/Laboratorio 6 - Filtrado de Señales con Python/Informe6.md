@@ -126,6 +126,7 @@ Las frecuencias de interés del EEG se encuentran entre 0.5 Hz y 100 Hz, abarcan
 *Filtros FIR*:
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
+|filtro en pyFDA|<img width="1441" height="817" alt="image" src="https://github.com/user-attachments/assets/af71f686-9368-47a4-ad10-8570c8d5e82a" />|<img width="1443" height="740" alt="image" src="https://github.com/user-attachments/assets/c5f8836c-f44c-48dc-afd2-83f0fe1255ec" />|<img width="1443" height="740" alt="image" src="https://github.com/user-attachments/assets/80f706dd-ec66-4357-b0c5-0a9277514d3b" />|
 |Basal|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/748de29b-7aa2-4f09-8501-fc69e54caeae" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/c8447fbd-de1c-405e-801c-51887c3e59b6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/81545631-63d8-42e1-82d0-641d330775d9" />|
 
 *Filtros IIR*: También se diseñaron filtros Pasa Bajas debido a la inestabilidad de los Pasa Banda. En el diseño se llegó a un punto en el que al querer eliminar ondulaciones de las bandas y aumentar el número de orden, ya no se veía un suavizado de las ondulaciones sino que lo único que cambiaba era la caída de la pendiente de la banda de transición. Así se definió que para el filtro Butterworth se necesitó un N=15 y para el Chevyshev un N=10.
@@ -136,6 +137,7 @@ Las frecuencias de interés del EEG se encuentran entre 0.5 Hz y 100 Hz, abarcan
 *Filtros FIR:*
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
+|filtro en pyFDA|<img width="1441" height="817" alt="image" src="https://github.com/user-attachments/assets/af71f686-9368-47a4-ad10-8570c8d5e82a" />|<img width="1443" height="740" alt="image" src="https://github.com/user-attachments/assets/c5f8836c-f44c-48dc-afd2-83f0fe1255ec" />|<img width="1443" height="740" alt="image" src="https://github.com/user-attachments/assets/80f706dd-ec66-4357-b0c5-0a9277514d3b" />|
 |Mirada fija|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6a2569e5-9c0b-4f06-adfb-f08c07779ea6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5fceffe4-3c10-4105-86a6-c8cbd0e043ca" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6c34c529-9812-4af9-b11b-be63c814a4bb" />|
 
 *Filtros IIR*: 
@@ -146,6 +148,7 @@ Las frecuencias de interés del EEG se encuentran entre 0.5 Hz y 100 Hz, abarcan
 *Filtros FIR:*
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
+|filtro en pyFDA|<img width="1441" height="817" alt="image" src="https://github.com/user-attachments/assets/af71f686-9368-47a4-ad10-8570c8d5e82a" />|<img width="1443" height="740" alt="image" src="https://github.com/user-attachments/assets/c5f8836c-f44c-48dc-afd2-83f0fe1255ec" />|<img width="1443" height="740" alt="image" src="https://github.com/user-attachments/assets/80f706dd-ec66-4357-b0c5-0a9277514d3b" />|
 |Preguntas|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/3648a775-3f05-456e-9d48-f6423a62e93e" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/33dabba3-4b30-4fed-8a5c-1b147d41f2d6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/61818343-e524-4ed1-8382-ceab4a1c2f8c" />|
 
 *Filtros IIR:*
