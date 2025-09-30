@@ -138,8 +138,8 @@ Las frecuencias de interés del EEG se encuentran entre 0.5 Hz y 100 Hz, abarcan
 |--------------------|----------|-------------|-----|
 |Mirada fija|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6a2569e5-9c0b-4f06-adfb-f08c07779ea6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5fceffe4-3c10-4105-86a6-c8cbd0e043ca" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/6c34c529-9812-4af9-b11b-be63c814a4bb" />|
 
-
 *Filtros IIR*: 
+
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/8893ced8-df42-4e19-98d7-0c6c34a839c7" />
 
 ### 6.2.c Preguntas
@@ -149,6 +149,7 @@ Las frecuencias de interés del EEG se encuentran entre 0.5 Hz y 100 Hz, abarcan
 |Preguntas|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/3648a775-3f05-456e-9d48-f6423a62e93e" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/33dabba3-4b30-4fed-8a5c-1b147d41f2d6" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/61818343-e524-4ed1-8382-ceab4a1c2f8c" />|
 
 *Filtros IIR:*
+
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/4cd54bcf-4ad9-4fc4-a526-4136bebd75c9" />
 
 #### Resultados de los filtros de las señales EEG
