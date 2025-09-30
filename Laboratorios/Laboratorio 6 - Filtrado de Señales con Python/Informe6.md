@@ -65,22 +65,21 @@ Diversos estudios han establecido que la información útil del EEG se encuentra
 Dentro de esta banda, se distinguen los principales ritmos cerebrales: delta (0.5–4 Hz), theta (4–8 Hz), alpha (8–12 Hz), beta (12–40 Hz) y gamma (40–80 Hz). Cada uno refleja distintos estados funcionales del cerebro, desde el sueño profundo hasta la atención y el procesamiento cognitivo. Por tanto, limitar la señal al rango de 0.5–100 Hz garantiza la preservación de las oscilaciones neuronales de interés, a la vez que se reducen artefactos y ruidos externos, facilitando el análisis clínico y computacional [7].
 
 ## **6. Discusión y Análisis** <a name="id1"></a>
+Para cada toma de cada señal (ECG, EEG) se diseñaron tres filtros FIR Pasa Banda utilizando las ventanas Hamming, Hann y Blackman para comparar cómo las diferentes formas de ventana afectan la respuesta temporal y la atenuación del ruido en la señal ECG. Se usaron estas ventanas porque son clásicas en procesamiento de señales y permiten diseñar filtros FIR estables, con respuesta en frecuencia controlada, además de ser adecuadas para señales EEG y ECG.
+También se diseñaron filtros IIR de tipo Butterworth Y Chevyshev tipo 1 para las señales ECG y EEG; y adicionalmente se realizó un filtro Bessel para las señales EMG. Se diseñaron para evidenciar que con un número menor de orden se pueden obtener filtros igual de efectivos que los FIR a pesar de presentar un desfase no lineal.
+
 ## 6.1 ECG
-Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se optó por diseñar un filtro Pasa Banda en pyFDA. Se ajustaron los parámetros de las frecuencias de corte para obtener un filtro que nos permita obtener las frecuencias de interés de las señales EMG
+Las frecuencias de interés se encuentran entre 0.5Hz y 40Hz, por lo que se optó por diseñar un filtro Pasa Banda en pyFDA. Se ajustaron los parámetros de las frecuencias de corte para obtener un filtro que nos permita obtener las frecuencias de interés de las señales ECG.
 ### 6.1.a Reposo
-*Filtros FIR*: Para observarfernvev enventanamiento
-
-
+*Filtros FIR*: Al filtrar la señal con las diferentes ventanas se puede observar que se preservan los picos R y que se presenta un desfase constante respecto a la señal cruda, lo cual es una característica bastante común de los filtros FIR. Para el diseño de cada uno de los filtros se necesitó un número de orden mayor a 100. Por ejemplo para Hamming se necesitaron 200 coeficientes (N=200), para Hann 118 y para Blackman 120. Un mayor número de coeficientes permite que la transición entre la banda de paso y la banda de rechazo sea más pronunciada, reduciendo ruido. La ventaja de usar pyFDA para el diseño es que se podía observar si se estaba usando un número de orden ideal y modular la selectividad aumentando o disminuyendo el número de orden.
 
 | Señal           | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
-|pyFDA| <img width="1447" height="740" alt="image" src="https://github.com/user-attachments/assets/a798648c-dbe8-4e0f-b6e8-ca1140d3aae6" />|<img width="1437" height="821" alt="image" src="https://github.com/user-attachments/assets/6f26d3fd-3fa7-4617-b6c2-43427910e2bf" />|<img width="1438" height="847" alt="image" src="https://github.com/user-attachments/assets/785c1216-d817-4eb5-944e-025efe24953d" />|
+|filtro en pyFDA| <img width="1447" height="740" alt="image" src="https://github.com/user-attachments/assets/a798648c-dbe8-4e0f-b6e8-ca1140d3aae6" />|<img width="1437" height="821" alt="image" src="https://github.com/user-attachments/assets/6f26d3fd-3fa7-4617-b6c2-43427910e2bf" />|<img width="1438" height="847" alt="image" src="https://github.com/user-attachments/assets/785c1216-d817-4eb5-944e-025efe24953d" />|
 | Reposo |<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/5e202eae-9cee-4714-aaea-0f2f2b3b8a0f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/9e70ae25-7728-493b-bab6-34da22e7584f" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/c531f5e5-45d1-4843-9bea-b6df0038cca7" />|
 
 
-*Filtros IIR*: Se diseñaron los filtros Butterworth y Chevishev tipo 1 de tipo Pasa Bajas; esto debido a que al ser jcdcjsjvjf no eprmite sjdcbebv por lo que se comportaba muy inestable en las regiones de transición a pesar de modificar el orden del filtro, por lo que se optó diseñar un Pasa Bajas que se mostraba más estable y permitía un correcto filtrado y obtención de la banda de frecuencia de inetrés
-*************iamgen de pyfda
-
+*Filtros IIR*: Se diseñaron los filtros Butterworth y Chebyshev tipo 1 de tipo Pasa Bajas, ya que en Pasa Banda se presentaba inestabilidad en las regiones de transición incluso al modificar el orden del filtro. La opción de un filtro Pasa Bajas permitió un comportamiento más estable y un filtrado correcto, asegurando la adecuada obtención de la banda de frecuencia de interés en la señal.
 Se observa la señal de reposo tras aplicarles ambos filtros:
 ************
 <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/9573450d-140c-49ee-b15d-0045c064b586" />
@@ -91,6 +90,7 @@ Se observa la señal de reposo tras aplicarles ambos filtros:
 ### 6.1.b Apnea 10 segundos
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
+|filtro en pyFDA| <img width="1447" height="740" alt="image" src="https://github.com/user-attachments/assets/a798648c-dbe8-4e0f-b6e8-ca1140d3aae6" />|<img width="1437" height="821" alt="image" src="https://github.com/user-attachments/assets/6f26d3fd-3fa7-4617-b6c2-43427910e2bf" />|<img width="1438" height="847" alt="image" src="https://github.com/user-attachments/assets/785c1216-d817-4eb5-944e-025efe24953d" />|
 |Apnea|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/ef939ec9-6090-4513-bf67-9c3317326adc" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/87c430d7-f88a-4d37-8091-ada1234d2ee7" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/bfa6f89f-1072-4d8e-8868-956596a0040c" />|
  
 
@@ -98,6 +98,7 @@ Se observa la señal de reposo tras aplicarles ambos filtros:
 ### 6.1.c Actividad Aeróbica
 | Señal                                   | Hamming | Hann |Blackman |
 |--------------------|----------|-------------|-----|
+|filtro en pyFDA| <img width="1447" height="740" alt="image" src="https://github.com/user-attachments/assets/a798648c-dbe8-4e0f-b6e8-ca1140d3aae6" />|<img width="1437" height="821" alt="image" src="https://github.com/user-attachments/assets/6f26d3fd-3fa7-4617-b6c2-43427910e2bf" />|<img width="1438" height="847" alt="image" src="https://github.com/user-attachments/assets/785c1216-d817-4eb5-944e-025efe24953d" />|
 |Actividad aeróbica|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/3aa3f2b7-255d-4e29-b1cf-27b2ed7100aa" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/374830a1-bf90-4c15-ba04-8974719503ba" />|<img width="989" height="389" alt="image" src="https://github.com/user-attachments/assets/e431b31a-173c-4a71-8694-fa27ed9af5c6" />|
 
 *Filtros IIR*: Se dise
