@@ -34,40 +34,38 @@
 
 ## 1. Introducción  
 
-El análisis de bioseñales como el electrocardiograma (ECG), el electromiograma (EMG) y el electroencefalograma (EEG) constituye uno de los pilares fundamentales en la ingeniería biomédica, tanto en la investigación como para el diagnóstico clínico. En estas representaciones graficas, las señales naturalmente suelen suelen presentar ruido y artefactos que dificultan su interpretación directa, ademas de poseer una naturaleza inherentemente no estacionaria. Con el fin de solventar dicha problemática, la Transformada Wavelet se ha consolidado en las últimas décadas como una técnica muy robusta para el procesamiento de señales, pues permite descomponerlas en diferentes escalas de tiempo y frecuencia sin perder información temporal crítica.  
+El análisis de bioseñales como el electrocardiograma (ECG), el electromiograma (EMG) y el electroencefalograma (EEG) constituye uno de los pilares fundamentales en la ingeniería biomédica, tanto en la investigación como para el diagnóstico clínico. En estas representaciones graficas, las señales naturalmente suelen suelen presentar ruido y artefactos que dificultan su interpretación directa, ademas de poseer una naturaleza inherentemente no estacionaria. Con el fin de solventar dicha problemática, la Transformada Wavelet se ha consolidado en las últimas décadas como una técnica muy robusta para el procesamiento de señales, pues permite descomponerlas en diferentes escalas de tiempo y frecuencia sin perder información temporal crítica. [1]
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/706eca35-0ff2-458e-9282-d7e6c2a19804" width="300"><br>
   <em>Figura 1. Señal EKG en reposo.</em>
 </p>
 
-Ademas a diferencia de la Transformada de Fourier, el cual ofrece un panorama global de las frecuencias sin detallar su evolución temporal, la Wavelet ajusta su resolución de forma adaptativam brindando mayor precisión temporal en altas frecuencias y mejor resolución frecuencial en componentes de baja frecuencia, la cual es una propiedad especialmente útil para la detección de fenómenos transitorios, como complejos QRS en ECG, artefactos de contracción en EMG o patrones de actividad cerebral en EEG.
+Ademas a diferencia de la Transformada de Fourier, el cual ofrece un panorama global de las frecuencias sin detallar su evolución temporal, la Wavelet ajusta su resolución de forma adaptativam brindando mayor precisión temporal en altas frecuencias y mejor resolución frecuencial en componentes de baja frecuencia, la cual es una propiedad especialmente útil para la detección de fenómenos transitorios, como complejos QRS en ECG, artefactos de contracción en EMG o patrones de actividad cerebral en EEG.[2]
 
-"Falta imagen"
 
-Por ello, un aspecto clave en la aplicación práctica es la elección de la wavelet madre, pues existen distintas familias, como Haar, Daubechies, Symlet o Coiflet, las cuales ofrecen características particulares en términos de suavidad, simetría y soporte, lo cual impacta directamente en la calidad de la descomposición y la fidelidad de la reconstrucción. En ese sentido, investigaciones recientes han demostrado que las wavelets de orden elevado, como la Daubechies 44 (db44), pueden presentan una alta similitud morfológica con múltiples biosignales, lo que las hace especialmente útiles para extraer características relevantes en contextos clínicos y experimentales. 
+Por ello, un aspecto clave en la aplicación práctica es la elección de la wavelet madre, pues existen distintas familias, como Haar, Daubechies, Symlet o Coiflet, las cuales ofrecen características particulares en términos de suavidad, simetría y soporte, lo cual impacta directamente en la calidad de la descomposición y la fidelidad de la reconstrucción. En ese sentido, investigaciones recientes han demostrado que las wavelets de orden elevado, como la Daubechies 44 (db44), pueden presentan una alta similitud morfológica con múltiples biosignales, lo que las hace especialmente útiles para extraer características relevantes en contextos clínicos y experimentales.[3]
 
-"Falta imagen"
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b0931f49-23a8-4b70-907a-dba00c0c4964" width="450"><br>
+  <em>Figura 2. Transformada Wavelet de la señal EKG.</em>
+</p>
 
 Estos hallazgos sugieren que la selección de la función base no debe limitarse a la semejanza superficial con la señal, sino que debe considerar la capacidad de capturar patrones comunes entre distintos dominios biológicos.  
 
 En este informe se exploran los fundamentos de la Transformada Wavelet y su aplicación en señales biomédicas (ECG, EMG y EEG), comparando su desempeño. De esta manera, se busca ofrecer una visión integral sobre su potencial en el procesamiento avanzado de bioseñales y sus implicancias para la práctica clínica y la investigación interdisciplinaria.
 
-Review 1
-https://www.sciencedirect.com/science/article/abs/pii/S0957417410012881
-
-Review 2
-https://books.google.com.pe/books?hl=es&lr=&id=SuIlBQAAQBAJ&oi=fnd&pg=PR13&dq=wavelets+basics&ots=xRC1nChqym&sig=RuK8E3d9M3jrKAU-2qtVRHpSjeo#v=onepage&q=wavelets%20basics&f=false
-
-Probar diferentes tipos de wavelet
-https://doi.org/10.1016/j.procs.2018.05.054
-
-wavelets motor imagery
-https://ieeexplore.ieee.org/abstract/document/8585027
-
 ## 2. Marco Teórico  
 
 ### 2.1 Fundamentos de la Transformada Wavelet  
+La **Transformada Wavelet (WT)** es una herramienta matemática que permite analizar señales tanto en el **dominio del tiempo como en el de la frecuencia**, superando las limitaciones de la Transformada de Fourier tradicional.  
+A diferencia del análisis espectral clásico, la WT utiliza funciones denominadas **wavelets**, las cuales son de corta duración y localizadas, permitiendo detectar **cambios transitorios o eventos no estacionarios** en una señal. 
+
+Matemáticamente, la **Transformada Wavelet Continua (CWT)** de una señal \( x(t) \) se define como:  
+
+\[
+W(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} x(t) \psi^*\left( \frac{t-b}{a} \right) dt
+\]
 
 ### 2.2 Aplicaciones en Señales Biomédicas  
 
@@ -200,3 +198,6 @@ Umbral Universal calculado: 5.1238
 ## 8. Conclusiones  
 
 ## 9. Bibliografía  
+[1] https://www.sciencedirect.com/science/article/abs/pii/S0957417410012881
+[2] https://books.google.com.pe/books?hl=es&lr=&id=SuIlBQAAQBAJ&oi=fnd&pg=PR13&dq=wavelets+basics&ots=xRC1nChqym&sig=RuK8E3d9M3jrKAU-2qtVRHpSjeo#v=onepage&q=wavelets%20basics&f=false
+[3]https://doi.org/10.1016/j.procs.2018.05.054
