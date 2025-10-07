@@ -36,8 +36,10 @@
 
 El análisis de bioseñales como el electrocardiograma (ECG), el electromiograma (EMG) y el electroencefalograma (EEG) constituye uno de los pilares fundamentales en la ingeniería biomédica, tanto en la investigación como para el diagnóstico clínico. En estas representaciones graficas, las señales naturalmente suelen suelen presentar ruido y artefactos que dificultan su interpretación directa, ademas de poseer una naturaleza inherentemente no estacionaria. Con el fin de solventar dicha problemática, la Transformada Wavelet se ha consolidado en las últimas décadas como una técnica muy robusta para el procesamiento de señales, pues permite descomponerlas en diferentes escalas de tiempo y frecuencia sin perder información temporal crítica.  
 
-<img width="283" height="178" alt="image" src="https://github.com/user-attachments/assets/706eca35-0ff2-458e-9282-d7e6c2a19804" />
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/706eca35-0ff2-458e-9282-d7e6c2a19804" width="300"><br>
+  <em>Figura 1. Señal EKG en reposo.</em>
+</p>
 
 Ademas a diferencia de la Transformada de Fourier, el cual ofrece un panorama global de las frecuencias sin detallar su evolución temporal, la Wavelet ajusta su resolución de forma adaptativam brindando mayor precisión temporal en altas frecuencias y mejor resolución frecuencial en componentes de baja frecuencia, la cual es una propiedad especialmente útil para la detección de fenómenos transitorios, como complejos QRS en ECG, artefactos de contracción en EMG o patrones de actividad cerebral en EEG.
 
