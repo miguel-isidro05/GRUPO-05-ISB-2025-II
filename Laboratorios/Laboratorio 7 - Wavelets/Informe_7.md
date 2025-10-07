@@ -289,8 +289,7 @@ Umbral Universal calculado: 86.3788
 
 | Señal           | Original | Filtrada nivel optimo |
 |--------------------|----------|-------------|
-|Aplicando Fuerza |<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/cde46359-27ac-4470-9f93-2348937b694a" />
-|<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/35d4c554-48ea-4960-99a2-e53899a00966" />|
+|Aplicando Fuerza |<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/cde46359-27ac-4470-9f93-2348937b694a" />|<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/35d4c554-48ea-4960-99a2-e53899a00966" />|
 
 
 ### 6.3 Señal EEG  
