@@ -247,7 +247,7 @@ Por estas razones —combinar buen desempeño empírico con propiedades matemát
 
 #### 6.2.1 Musculo relajado
 **Descomposición y coeficientes de detalle:**  
-Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel:
+Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel:4
 
 ```python
 Umbral Universal calculado: 4.9120
@@ -258,13 +258,15 @@ Umbral Universal calculado: 4.9120
 
 | Señal           | Original | Filtrada nivel optimo |
 |--------------------|----------|-------------|
-|Reposo basal|<img width="1041" height="391" alt="image" src="https://github.com/user-attachments/assets/ebe6d4a3-9d5d-4b39-a318-bf86c93bee37" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/8e2d8dd4-0648-4ab5-8a55-80ef9b9f509b" />|
+|Musculo relajado|<img width="1041" height="391" alt="image" src="https://github.com/user-attachments/assets/ebe6d4a3-9d5d-4b39-a318-bf86c93bee37" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/8e2d8dd4-0648-4ab5-8a55-80ef9b9f509b" />|
+
+
 #### 6.2.2 Movimiento leve
 **Descomposición y coeficientes de detalle:**  
-Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel:
+Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel:11
 
 ```python
-Umbral Universal calculado: 4.9120
+Umbral Universal calculado: 11.9247
 ```
 <img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/ea67e01d-8cf2-4ae8-823b-17d74cbb85cf" />
 
@@ -272,8 +274,24 @@ Umbral Universal calculado: 4.9120
 
 | Señal           | Original | Filtrada nivel optimo |
 |--------------------|----------|-------------|
-|Reposo basal|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/1627c94f-6671-43b6-a091-a9dd82fb50aa" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/eb63a983-e613-4c8d-b5a3-1bde1009b40d" />|
+|Movimiento leve|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/1627c94f-6671-43b6-a091-a9dd82fb50aa" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/eb63a983-e613-4c8d-b5a3-1bde1009b40d" />|
+
 #### 6.2.3 Aplicando fuerza
+**Descomposición y coeficientes de detalle:** 
+Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel: 6
+
+```python
+Umbral Universal calculado: 86.3788
+```
+<img width="1188" height="990" alt="image" src="https://github.com/user-attachments/assets/62cc827c-8741-4e33-8e72-110a6e9b5ed2" />
+
+**Filtrado y selección de nivel óptimo:**  
+
+| Señal           | Original | Filtrada nivel optimo |
+|--------------------|----------|-------------|
+|Aplicando Fuerza |<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/cde46359-27ac-4470-9f93-2348937b694a" />
+|<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/35d4c554-48ea-4960-99a2-e53899a00966" />|
+
 
 ### 6.3 Señal EEG  
 
