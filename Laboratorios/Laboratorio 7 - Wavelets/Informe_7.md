@@ -202,13 +202,13 @@ Se realizó la descomposición en 5 niveles acorde al umbral, obteniendo los coe
 Umbral Universal calculado: 5.1238
 ```
 
-//colocar imagen de coeficientes por niveles
+<img width="1187" height="989" alt="image" src="https://github.com/user-attachments/assets/b2685130-0ecb-49e4-b704-edc0c159483d" />
 
 **Filtrado y selección de nivel óptimo:**  
 
 | Señal           | Original | Filtrada nivel optimo |
 |--------------------|----------|-------------|
-|Posterior a actividad aerobica| | |
+|Posterior a actividad aerobica|<img width="1041" height="391" alt="image" src="https://github.com/user-attachments/assets/351f0485-cb65-4c71-9051-281c25cf644f" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/a2a60d3d-9168-4bfe-91f7-b6eff791dac5" />|
 
 ### 6.2 Señal EMG  
 
