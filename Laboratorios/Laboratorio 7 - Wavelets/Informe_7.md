@@ -79,7 +79,19 @@ Esta propiedad es útil para la **eliminación de ruido**, **detección de event
 
 
 ### 2.2 Aplicaciones en Señales Biomédicas  
+En el campo biomédico, las señales fisiológicas suelen ser **no estacionarias** y de naturaleza compleja, por lo que la Transformada Wavelet se ha convertido en una herramienta esencial para su análisis.  
+Algunas aplicaciones destacadas incluyen:  
 
+- **Electrocardiograma (ECG):** la WT se utiliza para **detectar picos R**, **eliminar artefactos de ruido muscular y de línea base**, y **segmentar los intervalos P-QRS-T**.  
+  Las wavelets tipo *Daubechies (db4)* y *Symlet* son especialmente útiles por su similitud con la morfología del complejo QRS.  
+
+- **Electroencefalograma (EEG):** permite analizar la actividad cerebral en diferentes **bandas de frecuencia** (delta, theta, alfa, beta, gamma), facilitando la detección de **epilepsia**, **trastornos del sueño** y **respuestas cognitivas** mediante descomposición multirresolución.  
+
+- **Electromiograma (EMG):** la DWT ayuda a **extraer características** del patrón muscular y **eliminar interferencias de alta frecuencia**, mejorando el reconocimiento de movimientos o la evaluación de neuropatías.  
+
+En conjunto, la Transformada Wavelet ofrece una visión **multiescala** del comportamiento fisiológico, posibilitando un procesamiento más preciso y eficiente que las técnicas clásicas basadas únicamente en el dominio del tiempo o de la frecuencia.  
+
+---
 ## 3. Objetivos  
 
 ### 3.1 Objetivo General  
