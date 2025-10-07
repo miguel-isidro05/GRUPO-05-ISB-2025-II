@@ -214,7 +214,7 @@ Umbral Universal calculado: 5.1238
 ### 6.2 Señal EMG  
 ## 6.2 Señal EMG y elección de la familia Wavelet
 
-La señal de **electromiograma (EMG / sEMG)** es inherentemente *no estacionaria*, con variaciones rápidas en amplitud y frecuencia debidas a contracciones musculares, artefactos y ruido. La Transformada Wavelet Discreta (DWT) permite una descomposición multiescala que separa componentes de detalle (alta frecuencia) y aproximación (baja frecuencia), lo cual es ideal para filtrado, extracción de características y clasificación (Phinyomark et al., 2012). :contentReference[oaicite:0]{index=0}
+La señal de **electromiograma (EMG / sEMG)** es inherentemente *no estacionaria*, con variaciones rápidas en amplitud y frecuencia debidas a contracciones musculares, artefactos y ruido. La Transformada Wavelet Discreta (DWT) permite una descomposición multiescala que separa componentes de detalle (alta frecuencia) y aproximación (baja frecuencia), lo cual es ideal para filtrado, extracción de características y clasificación.
 
 ### Uso predominante de la familia Daubechies en EMG
 
@@ -246,8 +246,20 @@ Las razones técnicas que explican por qué Daubechies es tan usada en EMG son:
 Por estas razones —combinar buen desempeño empírico con propiedades matemáticas convenientes— se considera **razonable elegir una wavelet Daubechies  db4** para el análisis de señales EMG en tu laboratorio.
 
 #### 6.2.1 Musculo relajado
-
+**Descomposición y coeficientes de detalle:**  
 #### 6.2.2 Movimiento leve
+Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel:
+
+```python
+Umbral Universal calculado: 4.9120
+```
+<img width="1189" height="989" alt="image" src="https://github.com/user-attachments/assets/46682a1e-baa9-4b7c-883e-ad6cb85a8217" />
+
+**Filtrado y selección de nivel óptimo:**  
+
+| Señal           | Original | Filtrada nivel optimo |
+|--------------------|----------|-------------|
+|Reposo basal|<img width="1041" height="391" alt="image" src="https://github.com/user-attachments/assets/ebe6d4a3-9d5d-4b39-a318-bf86c93bee37" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/8e2d8dd4-0648-4ab5-8a55-80ef9b9f509b" />|
 
 #### 6.2.3 Aplicando fuerza
 
