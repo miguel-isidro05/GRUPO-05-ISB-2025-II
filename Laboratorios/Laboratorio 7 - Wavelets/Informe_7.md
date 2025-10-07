@@ -137,16 +137,16 @@ Aplicar la Transformada Wavelet en el procesamiento de bioseñales (ECG, EMG y E
 La **familia de wavelets Daubechies (dbN)**, propuesta por Ingrid Daubechies, es una de las más utilizadas en el análisis de señales ECG debido a las siguientes razones:  
 
 - **Similitud morfológica con el complejo QRS:**  
-  Las funciones wavelet *Daubechies* poseen una forma asimétrica y una respuesta impulsiva corta, muy parecida a la morfología del complejo QRS del ECG. Esto permite que las descomposiciones capten con precisión los picos R y las variaciones rápidas.  
+  Las funciones wavelet *Daubechies* poseen una forma asimétrica y una respuesta impulsiva corta, muy parecida a la morfología del complejo QRS del ECG. Esto permite que las descomposiciones capten con precisión los picos R y las variaciones rápidas.[9]
 
 - **Buena localización en tiempo y frecuencia:**  
-  Las wavelets *Daubechies* ofrecen un equilibrio óptimo entre resolución temporal y espectral, lo que permite detectar eventos transitorios (picos o artefactos) sin perder información de fondo.  
+  Las wavelets *Daubechies* ofrecen un equilibrio óptimo entre resolución temporal y espectral, lo que permite detectar eventos transitorios (picos o artefactos) sin perder información de fondo.[10]
 
 - **Ortogonalidad y eficiencia computacional:**  
-  Al ser ortogonales, las *dbN* permiten reconstruir la señal sin redundancia y con bajo costo computacional, cualidad esencial para aplicaciones en tiempo real o sistemas embebidos.  
+  Al ser ortogonales, las *dbN* permiten reconstruir la señal sin redundancia y con bajo costo computacional, cualidad esencial para aplicaciones en tiempo real o sistemas embebidos.  [11]
 
 - **Desempeño probado en filtrado y detección de picos:**  
-  Estudios clásicos demuestran que wavelets como *db4* o *db6* logran eliminar el ruido de línea base y resaltar el complejo QRS con alta precisión, lo cual las convierte en un estándar en el análisis ECG.  
+  Estudios clásicos demuestran que wavelets como *db4* o *db6* logran eliminar el ruido de línea base y resaltar el complejo QRS con alta precisión, lo cual las convierte en un estándar en el análisis ECG. [12]
 
 En consecuencia, en este laboratorio se selecciona la **wavelet madre Daubechies de orden 4 (db4)** por su comprobada eficacia en la detección de picos R y su capacidad para mantener la morfología característica de la señal cardiaca.  
 
@@ -252,3 +252,10 @@ Umbral Universal calculado: 5.1238
 
 [8] C. Li, C. Zheng, and C. Tai, “Detection of ECG characteristic points using wavelet transforms,” *IEEE Transactions on Biomedical Engineering*, vol. 42, no. 1, pp. 21–28, 1995.  
 
+[9] I. Daubechies, *Ten Lectures on Wavelets*. Philadelphia, PA: SIAM, 1992. 
+
+[10] S. Ghosh-Dastidar and H. Adeli, “Improved spiking neural networks for EEG classification and epilepsy and seizure detection,” *Integrated Computer-Aided Engineering*, vol. 14, no. 3, pp. 187–212
+
+[11]C. Li, C. Zheng, and C. Tai, “Detection of ECG characteristic points using wavelet transforms,” *IEEE Transactions on Biomedical Engineering*, vol. 42, no. 1, pp. 21–28
+
+[12] P. S. Addison, *The Illustrated Wavelet Transform Handbook*, 2nd ed. Boca Raton, FL: CRC Press, 2017.  
