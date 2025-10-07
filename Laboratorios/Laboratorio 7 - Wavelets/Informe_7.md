@@ -59,9 +59,9 @@ En este informe se exploran los fundamentos de la Transformada Wavelet y su apli
 
 ### 2.1 Fundamentos de la Transformada Wavelet  
 La **Transformada Wavelet (WT)** es una herramienta matemática que permite analizar señales tanto en el **dominio del tiempo como en el de la frecuencia**, superando las limitaciones de la Transformada de Fourier tradicional.  
-A diferencia del análisis espectral clásico, la WT utiliza funciones denominadas **wavelets**, las cuales son de corta duración y localizadas, permitiendo detectar **cambios transitorios o eventos no estacionarios** en una señal. 
+A diferencia del análisis espectral clásico, la WT utiliza funciones denominadas **wavelets**, las cuales son de corta duración y localizadas, permitiendo detectar **cambios transitorios o eventos no estacionarios** en una señal. [4]
 
-Matemáticamente, la **Transformada Wavelet Continua (CWT)** de una señal \( x(t) \) se define como:  
+Matemáticamente, la **Transformada Wavelet Continua (CWT)** de una señal \( x(t) \) se define como: [5]
 
 $$
 W(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} x(t)\,\psi^*\left( \frac{t-b}{a} \right)\,dt
@@ -75,11 +75,11 @@ donde:
 
 
 En la práctica, también se emplea la **Transformada Wavelet Discreta (DWT)**, que descompone la señal en distintos niveles mediante **filtros pasa bajos y pasa altos**, permitiendo representar los componentes de baja y alta frecuencia en cada escala.  
-Esta propiedad es útil para la **eliminación de ruido**, **detección de eventos** y **compresión de datos**.  
+Esta propiedad es útil para la **eliminación de ruido**, **detección de eventos** y **compresión de datos**. [6]
 
 
 ### 2.2 Aplicaciones en Señales Biomédicas  
-En el campo biomédico, las señales fisiológicas suelen ser **no estacionarias** y de naturaleza compleja, por lo que la Transformada Wavelet se ha convertido en una herramienta esencial para su análisis.  
+En el campo biomédico, las señales fisiológicas suelen ser **no estacionarias** y de naturaleza compleja, por lo que la Transformada Wavelet se ha convertido en una herramienta esencial para su análisis. [7]
 Algunas aplicaciones destacadas incluyen:  
 
 - **Electrocardiograma (ECG):** la WT se utiliza para **detectar picos R**, **eliminar artefactos de ruido muscular y de línea base**, y **segmentar los intervalos P-QRS-T**.  
@@ -89,7 +89,7 @@ Algunas aplicaciones destacadas incluyen:
 
 - **Electromiograma (EMG):** la DWT ayuda a **extraer características** del patrón muscular y **eliminar interferencias de alta frecuencia**, mejorando el reconocimiento de movimientos o la evaluación de neuropatías.  
 
-En conjunto, la Transformada Wavelet ofrece una visión **multiescala** del comportamiento fisiológico, posibilitando un procesamiento más preciso y eficiente que las técnicas clásicas basadas únicamente en el dominio del tiempo o de la frecuencia.  
+En conjunto, la Transformada Wavelet ofrece una visión **multiescala** del comportamiento fisiológico, posibilitando un procesamiento más preciso y eficiente que las técnicas clásicas basadas únicamente en el dominio del tiempo o de la frecuencia.[8]
 
 ---
 ## 3. Objetivos  
@@ -222,5 +222,18 @@ Umbral Universal calculado: 5.1238
 
 ## 9. Bibliografía  
 [1] https://www.sciencedirect.com/science/article/abs/pii/S0957417410012881
+
 [2] https://books.google.com.pe/books?hl=es&lr=&id=SuIlBQAAQBAJ&oi=fnd&pg=PR13&dq=wavelets+basics&ots=xRC1nChqym&sig=RuK8E3d9M3jrKAU-2qtVRHpSjeo#v=onepage&q=wavelets%20basics&f=false
+
 [3]https://doi.org/10.1016/j.procs.2018.05.054
+
+[4] S. Mallat, *A Wavelet Tour of Signal Processing: The Sparse Way*, 3rd ed. Burlington, MA: Academic Press, 2008.  
+
+[5] P. S. Addison, *The Illustrated Wavelet Transform Handbook*, 2nd ed. Boca Raton, FL: CRC Press, 2017.  
+
+[6] M. Akay, Ed., *Time–Frequency and Wavelets in Biomedical Signal Processing*. Piscataway, NJ: IEEE Press, 1998.  
+
+[7] A. Subasi, “EEG signal classification using wavelet feature extraction and a mixture of expert model,” *Expert Systems with Applications*, vol. 32, no. 4, pp. 1084–1093, 2007.  
+
+[8] C. Li, C. Zheng, and C. Tai, “Detection of ECG characteristic points using wavelet transforms,” *IEEE Transactions on Biomedical Engineering*, vol. 42, no. 1, pp. 21–28, 1995.  
+
