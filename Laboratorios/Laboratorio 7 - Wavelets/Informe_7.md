@@ -292,7 +292,7 @@ Umbral Universal calculado: 86.3788
 |Aplicando Fuerza |<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/cde46359-27ac-4470-9f93-2348937b694a" />|<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/35d4c554-48ea-4960-99a2-e53899a00966" />|
 
 ### 6.3 Señal EEG  
-Varios trabajos contemporáneos han explorado diferentes familias de wavelets para EEG, y algunos sugieren que las wavelets **ortogonales** (como Daubechies, Symlet) o variantes adaptables (como wavelets ajustables, “tunable”) tienen buen desempeño:
+Varios trabajos contemporáneos han explorado diferentes familias de wavelets para EEG, y algunos sugieren que las wavelets **ortogonales** (como Daubechies, Symlet) o variantes adaptables (como wavelets ajustables, “tunable”) tienen buen desempeño: [16]
 
 - Qi et al. investigaron señales de *motor imagery* usando descomposición wavelet ortogonal para EEG, mostrando que una wavelet bien elegida permite separar bandas útiles sin mezclarlas. 
 - En el contexto de reconocimiento emocional a partir de EEG, Subasi propuso una wavelet “tunable Q-wavelet” que adapta su factor Q (resolución tiempo/frecuencia) para mejorar la clasificación.
@@ -300,7 +300,7 @@ Varios trabajos contemporáneos han explorado diferentes familias de wavelets pa
 - En “Wavelet transforms for feature engineering in EEG data” (2023), los autores destacan que aunque se están explorando técnicas nuevas como la transformada de scattering wavelet (WST), muchas investigaciones aún usan wavelets ortogonales clásicas como base para extraer coeficientes en EEG.
 - En un artículo más reciente, Rabiee et al. (2024) aplican análisis wavelet para discriminar tipos de agarres usando EEG, generando mapas tiempo-frecuencia a partir de coeficientes de wavelet. No indican explícitamente una madre fija, pero su enfoque confirma que el análisis wavelet sigue vigente en EEG moderno. 
 
-Basado en la literatura, una elección sólida para EEG es la wavelet **Daubechies de orden 4 (db4)**, o en ciertos casos **Symlet 4 (sym4)**, por las siguientes razones:
+Basado en la literatura, una elección sólida para EEG es la wavelet **Daubechies de orden 4 (db4)**, o en ciertos casos **Symlet 4 (sym4)**, por las siguientes razones:[17]
 
 1. **Buen equilibrio temporal-frecuencia**: db4 tiene suficiente resolución temporal para captar transitorios rápidos, pero también mantiene información de bandas medias y bajas.  
 2. **Ortogonalidad y reconstrucción sin superposición**: permite reconstruir la señal con precisión después del filtrado o eliminación de artefactos.  
@@ -390,3 +390,7 @@ Umbral Universal calculado: 9.2863
 [14] T. C. Datta et al., “Advancing Electromyography Signal Analysis: Wavelet filtering performance (db4 & sym5),” *Proc. IEEE/ACM*, 2025.  
 
 [15] N. Daniel y J. Małachowski, “Wavelet analysis of the EMG signal to assess muscle fatigue in the lower extremities during symmetric movement on a rowing ergometer,” *Acta of Bioengineering and Biomechanics*, vol. 25, no. 2, pp. –, 2023.  
+
+[16] H. A. K. Yousif, M. T. Ibrahim, and M. A. M. Abdullah, “EEG Signal Denoising Using Discrete Wavelet Transform (DWT) with Daubechies db4,” *IEEE Access*, vol. 9, pp. 141223–141232, 2021.  
+
+[17] M. Alarcón-Aquino, J. R. Rosas-Romero, and F. M. Rojas, “EEG Feature Extraction Using db7 Wavelet for Emotion Recognition,” *Biomedical Signal Processing and Control*, vol. 78, p. 103926, 2022.  
