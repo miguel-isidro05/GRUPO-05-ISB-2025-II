@@ -184,13 +184,14 @@ Se realizó la descomposición en 5 niveles acorde al umbral, obteniendo los coe
 Umbral Universal calculado: 5.3815
 ```
 
-//colocar imagen de coeficientes por niveles
+<img width="1189" height="989" alt="image" src="https://github.com/user-attachments/assets/7ea8c42c-0025-47e1-b7c8-da6a1e90bea2" />
+
 
 **Filtrado y selección de nivel óptimo:**  
 
 | Señal           | Original | Filtrada nivel optimo |
 |--------------------|----------|-------------|
-|Apnea 10 segundos| | |
+|Apnea 10 segundos|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/dff445e4-0c70-4536-b9c3-8ffe55912343" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/b810d0e6-67a2-48ce-9285-da54ccea29ca" />|
 
 #### 6.1.3 Posterior a actividad aerobica
 
