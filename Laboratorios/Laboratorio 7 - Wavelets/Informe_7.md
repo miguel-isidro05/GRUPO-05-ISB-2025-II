@@ -134,6 +134,10 @@ Aplicar la Transformada Wavelet en el procesamiento de bioseñales (ECG, EMG y E
 | Verificación y discusión | Comparar señal original vs. filtrada; analizar eliminación de ruido y preservación de características. | Gráficas comparativas y métricas de calidad. |
 
 ## 6. Resultados  
+ 
+### 6.1 Señal ECG
+
+**Justificación de la elección de wavelet:**  
 La **familia de wavelets Daubechies (dbN)**, propuesta por Ingrid Daubechies, es una de las más utilizadas en el análisis de señales ECG debido a las siguientes razones:  
 
 - **Similitud morfológica con el complejo QRS:**  
@@ -148,14 +152,8 @@ La **familia de wavelets Daubechies (dbN)**, propuesta por Ingrid Daubechies, es
 - **Desempeño probado en filtrado y detección de picos:**  
   Estudios clásicos demuestran que wavelets como *db4* o *db6* logran eliminar el ruido de línea base y resaltar el complejo QRS con alta precisión, lo cual las convierte en un estándar en el análisis ECG. [12]
 
-En consecuencia, en este laboratorio se selecciona la **wavelet madre Daubechies de orden 4 (db4)** por su comprobada eficacia en la detección de picos R y su capacidad para mantener la morfología característica de la señal cardiaca.  
+En consecuencia, en este laboratorio se selecciona la **wavelet madre Daubechies de orden 4 (db4)** por su comprobada eficacia en la detección de picos R y su capacidad para mantener la morfología característica de la señal cardiaca. 
 
-### 6.1 Señal ECG
-
-**Justificación de la elección de wavelet:**  
-Se utilizó la familia Daubechies (`db6`), adecuada para señales ECG debido a su similitud morfológica con los complejos QRS y su buena capacidad para separar ruido de alta frecuencia sin distorsionar la forma de la señal fisiologica [a].
-
-/inclusir referencia
 
 #### 6.1.1 Reposo basal
 
