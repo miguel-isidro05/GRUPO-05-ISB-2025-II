@@ -134,9 +134,9 @@ Umbral Universal calculado: 5.1393
 
 | Señal           | Original | Filtrada nivel optimo |
 |--------------------|----------|-------------|
-|Reposo basal|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/287dd1f0-dbf6-42b5-87e7-53061f4947fb" />
- |<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/6347e73a-97b4-4196-87b8-53ea0f010d68" />
- |
+|Reposo basal|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/287dd1f0-dbf6-42b5-87e7-53061f4947fb" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/d3d15c56-aee9-4e4e-b8b9-34686acb0731" />|
+
+
 
 #### 6.1.2 Apnea 10 segundos
 
