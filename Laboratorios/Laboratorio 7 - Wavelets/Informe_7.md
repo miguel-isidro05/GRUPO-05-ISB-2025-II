@@ -339,6 +339,18 @@ Umbral Universal calculado: 7.7119
 |Estado basal |<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/e69d7afd-7b98-4cf6-948f-025a99616911" />|<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/d1a75d25-8a3b-4de3-8a97-0fdcecea3e34" />|
 
 #### 6.3.3 Preguntas
+**Descomposición y coeficientes de detalle:**  
+Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel:9
+
+```python
+Umbral Universal calculado: 9.2863
+```
+<img width="1189" height="989" alt="image" src="https://github.com/user-attachments/assets/62c46888-9b61-4916-91b2-1774d1f13e77" />
+
+**Filtrado y selección de nivel óptimo:**  
+| Señal           | Original | Filtrada nivel optimo |
+|--------------------|----------|-------------|
+|Estado basal |<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/3606ff2f-6990-459c-a5d8-b234d741c459" />|<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/e7617eb4-6b9a-4f52-b3b4-ec728f9a6bef" />|
 
 ## 7. Discusión  
 
