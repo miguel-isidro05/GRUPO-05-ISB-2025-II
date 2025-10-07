@@ -374,11 +374,13 @@ En síntesis, la Wavelet constituye una alternativa superior a los métodos trad
 Su implementación en entornos clínicos y experimentales representa un avance relevante para el procesamiento inteligente y diagnóstico asistido en ingeniería biomédica.  
 
 ## 9. Bibliografía  
-[1] https://www.sciencedirect.com/science/article/abs/pii/S0957417410012881
+[1]  A. Subasi, “Application of Adaptive Neuro-Fuzzy Inference System for EEG Signal Classification Using Wavelet Feature Extraction,” *Expert Systems with Applications*, vol. 37, no. 12, pp. 8745–8752, 2010.  
 
-[2] https://books.google.com.pe/books?hl=es&lr=&id=SuIlBQAAQBAJ&oi=fnd&pg=PR13&dq=wavelets+basics&ots=xRC1nChqym&sig=RuK8E3d9M3jrKAU-2qtVRHpSjeo#v=onepage&q=wavelets%20basics&f=false
+[2]  S. Mallat, *A Wavelet Tour of Signal Processing: The Sparse Way*, 3rd ed. Burlington, MA: Academic Press, 2008.  
+Disponible en: [https://books.google.com.pe/books?id=SuIlBQAAQBAJ](https://books.google.com.pe/books?id=SuIlBQAAQBAJ)
 
-[3]https://doi.org/10.1016/j.procs.2018.05.054
+[3]  M. Elsayed and A. Gad, “Wavelet-Based Analysis of Biomedical Signals,” *Procedia Computer Science*, vol. 131, pp. 894–901, 2018.  
+DOI: [https://doi.org/10.1016/j.procs.2018.05.054](https://doi.org/10.1016/j.procs.2018.05.054)
 
 [4] S. Mallat, *A Wavelet Tour of Signal Processing: The Sparse Way*, 3rd ed. Burlington, MA: Academic Press, 2008.  
 
