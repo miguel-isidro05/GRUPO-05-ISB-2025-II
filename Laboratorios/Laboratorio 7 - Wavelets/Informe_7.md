@@ -63,9 +63,10 @@ A diferencia del análisis espectral clásico, la WT utiliza funciones denominad
 
 Matemáticamente, la **Transformada Wavelet Continua (CWT)** de una señal \( x(t) \) se define como:  
 
-\[
-W(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} x(t) \psi^*\left( \frac{t-b}{a} \right) dt
-\]
+$$
+W(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} x(t)\,\psi^*\left( \frac{t-b}{a} \right)\,dt
+$$
+
 
 ### 2.2 Aplicaciones en Señales Biomédicas  
 
