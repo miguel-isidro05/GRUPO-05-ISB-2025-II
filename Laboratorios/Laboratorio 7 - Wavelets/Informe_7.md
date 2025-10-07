@@ -134,6 +134,21 @@ Aplicar la Transformada Wavelet en el procesamiento de bioseñales (ECG, EMG y E
 | Verificación y discusión | Comparar señal original vs. filtrada; analizar eliminación de ruido y preservación de características. | Gráficas comparativas y métricas de calidad. |
 
 ## 6. Resultados  
+La **familia de wavelets Daubechies (dbN)**, propuesta por Ingrid Daubechies, es una de las más utilizadas en el análisis de señales ECG debido a las siguientes razones:  
+
+- **Similitud morfológica con el complejo QRS:**  
+  Las funciones wavelet *Daubechies* poseen una forma asimétrica y una respuesta impulsiva corta, muy parecida a la morfología del complejo QRS del ECG. Esto permite que las descomposiciones capten con precisión los picos R y las variaciones rápidas.  
+
+- **Buena localización en tiempo y frecuencia:**  
+  Las wavelets *Daubechies* ofrecen un equilibrio óptimo entre resolución temporal y espectral, lo que permite detectar eventos transitorios (picos o artefactos) sin perder información de fondo.  
+
+- **Ortogonalidad y eficiencia computacional:**  
+  Al ser ortogonales, las *dbN* permiten reconstruir la señal sin redundancia y con bajo costo computacional, cualidad esencial para aplicaciones en tiempo real o sistemas embebidos.  
+
+- **Desempeño probado en filtrado y detección de picos:**  
+  Estudios clásicos demuestran que wavelets como *db4* o *db6* logran eliminar el ruido de línea base y resaltar el complejo QRS con alta precisión, lo cual las convierte en un estándar en el análisis ECG.  
+
+En consecuencia, en este laboratorio se selecciona la **wavelet madre Daubechies de orden 4 (db4)** por su comprobada eficacia en la detección de picos R y su capacidad para mantener la morfología característica de la señal cardiaca.  
 
 ### 6.1 Señal ECG
 
