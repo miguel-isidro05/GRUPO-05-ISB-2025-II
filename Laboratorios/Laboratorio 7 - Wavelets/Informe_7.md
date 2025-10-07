@@ -353,12 +353,25 @@ Umbral Universal calculado: 9.2863
 |Estado basal |<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/3606ff2f-6990-459c-a5d8-b234d741c459" />|<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/e7617eb4-6b9a-4f52-b3b4-ec728f9a6bef" />|
 
 ## 7. Discusión  
+El análisis mediante la Transformada Wavelet permitió observar diferencias notables en el comportamiento y la respuesta de cada tipo de bioseñal  tanto para ECG, EMG y EEG ,mostrando  la importancia de seleccionar adecuadamente la familia de wavelet según la naturaleza fisiológica y el objetivo de procesamiento.  
+ Primero para la señal ECG, el uso de la wavelet Daubechies de orden 4 (db4) demostró ser especialmente eficaz para detectar picos R y eliminar ruido de línea base, debido a su similitud morfológica con el complejo QRS y su buena localización temporal .De esta manera ,permite  preservar la morfología del ciclo cardíaco y mejorar la visualización de los intervalos P-QRS-T sin introducir distorsión.  
 
-### 7.1 Comparación de Resultados entre Señales  
+En la señal EMG, caracterizada por su alta variabilidad temporal y amplitud modulada, la familia Daubechies (db4–db7) mostró un excelente desempeño para separar los componentes de alta frecuencia asociados al ruido de fondo y mantener las ráfagas musculares de interés. En particular, db4 permitió un filtrado más rápido y eficiente en contracciones cortas o movimientos rápidos. Los resultados concuerdan con estudios recientes que reportan un desempeño óptimo de las wavelets Daubechies en la extracción de características del EMG superficial . 
 
-### 7.2 Ventajas y Limitaciones de la Transformada Wavelet  
+En la señal EEG, la aplicación de Daubechies 4 (db4)  permitió una descomposición multiresolución capaz de aislar las bandas delta, theta, alfa, beta y gamma, preservando tanto la información temporal como espectral. Esta wavelet facilitó la eliminación de artefactos oculares y musculares sin alterar significativamente el contenido informativo de la señal cerebral. 
+
+### 7.1 Ventajas y Limitaciones de la Transformada Wavelet  
+Destacan su capacidad de analizar simultáneamente tiempo y frecuencia, su flexibilidad multiresolución, y la posibilidad de eliminar ruido sin perder información morfológica.  
+Además, su implementación mediante DWT es eficiente y compatible con sistemas de adquisición biomédica.  
+Sin embargo, presenta limitaciones: la elección de la wavelet madre y del nivel de descomposición depende del tipo de señal y suele requerir validación empírica; asimismo, un mal umbral puede generar distorsión o pérdida de detalle.  
+Pese a ello, la Wavelet se consolida como una herramienta versátil y precisa para el procesamiento avanzado de bioseñales.  
 
 ## 8. Conclusiones  
+
+La aplicación de la Transformada Wavelet en las señales ECG, EMG y EEG evidenció su efectividad para filtrado, descomposición y análisis multiescala.  
+La familia Daubechies se confirmó como la más adecuada por su equilibrio entre resolución temporal y frecuencial, ofreciendo resultados consistentes en detección de picos, eliminación de ruido y extracción de características.  
+En síntesis, la Wavelet constituye una alternativa superior a los métodos tradicionales de filtrado, permitiendo un análisis más fiel y adaptado a la naturaleza no estacionaria de las bioseñales.  
+Su implementación en entornos clínicos y experimentales representa un avance relevante para el procesamiento inteligente y diagnóstico asistido en ingeniería biomédica.  
 
 ## 9. Bibliografía  
 [1] https://www.sciencedirect.com/science/article/abs/pii/S0957417410012881
