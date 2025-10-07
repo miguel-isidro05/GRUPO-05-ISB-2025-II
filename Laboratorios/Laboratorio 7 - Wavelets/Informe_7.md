@@ -220,13 +220,13 @@ La señal de **electromiograma (EMG / sEMG)** es inherentemente *no estacionaria
 
 La literatura reciente muestra un consenso notable: la familia **Daubechies (dbN)** es frecuentemente utilizada en el análisis de señales EMG por su efectividad y propiedades favorables. Algunos ejemplos relevantes:
 
-- En el artículo *“Surface electromyography (sEMG) feature extraction based on Daubechies wavelets”*, los autores investigan distintos niveles de reconstrucción usando wavelets Daubechies, y señalan que **db7** (Daubechies de orden 7) con detalles de nivel 1 y 2 brindó los mejores resultados para extracción de características (MAV) y separabilidad de clases. :contentReference[oaicite:1]{index=1}  
-- En *Wavelet Transform-Based Classification of Electromyogram Signals Using an ANOVA Technique*, se comparó la capacidad denoising de distintas wavelets sobre sEMG relacionados con movimientos del brazo, y se halló que **db4** produjo el mejor desempeño para remover ruido y lograr alta precisión en clasificación (≈ 88.90 %) entre movimientos del miembro superior. :contentReference[oaicite:2]{index=2}  
-- En estudios comparativos de extracción de características, Phinyomark et al. muestran que muchas investigaciones sobre EMG han concluido que la familia Daubechies es una opción estándar para análisis multiescala de sEMG, debido a su balance entre resolución temporal y frecuencia. :contentReference[oaicite:3]{index=3}  
+- En el artículo *“Surface electromyography (sEMG) feature extraction based on Daubechies wavelets”*, los autores investigan distintos niveles de reconstrucción usando wavelets Daubechies, y señalan que **db7** (Daubechies de orden 7) con detalles de nivel 1 y 2 brindó los mejores resultados para extracción de características (MAV) y separabilidad de clases.[13]
+- En *Wavelet Transform-Based Classification of Electromyogram Signals Using an ANOVA Technique*, se comparó la capacidad denoising de distintas wavelets sobre sEMG relacionados con movimientos del brazo, y se halló que **db4** produjo el mejor desempeño para remover ruido y lograr alta precisión en clasificación (≈ 88.90 %) entre movimientos del miembro superior.[14]
+- En estudios comparativos de extracción de características, Phinyomark et al. muestran que muchas investigaciones sobre EMG han concluido que la familia Daubechies es una opción estándar para análisis multiescala de sEMG, debido a su balance entre resolución temporal y frecuencia. 
 
 ###  Justificación técnica del uso de Daubechies
 
-Las razones técnicas que explican por qué Daubechies es tan usada en EMG son:
+Las razones técnicas que explican por qué Daubechies es tan usada en EMG son: [15]
 
 1. **Ortogonalidad y reconstrucción sin redundancia**  
    Las wavelets Daubechies son ortogonales, lo que permite reconstruir la señal original sin pérdida de información entre sub-bandas.
@@ -303,3 +303,9 @@ Umbral Universal calculado: 4.9120
 [11]C. Li, C. Zheng, and C. Tai, “Detection of ECG characteristic points using wavelet transforms,” *IEEE Transactions on Biomedical Engineering*, vol. 42, no. 1, pp. 21–28
 
 [12] P. S. Addison, *The Illustrated Wavelet Transform Handbook*, 2nd ed. Boca Raton, FL: CRC Press, 2017.  
+
+[13] A. Achmamad y A. Jbari, “A comparative study of wavelet families for electromyography signal classification based on discrete wavelet transform,” *Bulletin of Electrical Engineering and Informatics*, vol. 9, no. 4, pp. 1420–1429, 2020.  
+
+[14] T. C. Datta et al., “Advancing Electromyography Signal Analysis: Wavelet filtering performance (db4 & sym5),” *Proc. IEEE/ACM*, 2025.  
+
+[15] N. Daniel y J. Małachowski, “Wavelet analysis of the EMG signal to assess muscle fatigue in the lower extremities during symmetric movement on a rowing ergometer,” *Acta of Bioengineering and Biomechanics*, vol. 25, no. 2, pp. –, 2023.  
