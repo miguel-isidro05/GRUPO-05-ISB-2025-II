@@ -80,6 +80,7 @@ Esta propiedad es útil para la **eliminación de ruido**, **detección de event
 
 ### 2.2 Aplicaciones en Señales Biomédicas  
 En el campo biomédico, las señales fisiológicas suelen ser **no estacionarias** y de naturaleza compleja, por lo que la Transformada Wavelet se ha convertido en una herramienta esencial para su análisis. [7]
+
 Algunas aplicaciones destacadas incluyen:  
 
 - **Electrocardiograma (ECG):** la WT se utiliza para **detectar picos R**, **eliminar artefactos de ruido muscular y de línea base**, y **segmentar los intervalos P-QRS-T**.  
@@ -208,7 +209,7 @@ Umbral Universal calculado: 5.1238
 
 | Señal           | Original | Filtrada nivel optimo |
 |--------------------|----------|-------------|
-|Posterior a actividad aerobica|<img width="1041" height="391" alt="image" src="https://github.com/user-attachments/assets/351f0485-cb65-4c71-9051-281c25cf644f" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/a2a60d3d-9168-4bfe-91f7-b6eff791dac5" />|
+|Posterior a actividad aerobica|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/6fd95d82-f738-407e-9ad3-05ea64983dd6" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/f2371720-9a18-42b2-b817-8d05f42fca44" />|
 
 ### 6.2 Señal EMG  
 
