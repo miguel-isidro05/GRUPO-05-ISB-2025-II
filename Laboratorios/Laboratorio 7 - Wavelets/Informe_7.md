@@ -191,7 +191,7 @@ Umbral Universal calculado: 5.3815
 
 | Señal           | Original | Filtrada nivel optimo |
 |--------------------|----------|-------------|
-|Apnea 10 segundos|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/dff445e4-0c70-4536-b9c3-8ffe55912343" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/b810d0e6-67a2-48ce-9285-da54ccea29ca" />|
+|Apnea 10 segundos|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/dff445e4-0c70-4536-b9c3-8ffe55912343" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/629dcab2-4ab6-4ae5-be2c-802c541fdf0e" />|
 
 #### 6.1.3 Posterior a actividad aerobica
 
