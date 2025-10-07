@@ -291,12 +291,52 @@ Umbral Universal calculado: 86.3788
 |--------------------|----------|-------------|
 |Aplicando Fuerza |<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/cde46359-27ac-4470-9f93-2348937b694a" />|<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/35d4c554-48ea-4960-99a2-e53899a00966" />|
 
-
 ### 6.3 Señal EEG  
+Varios trabajos contemporáneos han explorado diferentes familias de wavelets para EEG, y algunos sugieren que las wavelets **ortogonales** (como Daubechies, Symlet) o variantes adaptables (como wavelets ajustables, “tunable”) tienen buen desempeño:
+
+- Qi et al. investigaron señales de *motor imagery* usando descomposición wavelet ortogonal para EEG, mostrando que una wavelet bien elegida permite separar bandas útiles sin mezclarlas. 
+- En el contexto de reconocimiento emocional a partir de EEG, Subasi propuso una wavelet “tunable Q-wavelet” que adapta su factor Q (resolución tiempo/frecuencia) para mejorar la clasificación.
+- En trabajos de denoising de EEG y comparación de técnicas DWT, WPT y wavelet estacionaria, se observa que wavelets ortogonales clásicas como Daubechies son una elección común inicial para comparación.
+- En “Wavelet transforms for feature engineering in EEG data” (2023), los autores destacan que aunque se están explorando técnicas nuevas como la transformada de scattering wavelet (WST), muchas investigaciones aún usan wavelets ortogonales clásicas como base para extraer coeficientes en EEG.
+- En un artículo más reciente, Rabiee et al. (2024) aplican análisis wavelet para discriminar tipos de agarres usando EEG, generando mapas tiempo-frecuencia a partir de coeficientes de wavelet. No indican explícitamente una madre fija, pero su enfoque confirma que el análisis wavelet sigue vigente en EEG moderno. 
+
+Basado en la literatura, una elección sólida para EEG es la wavelet **Daubechies de orden 4 (db4)**, o en ciertos casos **Symlet 4 (sym4)**, por las siguientes razones:
+
+1. **Buen equilibrio temporal-frecuencia**: db4 tiene suficiente resolución temporal para captar transitorios rápidos, pero también mantiene información de bandas medias y bajas.  
+2. **Ortogonalidad y reconstrucción sin superposición**: permite reconstruir la señal con precisión después del filtrado o eliminación de artefactos.  
+3. **Uso extendido en EEG clásico**: muchas investigaciones de EEG modernas adoptan Daubechies como punto de partida para comparaciones.  
+4. **Comparabilidad con estudios previos**: usar db4 facilita comparar tus resultados con trabajos anteriores porque es una referencia común.  
+5. **Compatibilidad con algoritmos de eliminación de artefactos**: en métodos híbridos que combinan wavelet + umbral o wavelet adaptativo, db4 funciona bien como base inicial.  
+
+Por estas razones, para tu análisis EEG puedes justificar la selección de **Daubechies 4 (db4)** como wavelet madre para el preprocesamiento (filtrado, eliminación de artefactos) y extracción de características.
 
 #### 6.3.1 Estado basal
+**Descomposición y coeficientes de detalle:**  
+Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel:10
+
+```python
+Umbral Universal calculado: 10.2978
+```
+<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/865cde7e-abc2-474d-bd78-e5ca363d9c10" />
+
+**Filtrado y selección de nivel óptimo:**  
+| Señal           | Original | Filtrada nivel optimo |
+|--------------------|----------|-------------|
+|Estado basal |<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/917fe4f9-3b7e-47aa-8991-75417417d7eb" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/602cc407-ff4b-4e8f-99f9-d2c5a711c868" />|
 
 #### 6.3.2 Mirada fija
+**Descomposición y coeficientes de detalle:**  
+Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel:7
+
+```python
+Umbral Universal calculado: 7.7119
+```
+<img width="1190" height="989" alt="image" src="https://github.com/user-attachments/assets/184d9331-b0a7-4481-961b-749290ce5493" />
+
+**Filtrado y selección de nivel óptimo:**  
+| Señal           | Original | Filtrada nivel optimo |
+|--------------------|----------|-------------|
+|Estado basal |<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/e69d7afd-7b98-4cf6-948f-025a99616911" />|<img width="1037" height="391" alt="image" src="https://github.com/user-attachments/assets/d1a75d25-8a3b-4de3-8a97-0fdcecea3e34" />|
 
 #### 6.3.3 Preguntas
 
