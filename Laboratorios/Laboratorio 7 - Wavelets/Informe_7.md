@@ -247,7 +247,6 @@ Por estas razones —combinar buen desempeño empírico con propiedades matemát
 
 #### 6.2.1 Musculo relajado
 **Descomposición y coeficientes de detalle:**  
-#### 6.2.2 Movimiento leve
 Se realizó la descomposición en 4 niveles acorde al umbral, obteniendo los coeficientes de detalle para cada nivel:
 
 ```python
@@ -260,6 +259,7 @@ Umbral Universal calculado: 4.9120
 | Señal           | Original | Filtrada nivel optimo |
 |--------------------|----------|-------------|
 |Reposo basal|<img width="1041" height="391" alt="image" src="https://github.com/user-attachments/assets/ebe6d4a3-9d5d-4b39-a318-bf86c93bee37" />|<img width="1028" height="391" alt="image" src="https://github.com/user-attachments/assets/8e2d8dd4-0648-4ab5-8a55-80ef9b9f509b" />|
+#### 6.2.2 Movimiento leve
 
 #### 6.2.3 Aplicando fuerza
 
