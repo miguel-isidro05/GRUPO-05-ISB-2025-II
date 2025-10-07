@@ -66,12 +66,13 @@ Matemáticamente, la **Transformada Wavelet Continua (CWT)** de una señal \( x(
 $$
 W(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} x(t)\,\psi^*\left( \frac{t-b}{a} \right)\,dt
 $$
-
+ 
 donde:  
-- \( a \) es el **parámetro de escala** (controla la frecuencia),  
-- \( b \) es el **parámetro de traslación** (controla la posición temporal),  
-- \( \psi(t) \) es la **wavelet madre**, y  
-- \( \psi^*(t) \) representa su conjugado complejo.  
+- $a$ es el **parámetro de escala** (controla la frecuencia),  
+- $b$ es el **parámetro de traslación** (controla la posición temporal),  
+- $\psi(t)$ es la **wavelet madre**, y  
+- $\psi^*(t)$ representa su **conjugado complejo**.  
+
 
 En la práctica, también se emplea la **Transformada Wavelet Discreta (DWT)**, que descompone la señal en distintos niveles mediante **filtros pasa bajos y pasa altos**, permitiendo representar los componentes de baja y alta frecuencia en cada escala.  
 Esta propiedad es útil para la **eliminación de ruido**, **detección de eventos** y **compresión de datos**.  
