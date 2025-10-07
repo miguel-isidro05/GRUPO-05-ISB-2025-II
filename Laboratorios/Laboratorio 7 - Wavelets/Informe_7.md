@@ -127,7 +127,8 @@ Se realizó la descomposición en 5 niveles acorde al umbral, obteniendo los coe
 Umbral Universal calculado: 5.1393
 ```
 
-//colocar imagen de coeficientes por niveles
+<img width="1189" height="989" alt="image" src="https://github.com/user-attachments/assets/be363501-006e-44e1-aff2-2844841396f5" />
+
 
 **Filtrado y selección de nivel óptimo:**  
 
