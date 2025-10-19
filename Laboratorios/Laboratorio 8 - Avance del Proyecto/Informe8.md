@@ -1,34 +1,16 @@
-# LABORATORIO 8: Segundo Avance del Proyecto 
+# LABORATORIO 8: Avance del Proyecto (Analisis exploratorio de datos)
 
 ## Tabla de Contenidos  
  
 1. [Introducción](#1-introducción)  
-2. [Marco Teórico](#2-marco-teórico)  
-   - [2.1 Fundamentos de la Transformada Wavelet](#21-fundamentos-de-la-transformada-wavelet)  
-   - [2.2 Aplicaciones en Señales Biomédicas](#22-aplicaciones-en-señales-biomédicas)  
-3. [Objetivos](#3-objetivos)  
-   - [3.1 Objetivo General](#31-objetivo-general)  
-   - [3.2 Objetivos Específicos](#32-objetivos-específicos)  
-4. [Materiales y Equipos](#4-materiales-y-equipos)  
-5. [Metodología](#5-metodología)  
-6. [Resultados](#6-resultados)  
-   - [6.1 Señal ECG](#61-señal-signal)  
-     - [6.1.1 Reposo basal](#611-reposo-basal)  
-     - [6.1.2 Apnea 10 segundos](#612-apnea-10-segundos)  
-     - [6.1.3 Posterior a actividad aeróbica](#613-posterior-a-actividad-aeróbica)  
-   - [6.2 Señal EMG](#62-señal-emg)  
-     - [6.2.1 Músculo relajado](#621-músculo-relajado)  
-     - [6.2.2 Movimiento leve](#622-movimiento-leve)  
-     - [6.2.3 Aplicando fuerza](#623-aplicando-fuerza)  
-   - [6.3 Señal EEG](#63-señal-eeg)  
-     - [6.3.1 Estado basal](#631-estado-basal)  
-     - [6.3.2 Mirada fija](#632-mirada-fija)  
-     - [6.3.3 Preguntas](#633-preguntas)  
-7. [Discusión](#7-discusión)  
-   - [7.1 Comparación de Resultados entre Señales](#71-comparación-de-resultados-entre-señales)  
-   - [7.2 Ventajas y Limitaciones de la Transformada Wavelet](#72-ventajas-y-limitaciones-de-la-transformada-wavelet)  
-8. [Conclusiones](#8-conclusiones)  
-9. [Bibliografía](#9-bibliografía)  
+2. [Planteamiento del Problema](#2-marco-teórico)  
+3. [Propuesta de Solución](#3-objetivos)  
+4. [Análisis Exploratorio de Datos (EDA)](#4-materiales-y-equipos)
+   - [4.1. Database Competition IV 2a](#71-comparación-de-resultados-entre-señales)  
+   - [4.2. Database Competition IV 2b](#72-ventajas-y-limitaciones-de-la-transformada-wavelet)  
+5. [Proximos pasos y roles definidos](#5-metodología)  
+6. [Material del entregable](#6-resultados)  
+7. [Bibliografía](#9-bibliografía)  
 
 ---
 
