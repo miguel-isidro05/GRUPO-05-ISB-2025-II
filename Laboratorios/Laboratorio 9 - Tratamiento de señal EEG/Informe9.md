@@ -40,6 +40,14 @@ Existen diversas técnicas que permiten discriminar las componentes independient
 
 
 
+<img width="681" height="589" alt="image" src="https://github.com/user-attachments/assets/a83e8f2a-7439-4571-bf48-24a2d59b482a" />
+<img width="681" height="589" alt="image" src="https://github.com/user-attachments/assets/1c0e8349-2918-4fb7-8828-12f7742c13de" />
+<img width="681" height="589" alt="image" src="https://github.com/user-attachments/assets/caca9f16-3166-45a4-af1f-2c2ae9d5fb39" />
+<img width="681" height="589" alt="image" src="https://github.com/user-attachments/assets/3e8e6f63-d24c-433c-ae81-2df2e81cab73" />
+<img width="681" height="589" alt="image" src="https://github.com/user-attachments/assets/6477bdc5-a7a5-4d8c-ba1a-a90537d9b14d" />
+<img width="681" height="589" alt="image" src="https://github.com/user-attachments/assets/10e42ab6-179a-43ca-bf79-edcdc86bafd0" />
+<img width="681" height="589" alt="image" src="https://github.com/user-attachments/assets/bab72eef-d2c5-4dd1-a4ee-0404cd5ad2e6" />
+
 
 
 
