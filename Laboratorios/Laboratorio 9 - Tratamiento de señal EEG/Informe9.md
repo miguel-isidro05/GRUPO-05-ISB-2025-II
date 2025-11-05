@@ -35,6 +35,11 @@ En el presente análisis se empleó la técnica de Análisis de Componentes Inde
 Existen diversas técnicas que permiten discriminar las componentes independientes obtenidas mediante Análisis de Componentes Independientes (ICA), con el fin de diferenciar las fuentes neuronales de los artefactos fisiológicos o eléctricos presentes en la señal EEG. En general, estas técnicas se basan en el análisis de tres tipos de información: topografía espacial, características temporales y contenido espectral de cada componente. Además de estas técnicas visuales, existen métodos automáticos de clasificación, como ADJUST, FASTER o ICLabel, que emplean medidas estadísticas y aprendizaje automático para estimar la probabilidad de que cada componente pertenezca a una categoría específica (neuronal, ocular, muscular, cardíaca o ruido).
 
 
+# Ploteo general del ICA
+<img width="770" height="793" alt="image" src="https://github.com/user-attachments/assets/6a941e5d-c244-47d2-b696-92abf884433a" />
+
+
+
 
 
 
