@@ -20,14 +20,20 @@ Se cargan los datos crudos de EEG registrados con OpenBCI y se seleccionan únic
 
 ### Plot para comparar la actividad eléctrica cerebral registrada en distintos momentos de tu señal EEG.
 
-Basicamente, se guardan segmentos en un diccionario y se visualizan como se organiza los canales en su posición real sobre el cuero cabelludo,  mostrando cómo difiere la distribución espacial y temporal de la actividad entre los dos intervalos.
+Aqui se puede visualizar cómo varía la actividad cerebral en ese intervalo mediante tres tipos de gráficos: las señales promedio por canal, los mapas topográficos del potencial en distintos momentos y un gráfico conjunto que muestra simultáneamente la evolución temporal y espacial de la señal.
 
 <img width="651" height="311" alt="image" src="https://github.com/user-attachments/assets/89e7b842-2db2-4688-93b3-072795863937" />
+<img width="810" height="431" alt="image" src="https://github.com/user-attachments/assets/80ce43ff-f547-4524-8c9a-65707caffc24" />
+
+Asimismo, se guardan segmentos en un diccionario y se visualizan como se organiza los canales en su posición real sobre el cuero cabelludo,  mostrando cómo difiere la distribución espacial y temporal de la actividad entre los dos intervalos.
+
+<img width="1586" height="1375" alt="image" src="https://github.com/user-attachments/assets/7bb46117-73d1-46b9-9411-1a38301f1de4" />
 
 ## 2. Procesamiento con ICA
 El Análisis de Componentes Independientes (ICA) es un algoritmo de extracción de características que identifica componentes estadísticamente independientes en un conjunto de datos, reduciendo las dependencias de segundo y tercer orden. En el caso de la señal EEG, el ICA permite identificar y eliminar artefactos sin perder las señales neuronales relevantes.
 En el presente análisis se empleó la técnica de Análisis de Componentes Independientes (ICA) con el objetivo de separar las fuentes neuronales de los artefactos fisiológicos y eléctricos presentes en la señal EEG. La señal fue adquirida por medio de 8 canales a una frecuencia de muestreo de 250 Hz. En este caso, se extrajeron 7 componentes independientes. Esto se debe a que cada canal representa una mezcla de las mismas fuentes, y el modelo ICA clásico asume que el número de fuentes no puede ser mayor que el número de sensores.Esta elección sigue las recomendaciones de la literatura, donde se establece que el número de componentes extraídos debe ser igual al número de canales después del preprocesamiento (Dharmaprani et al., 2016).
 Existen diversas técnicas que permiten discriminar las componentes independientes obtenidas mediante Análisis de Componentes Independientes (ICA), con el fin de diferenciar las fuentes neuronales de los artefactos fisiológicos o eléctricos presentes en la señal EEG. En general, estas técnicas se basan en el análisis de tres tipos de información: topografía espacial, características temporales y contenido espectral de cada componente. Además de estas técnicas visuales, existen métodos automáticos de clasificación, como ADJUST, FASTER o ICLabel, que emplean medidas estadísticas y aprendizaje automático para estimar la probabilidad de que cada componente pertenezca a una categoría específica (neuronal, ocular, muscular, cardíaca o ruido).
+
 
 
 
