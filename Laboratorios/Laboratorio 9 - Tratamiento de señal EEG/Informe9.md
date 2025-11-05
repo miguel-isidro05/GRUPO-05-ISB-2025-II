@@ -49,7 +49,10 @@ Existen diversas técnicas que permiten discriminar las componentes independient
 <img width="681" height="589" alt="image" src="https://github.com/user-attachments/assets/bab72eef-d2c5-4dd1-a4ee-0404cd5ad2e6" />
 
 
-
+## Conclusiones
+- Tras aplicar el análisis de Componentes Independientes (ICA), se identificó que el cuarto componente correspondía principalmente a actividad muscular (artefacto mioeléctrico), por lo que fue eliminado para preservar la calidad y pureza de la señal EEG.
+- La eliminación de los componentes contribuye a mejorar la limpieza del registro y a asegurar que el análisis posterior del EEG se base únicamente en señales neurofisiológicas genuinas.
+- La aplicación de ICA en el análisis de EEG permitió descomponer la señal en componentes independientes, facilitando la detección y eliminación de artefactos no neuronales. Este proceso contribuyó a optimizar la calidad del registro, asegurando que el análisis posterior refleje de manera más fiel la dinámica eléctrica cerebral.
 
 
 
