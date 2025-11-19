@@ -66,7 +66,9 @@ Primero, la señal ECG pasa por un filtrado pasa banda para eliminar interferenc
 
 |ECG baseline|Peak of QRS complex (ectopic beats)|Peak of QRS complex (multifocal ectopic beat)|
 |<img width="820" height="217" alt="image" src="https://github.com/user-attachments/assets/7b117e52-034a-4751-a0d0-cc42ca439845" />|<img width="765" height="292" alt="image" src="https://github.com/user-attachments/assets/294ae98e-9529-4af7-8ce4-5d96b5a3dfe5" />|<img width="850" height="283" alt="image" src="https://github.com/user-attachments/assets/6b7f07e7-3227-463e-94da-94c3db78e7e4" />|
+
 La inclusión del mecanismo de detección del pico predominante ofrece un criterio fisiológico adicional para identificar el verdadero pico R entre varios candidatos generados durante el procesamiento. Esta mejora es importante en registros donde los latidos son irregulares o existen extrasístoles simples. Sin embargo, el trabajo también reconoce que, aunque el método es robusto ante ruido y ectopias simples, todavía presenta limitaciones ante latidos ectópicos multifocales, donde la morfología del QRS puede variar tanto que disminuye la eficacia de los umbrales adaptativos.
 El uso de la base de datos MIT-BIH, ampliamente empleada como estándar, permitió validar el método en condiciones comparables a otros algoritmos. La alta precisión obtenida (99.68%) sugiere que las modificaciones propuestas aportan beneficios significativos, aunque sería necesario evaluar el método en señales ambulatorias o de larga duración para determinar su generalización.
+
 
 
