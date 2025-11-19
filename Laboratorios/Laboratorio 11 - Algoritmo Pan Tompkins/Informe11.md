@@ -57,6 +57,63 @@ Detectar el QRS con precisión es indispensable porque afecta directamente:
 
 Por ello, Pan–Tompkins se consolidó como un **pilar metodológico** en el procesamiento digital de señales ECG.
 
+### Flujo general
+#### Filtro Paso Bajo
+El filtro paso bajo elimina el ruido de alta frecuencia (principalmente EMG y componentes rápidas), 
+preservando las características esenciales del QRS.
+
+<p align="center">
+  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/ee37e0d5-14ca-4484-ba44-461820c8866f" />
+</p>
+
+<p align="center"><em>Figura 3. Filtro Paso Bajo</em></p>
+
+
+#### Filtro Paso Alta
+El filtro paso bajo elimina el ruido de alta frecuencia (principalmente EMG y componentes rápidas), 
+preservando las características esenciales del QRS.
+
+<p align="center">
+  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/318ca12d-85ba-4ce4-8ed8-34154020f994" />
+
+</p>
+
+<p align="center"><em>Figura 3. Filtro Paso Bajo</em></p>
+
+
+#### Filtro Derivador
+La derivada resalta los cambios abruptos y pendientes pronunciadas, características típicas 
+del complejo QRS, mientras reduce el aporte de ondas P y T.
+
+<p align="center">
+  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/d5904074-2e3c-4d06-9d9a-b0369109b748" />
+</p>
+
+<p align="center"><em>Figura 4. Filtro Derivador</em></p>
+
+
+#### Cuadrado de la señal
+El operador al cuadrado amplifica los valores con alta pendiente y energía del QRS, 
+haciendo más evidente su forma y reduciendo la influencia de valores negativos.
+
+<p align="center">
+  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/b6e7934a-8082-49ab-bf14-e17615837ac3" />
+</p>
+
+<p align="center"><em>Figura 5. Filtro Cuadrado de la señal</em></p>
+
+
+#### Integración por ventana móvil
+La integración calcula energía dentro de una ventana fija, suavizando la señal 
+y resaltando la anchura característica del QRS para facilitar la detección.
+
+<p align="center">
+  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/e3406a8b-e06c-472e-8730-30aec9a5d646" />
+</p>
+
+<p align="center"><em>Figura 6. Filtro Integrador</em></p>
+
+
 
 ## 2. Estudios Realizados
 ### 2.1 "Predominant peak detection of QRS complexes" []
@@ -79,5 +136,6 @@ El uso de la base de datos MIT-BIH, ampliamente empleada como estándar, permiti
 
 
 [] A. S. Al-Ghabban, A. F. Al-Hashimi, and Z. T. Al-Dahan,“Predominant peak detection of QRS complexes,” International Journal of Medical Imaging, vol. 2, no. 6, pp. 133–137, Nov. 2014, doi: 10.11648/j.ijmi.20140206.12.
+
 
 
