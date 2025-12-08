@@ -1,4 +1,4 @@
-# **NeuroMotion XR: Sistema Interfaz Cerebro-Computador para Rehabilitación Post-ACV Basada en Imaginería Motora y Neurofeedback**
+<img width="968" height="601" alt="image" src="https://github.com/user-attachments/assets/8bbffdee-31ff-4a7e-b31b-f3497ab08e00" /># **NeuroMotion XR: Sistema Interfaz Cerebro-Computador para Rehabilitación Post-ACV Basada en Imaginería Motora y Neurofeedback**
 
 ## *Resumen*
 
@@ -261,6 +261,8 @@ EEGNet es una arquitectura de red neuronal convolucional compacta diseñada espe
 
 EEGNet implementa una arquitectura de dos bloques principales que procesan señales EEG de forma eficiente:
 
+<img width="391" height="220" alt="image" src="https://github.com/user-attachments/assets/0bcca46f-f2eb-4e80-a85c-acba854af9c7" />
+
 **Bloque 1: Filtrado Temporal y Espacial**
 
 - **Convolución Temporal**: Se aplican F1 filtros convolucionales 2D de tamaño (1, 64), donde la longitud del filtro temporal se elige como la mitad de la frecuencia de muestreo de los datos (128 Hz en este caso). Esta configuración permite capturar información de frecuencia a partir de 2 Hz y superior. Para el dataset 2b con frecuencia de muestreo de 250 Hz, se ajustó el kernel temporal a 32 muestras (equivalente a ~128 ms).
@@ -295,13 +297,73 @@ Asimismo el modelo se entrenó utilizando:
 
 Para la implementación del pipeline de clasificación en tiempo real, se utilizó OpenVIBE, una plataforma de código abierto diseñada específicamente para interfaces cerebro-computadora (BCI) y procesamiento de señales biomédicas. El flujo de trabajo implementado utiliza Common Spatial Patterns (CSP) para la extracción de características espaciales y Linear Discriminant Analysis (LDA) como clasificador.
 
-### 4.5 Evaluation
+<img width="968" height="601" alt="image" src="https://github.com/user-attachments/assets/b1d76bc9-62ac-438d-b9fc-4c963218f551" />
 
-*(Sección pendiente de desarrollo - se implementará después del modeling)*
+##### 4.4.3.1 Configuración Inicial y Adquisición de Datos
 
-### 4.6 Deployment
+Antes de realizar las grabaciones en laboratorio, se siguió un protocolo manual de configuración:
 
-*(Sección pendiente de desarrollo - se implementará al final del proyecto)*
+**Acceso al Acquisition Server**
+
+- El Acquisition Server viene incluido al instalar OpenVIBE y se abre desde el menú de inicio junto con una terminal que muestra mensajes de estado útiles (logs).
+- Es el primer paso antes de abrir el **Designer**, ya que este último recibirá los datos desde el servidor.
+- Preferiblemente se conecta OpenBCI GUI para verificar la impedancia de los electrodos y realizar configuraciones iniciales correctas antes de conectar directamente a OpenVIBE.
+
+**Escenarios de Entrenamiento**
+
+El pipeline de entrenamiento consta de cuatro escenarios principales:
+
+1. **mi-csp-0-signal-monitoring.xml**: Sirve para verificar la calidad de la señal y el correcto funcionamiento de la adquisición de datos. Una vez confirmado que todo funciona correctamente, se procede con el siguiente escenario.
+
+2. **mi-csp-1-acquisition.xml**: Adquiere datos EEG de entrenamiento cuando el usuario imagina mover la mano izquierda o derecha. Se ajusta con el **LUA stimulator** (número de ensayos, duración de cada ensayo, descansos, etc.), donde se guarda el archivo con los datos de entrenamiento.
+
+   - **Nota importante**: Si se van a modificar parámetros, se debe realizar una copia del escenario.
+   - El archivo de grabación se nombra como "motor-imagery-csp-1-acquisition-[$core{date}-$core{time}].ov".
+   - **Error común**: Se debe configurar solo con enteros dentro de los parámetros, de lo contrario el sistema se cuelga y deja de funcionar.
+   - Una vez que empieza el Graz visualization, puede parecer que el escenario nunca termina, pero está cargando inicialmente. Se debe dejar recargar un rato (asegurándose de haber configurado la adquisición de datos correctamente).
+   - El marcador indica si el proceso ya terminó o no.
+
+
+3. **mi-csp-2-train-csp.xml**: Calcula los filtros espaciales con el método Common Spatial Pattern (CSP). Toma los EEG crudos y aprende combinaciones lineales de los canales que maximizan la varianza para clase A (mano izquierda) y minimizan para clase B (mano derecha), y viceversa. Este proceso transforma los datos pero no aprende a clasificar.
+
+   - **Entrada**: Archivo previamente adquirido en el paso de adquisición de señales.
+   - **Salida**: Conjunto de filtros espaciales entrenados.
+   - **Parámetros**: Se ajustan para reducir la información por electrodos a 4 filtros espaciales.
+
+
+##### 4.4.3.2 Análisis del Escenario de Entrenamiento
+
+Durante el **entrenamiento**, se utiliza:
+
+- **Stimulus-based epoching**: 0.5 – 4 s después del estímulo.
+  - Esto define *una sola época por intento* (por ejemplo, cada ensayo de "mano izquierda" o "mano derecha").
+  - El propósito aquí es **extraer una sola característica representativa por intento**.
+
+El flujo de entrenamiento es:
+
+```text
+EEG → Stimulus-based Epoching (0.5–4s)
+     → CSP Trainer
+     → CSP Apply
+     → Feature Extraction (varianza/log-varianza)
+     → Feature Aggregator (opcional)
+     → Classifier Trainer
+```
+
+En esta fase, el sistema **aprende**:
+
+- Qué combinaciones espaciales (CSP) separan mejor las clases.
+- Qué distribución de *features* (energía, log-varianza, etc.) corresponde a cada clase.
+
+No se necesita "time-based epoching" aquí porque **ya sabemos cuándo comienza y termina cada intento**.
+
+4. **mi-csp-3-classifier-trainer.xml**: Entrena el clasificador LDA con los datos ya filtrados por CSP. Se ajusta el canal de referencia y otros parámetros según el paradigma de EEG. Aquí se genera el modelo que discrimina entre derecha e izquierda.
+
+   - Se asegura que el archivo se encuentre en el directorio donde se grabó la data.
+   - Al ejecutar el escenario, se espera a que entrene el clasificador LDA.
+   - Al finalizar correctamente, el sistema muestra un mensaje de confirmación.
+
+
 
 ## **5. Resultados**
 
@@ -495,6 +557,7 @@ Para la implementación del pipeline de clasificación en tiempo real, se utiliz
  https://www.sciencedirect.com/science/article/pii/S1474442204008952
 
 [6] A. Rafferty et al., “Recommendations for Upper Limb Motor Recovery: An Overview of the UK and European Rehabilitation after Stroke Guidelines,” Healthcare, vol. 12, no. 14, p. 1433, 2024. doi: 10.3390/healthcare12141433.
+
 
 
 
