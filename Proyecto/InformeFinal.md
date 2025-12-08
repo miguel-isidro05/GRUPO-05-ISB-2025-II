@@ -538,6 +538,11 @@ No se necesita "time-based epoching" aquí porque **ya sabemos cuándo comienza 
 
 - El protocolo sin feedback visual hace que algunos sujetos generen señales menos estables.
 
+### 5.3. Resultados EEGnet
+
+<img width="827" height="711" alt="image" src="https://github.com/user-attachments/assets/87b19236-7b45-48aa-a898-24a2eeef1882" />
+
+
 ## **6. Conclusiones**
 
 ## **7. Referencias Bibliograficas**
@@ -557,6 +562,7 @@ No se necesita "time-based epoching" aquí porque **ya sabemos cuándo comienza 
  https://www.sciencedirect.com/science/article/pii/S1474442204008952
 
 [6] A. Rafferty et al., “Recommendations for Upper Limb Motor Recovery: An Overview of the UK and European Rehabilitation after Stroke Guidelines,” Healthcare, vol. 12, no. 14, p. 1433, 2024. doi: 10.3390/healthcare12141433.
+
 
 
 
