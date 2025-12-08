@@ -24,6 +24,8 @@ En consecuencia, existe una necesidad urgente de desarrollar soluciones accesibl
 
 ## **3. Propuesta de solución**
 
+Sistema BCI (Brain–Computer Interface) basado en imaginería motora y neurofeedback, capaz de detectar en tiempo real la activación cortical asociada a intentos de movimiento del miembro superior mediante señales EEG. El sistema traducirá esta actividad neuronal en retroalimentación visual o háptica inmediata, con el propósito de estimular la neuroplasticidad, reforzar las redes motoras residuales y acelerar la recuperación funcional en personas en fase subaguda y crónica post-ACV.
+
 ## **4. Metodología (CRISP-DM)**
 
 ### 4.1 Business Understanding
@@ -545,6 +547,18 @@ No se necesita "time-based epoching" aquí porque **ya sabemos cuándo comienza 
 
 ## **6. Conclusiones**
 
+- El sistema BCI logró detectar imaginería motora con resultados coherentes en datasets clínicos y señales reales, demostrando viabilidad técnica.
+
+
+- El rendimiento dependió del número de canales: 92% (2a), 73–78% (2b) y ~68% (señal real).
+
+
+- CSP, LDA y EEGNet permitieron distinguir adecuadamente izquierda/derecha.
+
+
+- NeuroMotion XR muestra potencial real como herramienta accesible para la rehabilitación motora post-stroke.
+
+
 ## **7. Referencias Bibliograficas**
 
 
@@ -562,6 +576,7 @@ No se necesita "time-based epoching" aquí porque **ya sabemos cuándo comienza 
  https://www.sciencedirect.com/science/article/pii/S1474442204008952
 
 [6] A. Rafferty et al., “Recommendations for Upper Limb Motor Recovery: An Overview of the UK and European Rehabilitation after Stroke Guidelines,” Healthcare, vol. 12, no. 14, p. 1433, 2024. doi: 10.3390/healthcare12141433.
+
 
 
 
