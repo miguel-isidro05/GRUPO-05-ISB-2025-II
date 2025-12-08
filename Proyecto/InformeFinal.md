@@ -257,11 +257,11 @@ La salida final por cada banda de frecuencia es un vector de features que poster
   </tr>
   <tr>
     <td><b>Dataseet Competition IV 2a</b></td>
-    <td><b>91.714%</b></td>
+    <td><b>91.71%</b></td>
   </tr>
   <tr>
     <td><b>Dataseet Competition IV 2b</b></td>
-    <td><b>75.5%</b></td>
+    <td><b>75.50%</b></td>
   </tr>
   <tr>
     <td><b>Testeo técnico de Adriana</b></td>
@@ -271,6 +271,11 @@ La salida final por cada banda de frecuencia es un vector de features que poster
 
 </div>
 
+- En el Dataset 2a se observa un rendimiento altamente preciso y equilibrado, con un 92% de acierto tanto para la clase izquierda como para la derecha. Los errores son mínimos (8% en ambas clases), lo que indica que el modelo pudo distinguir con claridad los patrones SMR asociados a cada tarea de imaginería motora. Este desempeño se explica por la mayor cantidad de canales EEG (22), que ofrece mejor resolución espacial para diferenciar la actividad contralateral.
+
+- Para el Dataset 2b, el rendimiento disminuye de manera esperada debido a la reducción de canales a solo 3 bipolares (C3, Cz, C4). La clase izquierda alcanza un 78% de aciertos, mientras que la clase derecha llega al 73%. Se observa mayor confusión entre clases (23–27%), lo que refleja la menor capacidad del registro para separar las señales motoras contralaterales. Aun así, el desempeño es consistente y suficiente para validar el modelo en configuraciones simplificadas.
+
+- En la señal adquirida con OpenBCI se obtiene un rendimiento de 68.2%, con 67% de aciertos para la clase izquierda y 70% para la derecha. La confusión entre clases es mayor (30–33%), atribuida a la variabilidad natural del EEG real, la presencia de artefactos y el número limitado de canales del hardware. A pesar de ello, los resultados confirman que los patrones ERD/ERS de imaginería motora son detectables con hardware accesible, demostrando la viabilidad técnica del sistema en condiciones reales.
 
 #### 5.1.2. Matriz de confusión
 
@@ -310,6 +315,30 @@ La salida final por cada banda de frecuencia es un vector de features que poster
 </div>
 
 ### 5.2. Resultados del análisis de los dataseets (OFFLINE)
+
+#### 5.2.1. Componentes CSP 
+
+<div align="center">
+
+<table>
+  <tr>
+    <th><b>Dataset 2a</b></th>
+    <th><b>Dataset 2b</b></th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/d3dc4f81-6153-4a55-a401-aad068e820df" width="90%">
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/d7b9dd5c-f08c-48b4-84da-0e2f00d8cea9" width="90%">
+    </td>
+  </tr>
+</table>
+
+</div>
+
+#### 5.2.2. Componentes CSP 
+
 
 ### 5.3. Resultados del análisis (ONLINE)
 
@@ -384,6 +413,7 @@ La salida final por cada banda de frecuencia es un vector de features que poster
 ## **6. Conclusiones**
 
 ## **7. Referencias Bibliograficas**
+
 
 
 
