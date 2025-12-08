@@ -207,6 +207,26 @@ Se generaron múltiples visualizaciones para analizar los patrones ERD/ERS:
 
 #### 4.4.1. Algoritmo FBCSP
 
+El algoritmo FBCSP es una optimización del método Common Spatial Patterns (CSP) que incorpora un banco de filtros para capturar información discriminativa en distintas bandas de frecuencia relevantes para Motor Imagery (MI). Este enfoque mejora la robustez del modelo frente a la variabilidad espectral entre sujetos y sesiones, permitiendo una extracción de características más estable y completa.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0873a6eb-d1bb-439f-9a70-015883d5f6e9" width="70%">
+</p>
+
+##### *4.4.1.2. Filter Bank:* 
+El primer paso consiste en aplicar un conjunto de filtros pasabanda distribuidos en intervalos consecutivos dentro del rango asociado al control motor, típicamente ondas μ (8–13 Hz) y ondas β (13–30 Hz).
+Cada filtro genera una versión distinta de la misma señal EEG, preservando información específica de cada sub-banda. El objetivo es capturar patrones espectrales relevantes que no necesariamente se expresan igual en todos los sujetos o en todas las frecuencias.
+
+##### *4.4.1.2. Common Spatial Pattern (CSP):*
+Una vez filtrada la señal en cada banda, se aplica el algoritmo CSP, cuya finalidad es encontrar proyecciones espaciales óptimas que maximicen la varianza para una clase y la minimicen para la otra. Esto es especialmente útil en BCI porque la varianza del EEG en bandas específicas se correlaciona con la potencia y, por extensión, con la activación cortical.
+*Idea central:* CSP asigna mayor peso espacial a los electrodos ubicados en áreas sensoriomotoras (C3 y C4), y entre ellos selecciona aquellos con mayor capacidad discriminante para diferenciar entre ambas clases.
+
+##### *4.4.1.2. Feature Extraction:*
+De cada componente espacial generado por CSP, se calcula la varianza normalizada o la log-varianza, obteniendo características robustas que representan la potencia de las señales.
+La salida final por cada banda de frecuencia es un vector de features que posteriormente se concatenan y se alimentan a un clasificador en la siguiente etapa como lo es el LDA.
+
+*Nota:* Nosotros para el análisis OFFLINE usamos el algoritmo FBCSP entre bandas alpha y beta para maximizar el accuracy. Sin embargo, para el análisis ONLINE y entrenamiento de los modelos nos vimos obligados a usar CSP debido a la complejidad de usar FBCSP en la implementación con OPEN VIBE.
+
 #### 4.4.2. EEGNET
 
 #### 4.4.3. Openvibe
@@ -225,15 +245,139 @@ Se generaron múltiples visualizaciones para analizar los patrones ERD/ERS:
 
 #### 5.1.1. Accuracy
 
+<div align="center">
+
+<table>
+  <tr>
+    <th>Dataset</th>
+    <th>Accuracy</th>
+  </tr>
+  <tr>
+    <td><b>Dataseet Competition IV 2a</b></td>
+    <td><b>— %</b></td>
+  </tr>
+  <tr>
+    <td><b>Dataseet Competition IV 2b</b></td>
+    <td><b>— %</b></td>
+  </tr>
+  <tr>
+    <td><b>Testeo técnico de Adriana</b></td>
+    <td><b>— %</b></td>
+  </tr>
+</table>
+
+</div>
+
+
 #### 5.1.2. Matriz de confusión
+
+<div align="center">
+
+<table>
+  <tr>
+    <th>Matriz de confusión – Dataset 2a</th>
+    <th>Matriz de confusión – Dataset 2b</th>
+    <th>Matriz de confusión – Adriana</th>
+  </tr>
+  <tr>
+    <td><img width="300" src="https://github.com/user-attachments/assets/1768fd7d-c0ff-4529-b9c5-38699977734c" /></td>
+    <td><img width="300" src="https://github.com/user-attachments/assets/eb18d78d-effe-484a-b2c1-4c9c2508f737" /></td>
+    <td><img width="300" src="https://github.com/user-attachments/assets/0e69a059-cb12-4c6b-ab66-00874637d6e9" /></td>
+  </tr>
+</table>
+
+</div>
+
 
 #### 5.1.3. Curvas ROC
 
+<div align="center">
+
+<table>
+  <tr>
+    <th>ROC – Dataset 2a</th>
+    <th>ROC – Dataset 2b</th>
+  </tr>
+  <tr>
+    <td><img width="350" src="https://github.com/user-attachments/assets/158e95b8-ef1d-462e-b3f0-709c8ede50e3" /></td>
+    <td><img width="350" src="https://github.com/user-attachments/assets/b8fe63e3-b581-40f9-aa6b-e1096dc8ebb3" /></td>
+  </tr>
+</table>
+
+</div>
+
+
 #### 5.1.4. Comparación entre Dataseets Competition IV 2a y 2b
+
+<div align="center">
+
+### **Comparación final entre Dataset 2a y Dataset 2b**
+
+<table>
+  <tr>
+    <th>Característica</th>
+    <th>Dataset 2a</th>
+    <th>Dataset 2b</th>
+  </tr>
+
+  <tr>
+    <td><b>Número de sujetos</b></td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+
+  <tr>
+    <td><b>Señales por clase</b></td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+
+  <tr>
+    <td><b>Número de clases</b></td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+
+  <tr>
+    <td><b>Tiempo por ensayo</b></td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+
+  <tr>
+    <td><b>Frecuencia de muestreo</b></td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+
+  <tr>
+    <td><b>Calidad de señal</b></td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+
+  <tr>
+    <td><b>Accuracy</b></td>
+    <td><b>— %</b></td>
+    <td><b>— %</b></td>
+  </tr>
+
+  <tr>
+    <td><b>AUC promedio</b></td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+
+</table>
+
+</div>
+
+
 
 ## **6. Conclusiones**
 
 ## **7. Referencias Bibliograficas**
+
 
 
 
