@@ -254,7 +254,46 @@ La salida final por cada banda de frecuencia es un vector de features que poster
 
 #### 4.4.2. EEGNET
 
+
+EEGNet es una arquitectura de red neuronal convolucional compacta diseñada específicamente para aplicaciones de BCI basadas en EEG. Esta arquitectura fue seleccionada para el proyecto debido a sus características clave: (1) puede aplicarse a diferentes paradigmas de BCI, (2) puede entrenarse con datos limitados, y (3) produce características neurofisiológicamente interpretables. Para este proyecto, se utilizó principalmente el **BCI Competition IV Dataset 2b** para entrenar y evaluar el modelo, permitiendo comparaciones directas con otros métodos.
+
+#### 3.4.2.1 Arquitectura del Modelo
+
+EEGNet implementa una arquitectura de dos bloques principales que procesan señales EEG de forma eficiente:
+
+**Bloque 1: Filtrado Temporal y Espacial**
+
+- **Convolución Temporal**: Se aplican F1 filtros convolucionales 2D de tamaño (1, 64), donde la longitud del filtro temporal se elige como la mitad de la frecuencia de muestreo de los datos (128 Hz en este caso). Esta configuración permite capturar información de frecuencia a partir de 2 Hz y superior. Para el dataset 2b con frecuencia de muestreo de 250 Hz, se ajustó el kernel temporal a 32 muestras (equivalente a ~128 ms).
+
+- **Convolución Depthwise**: Se utiliza una convolución depthwise de tamaño (C, 1), donde C es el número de canales EEG. Esta operación aprende filtros espaciales específicos para cada filtro temporal, permitiendo la extracción eficiente de filtros espaciales específicos de frecuencia. Un parámetro de profundidad D controla el número de filtros espaciales a aprender para cada mapa de características (feature map).
+
+- **Normalización y Activación**: Se aplica Batch Normalization a lo largo de la dimensión del mapa de características, seguido de la función de activación ELU (Exponential Linear Unit).
+
+- **Regularización**: Se utiliza Dropout con probabilidad 0.5 para clasificación within-subject (para prevenir sobreajuste con tamaños de muestra pequeños) y 0.25 para clasificación cross-subject. Además, se aplica una restricción de norma máxima de 1 a los pesos de cada filtro espacial (||w||₂ < 1).
+
+- **Reducción Dimensional**: Se aplica Average Pooling de tamaño (1, 4) para reducir la frecuencia de muestreo de la señal a aproximadamente 32 Hz.
+
+**Bloque 2: Convolución Separable**
+
+- **Convolución Separable**: Consiste en una convolución depthwise de tamaño (1, 16), que representa aproximadamente 500 ms de actividad EEG a 32 Hz, seguida de F2 convoluciones pointwise de tamaño (1, 1). Esta operación separa explícitamente la relación dentro y entre mapas de características, aprendiendo primero un kernel que resume cada mapa de características individualmente, y luego combinando óptimamente las salidas.
+
+- **Reducción Dimensional**: Se aplica Average Pooling de tamaño (1, 8) para reducción adicional de dimensiones.
+
+**Bloque de Clasificación**
+
+- Las características se pasan directamente a una capa de clasificación softmax con N unidades, donde N es el número de clases (2 en este caso: mano izquierda y mano derecha). Se omite el uso de una capa densa para agregación de características previa a la capa softmax para reducir el número de parámetros libres del modelo.
+
+Asimismo el modelo se entrenó utilizando:
+
+- **Optimizador**: Adam con parámetros por defecto
+- **Función de pérdida**: Categorical Cross-Entropy
+- **Epochs**: 500 iteraciones de entrenamiento
+- **Validación**: Se implementó early stopping, guardando los pesos del modelo que produjeron la menor pérdida en el conjunto de validación
+- **Dataset principal**: BCI Competition IV Dataset 2b (2 clases: mano izquierda y mano derecha)
+  
 #### 4.4.3. Openvibe
+
+Para la implementación del pipeline de clasificación en tiempo real, se utilizó OpenVIBE, una plataforma de código abierto diseñada específicamente para interfaces cerebro-computadora (BCI) y procesamiento de señales biomédicas. El flujo de trabajo implementado utiliza Common Spatial Patterns (CSP) para la extracción de características espaciales y Linear Discriminant Analysis (LDA) como clasificador.
 
 ### 4.5 Evaluation
 
@@ -456,6 +495,7 @@ La salida final por cada banda de frecuencia es un vector de features que poster
  https://www.sciencedirect.com/science/article/pii/S1474442204008952
 
 [6] A. Rafferty et al., “Recommendations for Upper Limb Motor Recovery: An Overview of the UK and European Rehabilitation after Stroke Guidelines,” Healthcare, vol. 12, no. 14, p. 1433, 2024. doi: 10.3390/healthcare12141433.
+
 
 
 
