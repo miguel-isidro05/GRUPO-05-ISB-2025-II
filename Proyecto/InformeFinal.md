@@ -2,11 +2,25 @@
 
 ## *Resumen*
 
+Este estudio presenta NeuroMotion XR, un sistema BCI para rehabilitación motora post-stroke basado en la detección de imaginería motora mediante EEG y neurofeedback. Se analizaron datos de los datasets BCI Competition IV 2a y 2b, así como registros propios obtenidos con OpenBCI. El procesamiento incluyó filtrado, extracción de características con CSP y clasificación mediante LDA y EEGNet. Los modelos alcanzaron precisiones de 92% (2a), 73–78% (2b) y ~68% con señales reales, demostrando la viabilidad del enfoque y su potencial como herramienta complementaria de bajo costo en rehabilitación motora.
+
+
 ## *Palabras clave*
 
 ## **1. Introducción**
 
+El Accidente Cerebrovascular (ACV) es un trastorno neurológico caracterizado por la interrupción súbita del flujo sanguíneo cerebral, ya sea por obstrucción de una arteria (ACV isquémico) o por ruptura de un vaso sanguíneo (ACV hemorrágico). Esta interrupción impide que las neuronas reciban oxígeno y nutrientes, lo que provoca daño cerebral focal o global y puede generar secuelas motoras, cognitivas, sensoriales o del lenguaje según la región afectada [1].
+Constituye la segunda causa de muerte y de las principales causas de discapacidad en adultos a nivel mundial, generando secuelas que impactan profundamente en la calidad de vida de los pacientes [2]. 
+Tras la fase aguda inicial, la mayoría de personas transita hacia el periodo post-stroke, que comprende desde las primeras semanas hasta varios años después del evento. Este periodo se subdivide usualmente en una fase subaguda, que abarca aproximadamente desde la primera semana hasta los 3–6 meses posteriores al ACV, y una fase crónica, que comienza alrededor de los 6 meses y puede prolongarse indefinidamente [3].
+Durante la fase subaguda, el sistema nervioso central atraviesa un “período sensible” caracterizado por una intensa plasticidad neuronal, reflejada en procesos como el crecimiento dendrítico, la formación de nuevas sinapsis y la reorganización cortical. Estos mecanismos facilitan una recuperación funcional activa y representan una ventana terapéutica crítica [4]. En contraste, la fase crónica se caracteriza por una estabilización del daño neurológico: aunque la plasticidad persiste, la recuperación espontánea disminuye y las secuelas tienden a consolidarse, lo que hace necesario implementar intervenciones sostenidas enfocadas en el mantenimiento funcional, la compensación y la rehabilitación a largo plazo [5].
+
+
 ## **2. Planteamiento del problema**
+
+Una de las secuelas más persistentes y limitantes del ACV es el deterioro motor del miembro superior, presente en aproximadamente el 60–80% de los sobrevivientes, incluso meses después del evento [6]. Aunque la mayor capacidad de recuperación ocurre en la etapa subaguda (7 días a 6 meses), muchos pacientes no acceden a rehabilitación intensiva en este periodo crítico. Como resultado, ingresan a la etapa crónica con déficits estables y difícilmente reversibles, afectando su independencia funcional y calidad de vida.
+En Perú, esta situación se agudiza por la limitada disponibilidad de servicios de rehabilitación especializados, listas de espera prolongadas y escasa implementación de tecnologías terapéuticas avanzadas. La mayoría de establecimientos públicos prioriza terapias convencionales con tiempos de sesión reducidos debido a la alta demanda, lo que impide alcanzar la intensidad y repetitividad necesarias para generar cambios neuroplásticos significativos. Esta brecha asistencial deja a un amplio número de pacientes con secuelas persistentes del miembro superior post-stroke, dificultando actividades básicas como alimentarse, vestirse o manipular objetos, y restringiendo su reintegración laboral.
+En consecuencia, existe una necesidad urgente de desarrollar soluciones accesibles, eficaces y contextualizadas al sistema de salud peruano, que permitan mejorar la función del miembro superior tanto en etapa subaguda como crónica, reduciendo la carga social, económica y asistencial asociada al ACV en el país.
+
 
 ## **3. Propuesta de solución**
 
@@ -14,7 +28,15 @@
 
 ### 4.1 Business Understanding
 
-*(Sección pendiente de desarrollo)*
+El proyecto está dirigido a pacientes post-ACV con déficit motor en el miembro superior, una población altamente afectada por secuelas persistentes. El ACV representa la segunda causa de muerte y la tercera causa de discapacidad, por lo que su impacto clínico, funcional y socioeconómico es significativo.
+Resolver este problema es importante porque las terapias convencionales muestran baja adherencia y una estimulación limitada de la neuroplasticidad, lo que dificulta una recuperación adecuada. La solución propuesta —un sistema BCI basado en imaginería motora y neurofeedback— aporta valor al potenciar la reorganización cortical, mejorar la participación del paciente y complementar la rehabilitación tradicional mediante retroalimentación en tiempo real.
+El éxito se evaluará a través de:
+- Precisión ≥ 80% en la clasificación de señales de imaginería motora,
+
+- Consistencia neurofisiológica entre datasets clínicos y señales reales,
+
+- La viabilidad técnica del sistema como herramienta accesible y complementaria en la rehabilitación post-ACV.
+
 
 ### 4.2 Data Understanding
 
@@ -271,12 +293,6 @@ La salida final por cada banda de frecuencia es un vector de features que poster
 
 </div>
 
-- En el Dataset 2a se observa un rendimiento altamente preciso y equilibrado, con un 92% de acierto tanto para la clase izquierda como para la derecha. Los errores son mínimos (8% en ambas clases), lo que indica que el modelo pudo distinguir con claridad los patrones SMR asociados a cada tarea de imaginería motora. Este desempeño se explica por la mayor cantidad de canales EEG (22), que ofrece mejor resolución espacial para diferenciar la actividad contralateral.
-
-- Para el Dataset 2b, el rendimiento disminuye de manera esperada debido a la reducción de canales a solo 3 bipolares (C3, Cz, C4). La clase izquierda alcanza un 78% de aciertos, mientras que la clase derecha llega al 73%. Se observa mayor confusión entre clases (23–27%), lo que refleja la menor capacidad del registro para separar las señales motoras contralaterales. Aun así, el desempeño es consistente y suficiente para validar el modelo en configuraciones simplificadas.
-
-- En la señal adquirida con OpenBCI se obtiene un rendimiento de 68.2%, con 67% de aciertos para la clase izquierda y 70% para la derecha. La confusión entre clases es mayor (30–33%), atribuida a la variabilidad natural del EEG real, la presencia de artefactos y el número limitado de canales del hardware. A pesar de ello, los resultados confirman que los patrones ERD/ERS de imaginería motora son detectables con hardware accesible, demostrando la viabilidad técnica del sistema en condiciones reales.
-
 #### 5.1.2. Matriz de confusión
 
 <div align="center">
@@ -314,6 +330,60 @@ La salida final por cada banda de frecuencia es un vector de features que poster
 
 </div>
 
+#### 5.1.4. Comparación entre métricas
+
+<div align="center">
+
+<table>
+  <tr>
+    <th><b>Fuente de datos</b></th>
+    <th><b>Acierto clase izquierda</b></th>
+    <th><b>Acierto clase derecha</b></th>
+    <th><b>Error / Confusión</b></th>
+    <th><b>Observaciones</b></th>
+  </tr>
+
+  <tr>
+    <td><b>Dataset 2a</b></td>
+    <td>92%</td>
+    <td>92%</td>
+    <td>8% – 8%</td>
+    <td>
+      Alto rendimiento y excelente separabilidad.<br>
+      Beneficia la mayor cantidad de electrodos (22 canales).<br>
+      Patrones SMR bien definidos.
+    </td>
+  </tr>
+
+  <tr>
+    <td><b>Dataset 2b</b></td>
+    <td>78%</td>
+    <td>73%</td>
+    <td>23% – 27%</td>
+    <td>
+      Disminución esperada por uso de solo 3 canales (C3, Cz, C4).<br>
+      Mayor confusión entre clases.<br>
+      Aun así, desempeño estable.
+    </td>
+  </tr>
+
+  <tr>
+    <td><b>OpenBCI (Testeo real)</b></td>
+    <td>67%</td>
+    <td>70%</td>
+    <td>30% – 33%</td>
+    <td>
+      Variabilidad real del EEG y artefactos incrementan la confusión.<br>
+      Número de canales limitado.<br>
+      Confirma viabilidad técnica del sistema en condiciones reales.
+    </td>
+  </tr>
+
+</table>
+
+</div>
+
+
 ### 5.2. Resultados del análisis de los dataseets (OFFLINE)
 
 #### 5.2.1. Componentes CSP 
@@ -337,83 +407,55 @@ La salida final por cada banda de frecuencia es un vector de features que poster
 
 </div>
 
-#### 5.2.2. Componentes CSP 
+- En el Dataset 2a se observan patrones CSP bien diferenciados entre clases. Los mapas muestran activación distribuida principalmente sobre regiones sensorimotoras (C3 y C4), con contrastes claros entre hemisferios. Los componentes CSP0 y CSP3 resaltan la actividad contralateral, exhibiendo valores más altos sobre un hemisferio específico según la clase de MI (izquierda o derecha). Esta topografía compleja y rica se debe al mayor número de canales (22 EEG), lo que permite al algoritmo capturar con mayor precisión los cambios ERD/ERS asociados a cada movimiento imaginado.
 
+- En el Dataset 2b, los patrones CSP son más simétricos y muestran una separación más limitada entre hemisferios. Los mapas CSP0 y CSP1 exhiben contrastes amplios pero con menor detalle espacial, debido a que el dataset solo dispone de 3 canales bipolares (C3, Cz, C4). Esto restringe la capacidad del algoritmo para capturar variaciones locales de ERD/ERS, produciendo patrones más generalizados y menos discriminativos.
 
-### 5.3. Resultados del análisis (ONLINE)
+#### 5.2.2. Observaciones relevanmtes por dataseets
 
+##### 5.2.2.1. Dataset 2a
 
+- Presenta 22 canales EEG, lo que proporciona mayor resolución espacial y permite identificar con más claridad la actividad contralateral asociada al Motor Imagery.
 
+- Los patrones ERD/ERS en C3 y C4 son más definidos y consistentes entre sujetos, facilitando la discriminación entre mano izquierda y mano derecha.
 
-<div align="center">
+- La calidad de la señal es elevada, con menor presencia de artefactos comparado con registros de hardware de bajo costo.
 
-### **Comparación final entre Dataset 2a y Dataset 2b**
+- La mayor cantidad de ensayos por sujeto permite entrenar modelos más robustos y menos sensibles al ruido.
 
-<table>
-  <tr>
-    <th>Característica</th>
-    <th>Dataset 2a</th>
-    <th>Dataset 2b</th>
-  </tr>
+- Se observa alta separabilidad entre clases, evidenciada por los valores elevados de acierto y por la claridad de las componentes CSP filtradas.
 
-  <tr>
-    <td><b>Número de sujetos</b></td>
-    <td>—</td>
-    <td>—</td>
-  </tr>
+##### 5.2.2.2. Dataset 2b
 
-  <tr>
-    <td><b>Señales por clase</b></td>
-    <td>—</td>
-    <td>—</td>
-  </tr>
+- Utiliza solo 3 canales bipolares (C3, Cz, C4), lo cual reduce considerablemente la información espacial disponible.
 
-  <tr>
-    <td><b>Número de clases</b></td>
-    <td>—</td>
-    <td>—</td>
-  </tr>
+- La discriminación entre tareas motoras se vuelve más dependiente del sujeto, mostrando mayor variabilidad inter-sujeto.
 
-  <tr>
-    <td><b>Tiempo por ensayo</b></td>
-    <td>—</td>
-    <td>—</td>
-  </tr>
+- La definición de los patrones ERD/ERS es más tenue, especialmente en presencia de ruido muscular o mala colocación del electrodo Cz.
 
-  <tr>
-    <td><b>Frecuencia de muestreo</b></td>
-    <td>—</td>
-    <td>—</td>
-  </tr>
+- Aunque su rendimiento es menor que en 2a, mantiene consistencia funcional, demostrando que incluso configuraciones minimalistas pueden capturar información útil para BCI.
 
-  <tr>
-    <td><b>Calidad de señal</b></td>
-    <td>—</td>
-    <td>—</td>
-  </tr>
-
-  <tr>
-    <td><b>Accuracy</b></td>
-    <td><b>— %</b></td>
-    <td><b>— %</b></td>
-  </tr>
-
-  <tr>
-    <td><b>AUC promedio</b></td>
-    <td>—</td>
-    <td>—</td>
-  </tr>
-
-</table>
-
-</div>
-
-
+- El protocolo sin feedback visual hace que algunos sujetos generen señales menos estables.
 
 ## **6. Conclusiones**
 
 ## **7. Referencias Bibliograficas**
 
+
+[1] V. L. Feigin et al., “World Stroke Organization: Global Stroke Fact Sheet 2025,” Int. J. Stroke, vol. 20, no. 2, pp. 132–144, 2025. [Online]. Available: https://pmc.ncbi.nlm.nih.gov/articles/PMC11786524/
+
+[2] V. L. Feigin et al., “Global burden of stroke,” The Lancet, vol. 383, no. 9913, pp. 245–254, 2014. [Online]. Available: https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)61953-4/fulltext
+
+[3] Bernhardt, J. et al. “Agreed definitions and a shared vision for new standards in stroke recovery research.” International Journal of Stroke (2017).
+ https://journals.sagepub.com/doi/10.1177/1747493017730746
+
+[4] Cramer, S. et al. “Harnessing neuroplasticity for clinical applications.” Brain (2011).
+ https://academic.oup.com/brain/article/134/5/1591/415847
+
+[5] Kwakkel, G. et al. “Effects of intensity of rehabilitation after stroke.” Lancet Neurology (2004).
+ https://www.sciencedirect.com/science/article/pii/S1474442204008952
+
+[6] A. Rafferty et al., “Recommendations for Upper Limb Motor Recovery: An Overview of the UK and European Rehabilitation after Stroke Guidelines,” Healthcare, vol. 12, no. 14, p. 1433, 2024. doi: 10.3390/healthcare12141433.
 
 
 
