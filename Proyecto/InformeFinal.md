@@ -8,13 +8,15 @@
 
 ## **2. Planteamiento del problema**
 
-## 3. Metodología (CRISP-DM)
+## **3. Propuesta de solución**
 
-### 3.1 Business Understanding
+## **4. Metodología (CRISP-DM)**
+
+### 4.1 Business Understanding
 
 *(Sección pendiente de desarrollo)*
 
-### 3.2 Data Understanding
+### 4.2 Data Understanding
 
 Las señales empleadas en este proyecto provienen de tareas de motor imagery (MI), base de los BCI basados en Sensorimotor Rhythms (SMR). En reposo, la corteza sensoriomotora muestra actividad en dos bandas principales:
 
@@ -35,7 +37,7 @@ Estos cambios son específicos de la región cortical correspondiente (por ejemp
 Esta consistencia es fundamental para validar que Neuromotion XR pueda funcionar tanto con datos clínicos estandarizados como con señales reales capturadas con hardware accesible.
 
 
-#### 3.2.1 Fuentes de Datos
+#### 4.2.1 Fuentes de Datos
 
 Se utilizaron tres fuentes principales de datos:
 
@@ -56,9 +58,9 @@ Se utilizaron tres fuentes principales de datos:
 3. **Grabación de laboratorio**: Señal EEG adquirida en laboratorio con 8 canales genéricos, frecuencia de muestreo de 250 Hz, realizando tareas de MI con 2 clases (mano izquierda, mano derecha) mediante la placa Cyton y el Ultracortex Mark IV.
 
 
-#### 3.2.2 Exploración de Datos
+#### 4.2.2 Exploración de Datos
 
-##### 3.2.2.1 Carga y Visualización Inicial
+##### 4.2.2.1 Carga y Visualización Inicial
 
 Los datos se cargaron utilizando la biblioteca MNE-Python (`mne.io.read_raw_gdf()`), que permite leer archivos en formato GDF (General Data Format) utilizados comúnmente en BCI. Se realizó una inspección inicial de:
 
@@ -70,7 +72,7 @@ Los datos se cargaron utilizando la biblioteca MNE-Python (`mne.io.read_raw_gdf(
 |-------------------------|----------|---------------------------------|
 |<img width="1427" height="999" alt="image" src="https://github.com/user-attachments/assets/c636513b-2c74-4bfc-b469-1fdb11f586b6" />| <img width="1427" height="999" alt="image" src="https://github.com/user-attachments/assets/96596962-763f-4f27-ac2a-24757fcc1805" />| <img width="1446" height="999" alt="image" src="https://github.com/user-attachments/assets/58abb11f-b303-4bbc-b2cb-f10c56a16d38" />|
 
-##### 3.2.2.2 Análisis de Eventos y Anotaciones
+##### 4.2.2.2 Análisis de Eventos y Anotaciones
 
 Se extrajeron los eventos de las anotaciones utilizando `mne.events_from_annotations()`, identificando:
 
@@ -85,7 +87,7 @@ Ejemplo de la estructura de eventos del 2a:
 
 <img width="563" height="432" alt="image" src="https://github.com/user-attachments/assets/f975e85b-87dd-49b5-9015-8da2f830e37b" />
 
-#### 3.2.3 Verificación de Distribución de Clases
+#### 4.2.3 Verificación de Distribución de Clases
 
 Se implementó un sistema de verificación para confirmar la distribución correcta de trials por clase, asegurando que:
 
@@ -93,21 +95,21 @@ Se implementó un sistema de verificación para confirmar la distribución corre
 - La distribución de trials sea balanceada o al menos representativa.
 - Los eventos estén correctamente mapeados según la documentación de cada dataset.
 
-### 3.3 Data Preparation
+### 4.3 Data Preparation
 
 La fase de Data Preparation incluye todas las transformaciones y limpiezas necesarias para preparar los datos para el análisis y modelado posterior.
 
-#### 3.3.1 Eliminación de Canales EOG
+#### 4.3.1 Eliminación de Canales EOG
 
 Los canales EOG (Electrooculografía) capturan actividad ocular y no son relevantes para el análisis de Motor Imagery. Se eliminaron sistemáticamente todos los canales que contenían "EOG" en su nombre utilizando `raw.drop_channels()`.
 
 **Justificación**: Los canales EOG introducen artefactos relacionados con movimientos oculares y parpadeos que pueden contaminar las señales EEG de interés. Su eliminación mejora la calidad de los datos para el análisis de ritmos sensoriomotores.
 
-#### 3.3.2 Filtrado de Señales
+#### 4.3.2 Filtrado de Señales
 
 Se aplicaron dos tipos de filtros para mejorar la calidad de las señales y enfocarse en las bandas de frecuencia relevantes:
 
-##### 3.3.2.1 Filtro Pasabanda (Bandpass Filter)
+##### 4.3.2.1 Filtro Pasabanda (Bandpass Filter)
 
 - **Rango de frecuencias**: 8-30 Hz
 - **Método**: Filtro IIR (Infinite Impulse Response) tipo Butterworth de fase cero
@@ -115,7 +117,7 @@ Se aplicaron dos tipos de filtros para mejorar la calidad de las señales y enfo
   - La banda de 8-30 Hz engloba los ritmos mu (8-12 Hz) y beta (13-30 Hz), que son los ritmos sensoriomotores más relevantes para Motor Imagery
   - Elimina componentes de baja frecuencia (drift, artefactos de movimiento) y alta frecuencia (ruido electromagnético, actividad muscular)
 
-##### 3.3.2.2 Filtro Notch (Bandstop Filter)
+##### 4.3.2.2 Filtro Notch (Bandstop Filter)
 
 - **Frecuencia central**: 50 Hz
 - **Método**: Filtro FIR (Finite Impulse Response) tipo Hamming
@@ -125,7 +127,7 @@ Se aplicaron dos tipos de filtros para mejorar la calidad de las señales y enfo
 |-------------------------|----------|---------------------------------|
 |<img width="1427" height="999" alt="image" src="https://github.com/user-attachments/assets/a7b3fe89-2c4b-4007-bd12-7e4241ea1216" />| <img width="1427" height="999" alt="image" src="https://github.com/user-attachments/assets/05ae3484-b976-42a5-932a-132b1751af78" />| <img width="1446" height="999" alt="image" src="https://github.com/user-attachments/assets/d661af50-a189-4423-80f3-dca4cf9bf447" />|
 
-#### 3.3.3 Segmentación Temporal (Epoching)
+#### 4.3.3 Segmentación Temporal (Epoching)
 
 Se segmentaron las señales continuas en epochs (ventanas temporales) centradas en los eventos de Motor Imagery:
 
@@ -140,7 +142,7 @@ Se segmentaron las señales continuas en epochs (ventanas temporales) centradas 
 
 **Justificación**: La segmentación permite analizar la evolución temporal de la actividad cerebral relacionada con cada tarea de MI, facilitando la identificación de patrones ERD/ERS.
 
-#### 3.3.4 Análisis Espectral (PSD)
+#### 4.3.4 Análisis Espectral (PSD)
 
 Se realizó un análisis de densidad espectral de potencia (Power Spectral Density, PSD) utilizando el método `compute_psd()` de MNE-Python para:
 
@@ -153,11 +155,11 @@ Se realizó un análisis de densidad espectral de potencia (Power Spectral Densi
 |-------------------------|----------|---------------------------------|
 |<img width="1511" height="1011" alt="image" src="https://github.com/user-attachments/assets/a5e6a7c0-c1e2-49c6-b912-9ae294c3cfd9" />| <img width="1511" height="1011" alt="image" src="https://github.com/user-attachments/assets/a8fb836a-d2b0-4a3f-b43b-16e434007829" />| <img width="1011" height="361" alt="image" src="https://github.com/user-attachments/assets/c9a66a79-674b-46cc-b48d-69477deffb73" />|
 
-#### 3.3.5 Análisis de Representación Tiempo-Frecuencia (TFR)
+#### 4.3.5 Análisis de Representación Tiempo-Frecuencia (TFR)
 
 Se realizó un análisis de representación tiempo-frecuencia utilizando wavelets de Morlet para caracterizar los fenómenos de Event-Related Desynchronization (ERD) y Event-Related Synchronization (ERS).
 
-##### 3.3.5.1 Cálculo de TFR
+##### 4.3.5.1 Cálculo de TFR
 
 - **Método**: `compute_tfr(method='morlet')` de MNE-Python
 - **Frecuencias analizadas**: 8-30 Hz con resolución de 1 Hz
@@ -165,7 +167,7 @@ Se realizó un análisis de representación tiempo-frecuencia utilizando wavelet
 - **Decimación**: Factor de 3 para reducir la resolución temporal y el costo computacional
 - **Promediado**: Se promediaron los TFRs de todos los trials de cada clase
 
-##### 3.3.5.2 Corrección de Baseline
+##### 4.3.5.2 Corrección de Baseline
 
 Se aplicó corrección de baseline utilizando el modo log-ratio:
 
@@ -185,7 +187,7 @@ Se aplicó corrección de baseline utilizando el modo log-ratio:
 
 - **Valores positivos**: Indican ERS (aumento de potencia respecto al baseline)
 
-##### 3.3.5.3 Visualizaciones de ERD/ERS
+##### 4.3.5.3 Visualizaciones de ERD/ERS
 
 Se generaron múltiples visualizaciones para analizar los patrones ERD/ERS:
 
@@ -201,26 +203,38 @@ Se generaron múltiples visualizaciones para analizar los patrones ERD/ERS:
 3. **Visualización de diferencia**: Para el recording de Adriana, se calculó la diferencia directa (derecha - izquierda) para reducir ruido común y resaltar diferencias específicas entre condiciones
 
 
-### 3.4 Modeling
+### 4.4 Modeling
 
-*(Sección pendiente de desarrollo - se implementará en fases posteriores)*
+#### 4.4.1. Algoritmo FBCSP
 
-### 3.5 Evaluation
+#### 4.4.2. EEGNET
+
+#### 4.4.3. Openvibe
+
+### 4.5 Evaluation
 
 *(Sección pendiente de desarrollo - se implementará después del modeling)*
 
-### 3.6 Deployment
+### 4.6 Deployment
 
 *(Sección pendiente de desarrollo - se implementará al final del proyecto)*
 
-
-## **4. Propuesta de solución**
-
 ## **5. Resultados**
+
+### 5.1. Métricas de Performance
+
+#### 5.1.1. Accuracy
+
+#### 5.1.2. Matriz de confusión
+
+#### 5.1.3. Curvas ROC
+
+#### 5.1.4. Comparación entre Dataseets Competition IV 2a y 2b
 
 ## **6. Conclusiones**
 
 ## **7. Referencias Bibliograficas**
+
 
 
 
