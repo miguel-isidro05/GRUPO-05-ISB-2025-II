@@ -68,8 +68,7 @@ Los datos se cargaron utilizando la biblioteca MNE-Python (`mne.io.read_raw_gdf(
 
 | Señal original - Database 2a | Señal original - Database 2b | Señal original - Adriana|                    
 |-------------------------|----------|---------------------------------|
-|Ploteo   |<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/28d5a92b-c238-4200-9b27-3853f5fd7fa8" />|<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/651a937b-3868-49ad-a85c-bb04dbd2b22d" />|
-|  PSD |<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/c4967867-017a-4389-b0a5-371ea8b0f58b" />|<img width="704" height="463" alt="image" src="https://github.com/user-attachments/assets/78dbddfa-836b-4129-be68-74ca7bcc7258" />|
+|<img width="1427" height="999" alt="image" src="https://github.com/user-attachments/assets/c636513b-2c74-4bfc-b469-1fdb11f586b6" />| <img width="1427" height="999" alt="image" src="https://github.com/user-attachments/assets/96596962-763f-4f27-ac2a-24757fcc1805" />| <img width="1446" height="999" alt="image" src="https://github.com/user-attachments/assets/58abb11f-b303-4bbc-b2cb-f10c56a16d38" />|
 
 ##### 3.2.2.2 Análisis de Eventos y Anotaciones
 
@@ -84,8 +83,7 @@ Se extrajeron los eventos de las anotaciones utilizando `mne.events_from_annotat
 
 Ejemplo de la estructura de eventos del 2a:
 
-<img width="1189" height="990" alt="image" src="https://github.com/user-attachments/assets/28d5a92b-c238-4200-9b27-3853f5fd7fa8" />
-
+<img width="563" height="432" alt="image" src="https://github.com/user-attachments/assets/f975e85b-87dd-49b5-9015-8da2f830e37b" />
 
 #### 3.2.3 Verificación de Distribución de Clases
 
@@ -123,6 +121,10 @@ Se aplicaron dos tipos de filtros para mejorar la calidad de las señales y enfo
 - **Método**: Filtro FIR (Finite Impulse Response) tipo Hamming
 - **Justificación**: Elimina el ruido de la línea eléctrica, que es una fuente común de contaminación en señales EEG
 
+| Señal filtrada - Database 2a | Señal filtrada - Database 2b | Señal filtrada - Adriana|                    
+|-------------------------|----------|---------------------------------|
+|<img width="1427" height="999" alt="image" src="https://github.com/user-attachments/assets/a7b3fe89-2c4b-4007-bd12-7e4241ea1216" />| <img width="1427" height="999" alt="image" src="https://github.com/user-attachments/assets/05ae3484-b976-42a5-932a-132b1751af78" />| <img width="1446" height="999" alt="image" src="https://github.com/user-attachments/assets/d661af50-a189-4423-80f3-dca4cf9bf447" />|
+
 #### 3.3.3 Segmentación Temporal (Epoching)
 
 Se segmentaron las señales continuas en epochs (ventanas temporales) centradas en los eventos de Motor Imagery:
@@ -146,6 +148,11 @@ Se realizó un análisis de densidad espectral de potencia (Power Spectral Densi
 - **Evaluar calidad de señal**: Detectar posibles artefactos, ruido de línea eléctrica (50 Hz), y características espectrales generales.
 - **Comparar entre datasets**: Analizar diferencias espectrales entre los diferentes datasets y sujetos.
 
+
+| PSD - Database 2a | PSD - Database 2b | PSD - Adriana|                    
+|-------------------------|----------|---------------------------------|
+|<img width="1511" height="1011" alt="image" src="https://github.com/user-attachments/assets/a5e6a7c0-c1e2-49c6-b912-9ae294c3cfd9" />| <img width="1511" height="1011" alt="image" src="https://github.com/user-attachments/assets/a8fb836a-d2b0-4a3f-b43b-16e434007829" />| <img width="1011" height="361" alt="image" src="https://github.com/user-attachments/assets/c9a66a79-674b-46cc-b48d-69477deffb73" />|
+
 #### 3.3.5 Análisis de Representación Tiempo-Frecuencia (TFR)
 
 Se realizó un análisis de representación tiempo-frecuencia utilizando wavelets de Morlet para caracterizar los fenómenos de Event-Related Desynchronization (ERD) y Event-Related Synchronization (ERS).
@@ -165,6 +172,12 @@ Se aplicó corrección de baseline utilizando el modo log-ratio:
 - **Ventana de baseline**: -0.5 a 0 s (período pre-evento)
 - **Modo**: `mode='logratio'` (logaritmo de la razón entre potencia post-evento y baseline)
 - **Fórmula**: `log10(power_post / power_baseline)`
+
+
+| TFR - Database 2a | TFR - Database 2b | TFR - Adriana|                    
+|-------------------------|----------|---------------------------------|
+|<img width="1511" height="1011" alt="image" src="https://github.com/miguel-isidro05/GRUPO-05-ISB-2025-II/blob/main/Proyecto/Software/Data_analysis/tfr_C3_left_vs_right.png" />| <img width="1511" height="1011" alt="image" src="https://github.com/miguel-isidro05/GRUPO-05-ISB-2025-II/blob/main/Proyecto/Software/Data_analysis/tfr_C3_left_vs_right_2b.png"/>| <img width="1600" height="600" alt="image" src="https://github.com/user-attachments/assets/5a4d3da3-e3b9-4875-af96-e7916df6c0f0" />
+| <img width="1600" height="600" alt="image" src="https://github.com/user-attachments/assets/c0ff4a6b-fbc0-45c9-b68b-ce1c43c9d7f7" />| <img width="1600" height="600" alt="image" src="https://github.com/user-attachments/assets/4b1c2252-2f04-494e-9778-2bed83c788e5" />| <img width="1600" height="600" alt="image" src="https://github.com/user-attachments/assets/0681ed15-39a1-4880-b224-30ed6ce2c4fb" />|
 
 **Interpretación**:
 
@@ -208,6 +221,7 @@ Se generaron múltiples visualizaciones para analizar los patrones ERD/ERS:
 ## **6. Conclusiones**
 
 ## **7. Referencias Bibliograficas**
+
 
 
 
