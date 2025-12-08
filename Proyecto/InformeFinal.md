@@ -85,7 +85,10 @@ Se extrajeron los eventos de las anotaciones utilizando `mne.events_from_annotat
 
 Ejemplo de la estructura de eventos del 2a:
 
-<img width="563" height="432" alt="image" src="https://github.com/user-attachments/assets/f975e85b-87dd-49b5-9015-8da2f830e37b" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f975e85b-87dd-49b5-9015-8da2f830e37b" width="60%">
+</p>
+
 
 #### 4.2.3 Verificación de Distribución de Clases
 
@@ -254,15 +257,15 @@ La salida final por cada banda de frecuencia es un vector de features que poster
   </tr>
   <tr>
     <td><b>Dataseet Competition IV 2a</b></td>
-    <td><b>— %</b></td>
+    <td><b>91.714%</b></td>
   </tr>
   <tr>
     <td><b>Dataseet Competition IV 2b</b></td>
-    <td><b>— %</b></td>
+    <td><b>75.5%</b></td>
   </tr>
   <tr>
     <td><b>Testeo técnico de Adriana</b></td>
-    <td><b>— %</b></td>
+    <td><b>69.48%</b></td>
   </tr>
 </table>
 
@@ -306,8 +309,12 @@ La salida final por cada banda de frecuencia es un vector de features que poster
 
 </div>
 
+### 5.2. Resultados del análisis de los dataseets (OFFLINE)
 
-#### 5.1.4. Comparación entre Dataseets Competition IV 2a y 2b
+### 5.3. Resultados del análisis (ONLINE)
+
+
+
 
 <div align="center">
 
@@ -377,6 +384,7 @@ La salida final por cada banda de frecuencia es un vector de features que poster
 ## **6. Conclusiones**
 
 ## **7. Referencias Bibliograficas**
+
 
 
 
