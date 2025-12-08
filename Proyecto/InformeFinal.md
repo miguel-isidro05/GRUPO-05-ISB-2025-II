@@ -1,4 +1,4 @@
-<img width="968" height="601" alt="image" src="https://github.com/user-attachments/assets/8bbffdee-31ff-4a7e-b31b-f3497ab08e00" /># **NeuroMotion XR: Sistema Interfaz Cerebro-Computador para Rehabilitación Post-ACV Basada en Imaginería Motora y Neurofeedback**
+# **NeuroMotion XR: Sistema Interfaz Cerebro-Computador para Rehabilitación Post-ACV Basada en Imaginería Motora y Neurofeedback**
 
 ## *Resumen*
 
@@ -557,6 +557,7 @@ No se necesita "time-based epoching" aquí porque **ya sabemos cuándo comienza 
  https://www.sciencedirect.com/science/article/pii/S1474442204008952
 
 [6] A. Rafferty et al., “Recommendations for Upper Limb Motor Recovery: An Overview of the UK and European Rehabilitation after Stroke Guidelines,” Healthcare, vol. 12, no. 14, p. 1433, 2024. doi: 10.3390/healthcare12141433.
+
 
 
 
